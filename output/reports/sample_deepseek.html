@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A股每日分析报告 - 2026-05-27</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: "Microsoft YaHei", "PingFang SC", "Helvetica Neue", Arial, sans-serif;
+    font-size: 14px; line-height: 1.6; color: #333; background: #f5f5f5;
+    max-width: 960px; margin: 0 auto; padding: 16px;
+  }
+  a { color: #1565c0; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .header {
+    background: linear-gradient(135deg, #1a237e 0%, #283593 100%);
+    color: white; padding: 24px 28px; border-radius: 8px 8px 0 0; margin-bottom: 2px;
+  }
+  .header h1 { font-size: 22px; font-weight: 700; margin-bottom: 8px; }
+  .header .meta { font-size: 12px; opacity: 0.85; }
+  .header .meta span { margin-right: 16px; }
+  .card {
+    background: white; border-radius: 6px; padding: 20px 24px;
+    margin-bottom: 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  }
+  .card h2 { font-size: 16px; color: #1a237e; border-bottom: 2px solid #e8eaf6; padding-bottom: 8px; margin-bottom: 14px; }
+  .summary-card {
+    background: linear-gradient(135deg, #e8f5e9 0%, #f1f8e9 100%);
+    border-left: 4px solid #4caf50;
+  }
+  .summary-item { margin: 6px 0; }
+  .summary-item strong { color: #2e7d32; }
+  .sector-pills { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+  .pill { padding: 3px 10px; border-radius: 12px; font-size: 12px; font-weight: 600; }
+  .pill-bullish { background: #ffcdd2; color: #c62828; }
+  .pill-bearish { background: #e8f5e9; color: #2e7d32; }
+  .pill-neutral { background: #e3f2fd; color: #1565c0; }
+  .pill-top { background: #e8eaf6; color: #1a237e; }
+  .policy-item {
+    border-left: 3px solid #1976d2; padding: 8px 12px; margin: 8px 0;
+    background: #f8f9ff; border-radius: 0 4px 4px 0;
+  }
+  .policy-title { font-weight: 600; color: #1565c0; }
+  .policy-meta { font-size: 12px; color: #666; margin-top: 4px; }
+  .sector-card {
+    border: 1px solid #e0e0e0; border-radius: 6px; margin-bottom: 12px; overflow: hidden;
+  }
+  .sector-header {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 12px 16px; background: #f5f5f5; border-bottom: 1px solid #e0e0e0;
+  }
+  .sector-name { font-weight: 700; font-size: 15px; }
+  .sector-meta { display: flex; gap: 12px; align-items: center; font-size: 12px; color: #666; }
+  .sector-body { padding: 14px 16px; }
+  .badge { display: inline-block; padding: 2px 9px; border-radius: 10px; font-size: 12px; font-weight: 600; }
+  .badge-strong_bullish { background: #ffcdd2; color: #b71c1c; }
+  .badge-bullish        { background: #ffe0e0; color: #c62828; }
+  .badge-neutral        { background: #f5f5f5; color: #616161; }
+  .badge-bearish        { background: #e8f5e9; color: #2e7d32; }
+  .badge-strong_bearish { background: #c8e6c9; color: #1b5e20; }
+  .advice-row { display: flex; flex-wrap: wrap; gap: 8px; margin: 10px 0; }
+  .advice-tag { padding: 4px 12px; border-radius: 4px; font-size: 13px; font-weight: 700; }
+  .advice-buy    { background: #fff3e0; color: #e65100; border: 1px solid #ff9800; }
+  .advice-watch  { background: #fffde7; color: #f57f17; border: 1px solid #ffc107; }
+  .advice-neutral{ background: #e3f2fd; color: #1565c0; border: 1px solid #42a5f5; }
+  .advice-sell   { background: #fce4ec; color: #880e4f; border: 1px solid #e91e63; }
+  .advice-avoid  { background: #e8f5e9; color: #1b5e20; border: 1px solid #4caf50; }
+  .factors-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 10px 0;
+  }
+  @media (max-width: 600px) { .factors-grid { grid-template-columns: 1fr; } }
+  .factors-col h4 { font-size: 13px; margin-bottom: 6px; }
+  .factors-col ul { padding-left: 16px; }
+  .factors-col li { font-size: 13px; margin-bottom: 3px; }
+  .bull-col h4 { color: #c62828; }
+  .bear-col h4 { color: #2e7d32; }
+  .risk-warning { color: #e65100; font-size: 13px; margin-top: 6px; }
+  .stocks { font-size: 13px; margin-top: 6px; }
+  .stock-tag {
+    display: inline-block; background: #e8eaf6; color: #283593;
+    padding: 2px 8px; border-radius: 4px; font-size: 12px; margin: 2px;
+  }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  th, td { padding: 8px 12px; border: 1px solid #e0e0e0; text-align: left; }
+  th { background: #f5f5f5; font-weight: 600; color: #424242; }
+  tr:nth-child(even) { background: #fafafa; }
+  .source-item { padding: 5px 0; border-bottom: 1px solid #f0f0f0; font-size: 13px; }
+  .source-item:last-child { border-bottom: none; }
+  .source-meta { font-size: 11px; color: #9e9e9e; margin-top: 2px; }
+  .footer {
+    text-align: center; padding: 16px; color: #9e9e9e; font-size: 12px;
+    border-top: 1px solid #e0e0e0; margin-top: 8px;
+  }
+  .score-bar {
+    display: inline-block; height: 6px; border-radius: 3px;
+    background: #e8eaf6; width: 60px; vertical-align: middle; overflow: hidden;
+  }
+  .score-fill {
+    position: absolute; left: 0; top: 0; height: 100%;
+    background: #3f51b5; border-radius: 3px;
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>A股每日分析报告</h1>
+  <div class="meta">
+    <span>2026-05-27</span>
+    <span>抓取 1 条</span>
+    <span>相关 1 条</span>
+    <span>耗时 8s</span>
+    <span>API费用 $0.0500</span>
+  </div>
+</div>
+
+<div class="card summary-card">
+  <h2>执行摘要</h2>
+  
+  <div class="summary-item">
+    <strong>今日重点板块：</strong>
+    <div class="sector-pills">
+      
+      <span class="pill pill-top">科技/半导体</span>
+      
+    </div>
+  </div>
+  
+  
+  <div class="summary-item" style="margin-top:10px">
+    <strong>利多板块：</strong>
+    <div class="sector-pills">
+      
+      <span class="pill pill-bullish">科技/半导体</span>
+      
+    </div>
+  </div>
+  
+  
+  
+</div>
+
+
+<div class="card">
+  <h2>宏观政策与时政</h2>
+  
+  <div class="policy-item">
+    <div class="policy-title">国产替代政策持续推进</div>
+    
+    <div class="policy-meta">
+      来源：<a href="https://zhuanlan.zhihu.com/p/t1">测试</a>
+      · 2026-05-27 21:17
+      · 置信度：80%
+    </div>
+  </div>
+  
+</div>
+
+
+<div class="card">
+  <h2>板块分析与操作建议</h2>
+  
+  
+  <div class="sector-card">
+    <div class="sector-header">
+      <div>
+        <span class="sector-name">科技/半导体</span>
+        <span class="badge badge-bullish" style="margin-left:8px">
+          看多 📈
+        </span>
+      </div>
+      <div class="sector-meta">
+        <span>
+          相关度
+          <span class="score-bar"><span class="score-fill" style="width:70%"></span></span>
+          7/10
+        </span>
+        <span>1条信息</span>
+      </div>
+    </div>
+    
+    <div class="sector-body">
+      
+      <div class="factors-grid">
+        <div class="factors-col bull-col">
+          <h4>利多因素</h4>
+          <ul>
+            
+            <li>AI算力强劲</li>
+            
+            <li>国产替代加速</li>
+            
+          </ul>
+        </div>
+        <div class="factors-col bear-col">
+          <h4>利空因素</h4>
+          <ul>
+            
+            <li>出口管制风险</li>
+            
+          </ul>
+        </div>
+      </div>
+      
+      <div style="border-top:1px solid #f0f0f0;padding-top:10px;margin-top:4px">
+        <div class="advice-row">
+          <span class="advice-tag advice-watch">
+            👀 谨慎关注
+          </span>
+          <span style="align-self:center;font-size:13px">
+            短期涨幅较大，关注回调
+          </span>
+        </div>
+        <div style="font-size:12px;color:#666;margin-top:4px">
+          短期(1-3天)
+        </div>
+        
+        <div class="risk-warning">风险：政策风险</div>
+        
+        
+        <div class="stocks">
+          关注：
+          
+          <span class="stock-tag">中芯国际</span>
+          
+          <span class="stock-tag">半导体ETF</span>
+          
+        </div>
+        
+      </div>
+    </div>
+    
+  </div>
+  
+  
+</div>
+
+
+
+<div class="card">
+  <h2>原始信息来源（共 1 条）</h2>
+  
+  <div class="source-item">
+    <a href="https://zhuanlan.zhihu.com/p/t1">半导体行业展望</a>
+    <div class="source-meta">测试 · 2026-05-27 21:17</div>
+  </div>
+  
+</div>
+
+<div class="footer">
+  本报告由 AI 自动生成，信息来源为知乎用户内容，仅供参考，不构成投资建议。<br>
+  股市有风险，投资需谨慎。
+</div>
+
+</body>
+</html>

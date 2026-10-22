@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>A股每日分析报告 - 2026-05-28</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: "Microsoft YaHei", "PingFang SC", Arial, sans-serif; font-size: 14px; line-height: 1.7; color: #333; background: #f5f5f5; max-width: 960px; margin: 0 auto; padding: 16px; }
+  a { color: #1565c0; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .header { background: linear-gradient(135deg, #1a237e, #283593); color: white; padding: 22px 28px; border-radius: 8px; margin-bottom: 14px; }
+  .header h1 { font-size: 22px; }
+  .header .meta { font-size: 12px; opacity: 0.85; margin-top: 6px; }
+  .header .meta span { margin-right: 16px; }
+  .card { background: white; border-radius: 6px; padding: 18px 22px; margin-bottom: 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+  .card h2 { font-size: 17px; color: #1a237e; border-bottom: 2px solid #e8eaf6; padding-bottom: 8px; margin-bottom: 12px; }
+
+  /* Author section */
+  .author-block { background: white; border-radius: 8px; margin-bottom: 16px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+  .author-header { background: #e8eaf6; padding: 14px 20px; display: flex; justify-content: space-between; align-items: center; }
+  .author-name { font-size: 17px; font-weight: 700; color: #1a237e; }
+  .author-stance { font-size: 13px; color: #555; margin-top: 4px; }
+  .author-sectors { display: flex; gap: 5px; flex-wrap: wrap; margin-top: 4px; }
+  .sector-tag { background: #e0e0e0; padding: 2px 8px; border-radius: 10px; font-size: 11px; color: #555; }
+  .author-body { padding: 0 20px 16px; }
+
+  /* Article within author */
+  .article-item { border: 1px solid #e8e8e8; border-radius: 6px; margin: 12px 0; }
+  .article-title-bar { background: #fafafa; padding: 10px 14px; border-bottom: 1px solid #eee; display: flex; justify-content: space-between; align-items: center; }
+  .article-type-badge { font-size: 11px; padding: 2px 7px; border-radius: 4px; background: #e3f2fd; color: #1565c0; }
+  .article-summary { padding: 8px 14px; color: #333; font-size: 13px; border-bottom: 1px solid #f5f5f5; }
+  .article-summary strong { color: #e65100; }
+
+  /* Abbreviations */
+  .abbr-box { padding: 8px 14px; background: #fff8e1; border-bottom: 1px solid #f5f5f5; }
+  .abbr-box .abbr-title { font-size: 12px; font-weight: 600; color: #f57f17; margin-bottom: 4px; }
+  .abbr-item { display: inline-block; background: #fff3e0; color: #e65100; padding: 2px 8px; border-radius: 4px; font-size: 12px; margin: 2px 4px 2px 0; }
+
+  /* Sector views table */
+  .sector-table { width: 100%; border-collapse: collapse; font-size: 12px; margin: 8px 14px; }
+  .sector-table th { background: #f5f5f5; padding: 6px 8px; border: 1px solid #e0e0e0; text-align: left; font-weight: 600; }
+  .sector-table td { padding: 6px 8px; border: 1px solid #e8e8e8; }
+  .sent-bullish { color: #c62828; font-weight: 600; }
+  .sent-bearish { color: #2e7d32; font-weight: 600; }
+  .sent-neutral { color: #757575; }
+
+  /* Daily sector summary */
+  .sector-summary-card { border: 1px solid #e0e0e0; border-radius: 8px; margin-bottom: 12px; overflow: hidden; }
+  .sector-summary-header { background: #283593; color: white; padding: 12px 18px; display: flex; justify-content: space-between; align-items: center; }
+  .sector-summary-body { padding: 14px 18px; }
+  .ss-row { margin: 6px 0; font-size: 13px; }
+  .ss-label { font-weight: 600; color: #555; display: inline-block; min-width: 90px; }
+  .author-pill { display: inline-block; background: #e8eaf6; color: #283593; padding: 2px 8px; border-radius: 10px; font-size: 11px; margin: 2px; }
+  .stock-pill { display: inline-block; background: #e3f2fd; color: #1565c0; padding: 2px 8px; border-radius: 4px; font-size: 12px; margin: 2px; }
+
+  /* Macro */
+  .macro-item { border-left: 3px solid #1976d2; padding: 8px 12px; margin: 6px 0; background: #f8f9ff; border-radius: 0 4px 4px 0; font-size: 13px; }
+
+  /* Sources */
+  .source-item { padding: 4px 0; border-bottom: 1px solid #f5f5f5; font-size: 12px; }
+  .source-meta { color: #9e9e9e; font-size: 11px; }
+  .footer { text-align: center; padding: 16px; color: #9e9e9e; font-size: 12px; border-top: 1px solid #e0e0e0; margin-top: 8px; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>A股每日分析报告</h1>
+  <div class="meta">
+    <span>2026-05-28</span>
+    <span>抓取 11 条</span>
+    <span>相关 8 条</span>
+    <span>耗时 137s</span>
+    <span>API费用 $0.0052</span>
+  </div>
+</div>
+
+<!-- Part 1: 按作者分析 -->
+<div class="card">
+  <h2>一、作者观点分析（共 7 位）</h2>
+</div>
+
+
+<div class="author-block">
+  <div class="author-header">
+    <div>
+      <div class="author-name">水又三人禾</div>
+      <div class="author-stance">看好PCB和CPO板块带动市场</div>
+      
+      <div class="author-sectors">
+        
+        <span class="sector-tag">创业板指</span>
+        
+        <span class="sector-tag">PCB</span>
+        
+        <span class="sector-tag">CPO</span>
+        
+      </div>
+      
+    </div>
+    <div style="text-align:right;font-size:12px;color:#888">
+      1 篇相关内容
+    </div>
+  </div>
+
+  
+  <div class="author-body">
+    
+    <div class="article-item">
+      <div class="article-title-bar">
+        <div>
+          <span class="article-type-badge">回答</span>
+          <a href="https://www.zhihu.com/question/2043294279125165691/answer/2043389458691659033" style="margin-left:8px;font-size:13px;">创业板指探底回升涨近2%，PCB、CPO走强，如何看待 2026 年 5 月 28 日 A 股行情？</a>
+        </div>
+      </div>
+      <div class="article-summary">
+        <strong>核心观点：</strong>PCB和CPO板块走强带动创业板指回升，市场情绪回暖。
+      </div>
+
+      
+
+      
+      <table class="sector-table">
+        <thead>
+          <tr><th>板块</th><th>情绪</th><th>相关标的</th><th>核心观点</th></tr>
+        </thead>
+        <tbody>
+          
+          <tr>
+            <td>PCB</td>
+            <td class="sent-bullish">看多 📈</td>
+            <td></td>
+            <td>PCB板块走强，是创业板指回升的主要推动力之一。</td>
+          </tr>
+          
+          <tr>
+            <td>CPO</td>
+            <td class="sent-bullish">看多 📈</td>
+            <td></td>
+            <td>CPO板块表现强势，助力市场情绪回暖。</td>
+          </tr>
+          
+        </tbody>
+      </table>
+      
+    </div>
+    
+  </div>
+  
+</div>
+
+<div class="author-block">
+  <div class="author-header">
+    <div>
+      <div class="author-name">布得布说</div>
+      <div class="author-stance">看空A股流动性预期</div>
+      
+      <div class="author-sectors">
+        
+        <span class="sector-tag">A股</span>
+        
+      </div>
+      
+    </div>
+    <div style="text-align:right;font-size:12px;color:#888">
+      1 篇相关内容
+    </div>
+  </div>
+
+  
+  <div class="author-body">
+    
+    <div class="article-item">
+      <div class="article-title-bar">
+        <div>
+          <span class="article-type-badge">文章</span>
+          <a href="https://zhuanlan.zhihu.com/p/2043371850546270931" style="margin-left:8px;font-size:13px;">琢磨琢磨美联储放鹰的事儿</a>
+        </div>
+      </div>
+      <div class="article-summary">
+        <strong>核心观点：</strong>美联储鹰派表态将压制市场风险偏好，短期利空A股流动性预期。
+      </div>
+
+      
+
+      
+      <table class="sector-table">
+        <thead>
+          <tr><th>板块</th><th>情绪</th><th>相关标的</th><th>核心观点</th></tr>
+        </thead>
+        <tbody>
+          
+          <tr>
+            <td>整体市场</td>
+            <td class="sent-bearish">看空 📉</td>
+            <td></td>
+            <td>美联储鹰派信号导致全球资金收紧预期，A股承压。</td>
+          </tr>
+          
+        </tbody>
+      </table>
+      
+    </div>
+    
+  </div>
+  
+</div>
+
+<div class="author-block">
+  <div class="author-header">
+    <div>
+      <div class="author-name">剑锋无尘</div>
+      <div class="author-stance">短期看空黄金，长期存不确定性</div>
+      
+      <div class="author-sectors">
+        
+        <span class="sector-tag">黄金</span>
+        
+      </div>
+      
+    </div>
+    <div style="text-align:right;font-size:12px;color:#888">
+      1 篇相关内容
+    </div>
+  </div>
+
+  
+  <div class="author-body">
+    
+    <div class="article-item">
+      <div class="article-title-bar">
+        <div>
+          <span class="article-type-badge">回答</span>
+          <a href="https://www.zhihu.com/question/2043314967013581849/answer/2043393308542623931" style="margin-left:8px;font-size:13px;">5 月 28 日现货黄金跳水，盘中跌破 4400 美元/盎司，受到哪些因素影响？还会持续下跌吗？</a>
+        </div>
+      </div>
+      <div class="article-summary">
+        <strong>核心观点：</strong>黄金价格跳水，关注后续走势，短期承压但长期仍存不确定性。
+      </div>
+
+      
+
+      
+      <table class="sector-table">
+        <thead>
+          <tr><th>板块</th><th>情绪</th><th>相关标的</th><th>核心观点</th></tr>
+        </thead>
+        <tbody>
+          
+          <tr>
+            <td>贵金属</td>
+            <td class="sent-bearish">看空 📉</td>
+            <td><span class="stock-pill">山东黄金</span><span class="stock-pill">中金黄金</span></td>
+            <td>黄金短期受美元走强和风险偏好回升影响跳水，但长期避险需求仍存支撑。</td>
+          </tr>
+          
+        </tbody>
+      </table>
+      
+    </div>
+    
+  </div>
+  
+</div>
+
+<div class="author-block">
+  <div class="author-header">
+    <div>
+      <div class="author-name">派大星皮皮</div>
+      <div class="author-stance">谨慎判断市场阶段</div>
+      
+    </div>
+    <div style="text-align:right;font-size:12px;color:#888">
+      2 篇相关内容
+    </div>
+  </div>
+
+  
+  <div class="author-body">
+    
+    <div class="article-item">
+      <div class="article-title-bar">
+        <div>
+          <span class="article-type-badge">回答</span>
+          <a href="https://www.zhihu.com/question/2042146502986953353/answer/2043435036817495217" style="margin-left:8px;font-size:13px;">怎么看待2026年5月29日A股行情？</a>
+        </div>
+      </div>
+      <div class="article-summary">
+        <strong>核心观点：</strong>本文未提供具体板块或个股观点，仅标题提及日期。
+      </div>
+
+      
+
+      
+    </div>
+    
+    <div class="article-item">
+      <div class="article-title-bar">
+        <div>
+          <span class="article-type-badge">想法</span>
+          <a href="/pins/2043373557061832855" style="margin-left:8px;font-size:13px;">评论区我观察到两个现象：1. “我抄底追…</a>
+        </div>
+      </div>
+      <div class="article-summary">
+        <strong>核心观点：</strong>通过历史主线行情对比，提示当前市场可能处于不同阶段，需谨慎判断。
+      </div>
+
+      
+      <div class="abbr-box">
+        <div class="abbr-title">术语解码（缩写/黑话/谜语）</div>
+        
+        <span class="abbr-item">抄底 &rarr; 在股价低位买入，预期反弹获利</span>
+        
+        <span class="abbr-item">追高 &rarr; 在股价高位买入，预期继续上涨</span>
+        
+        <span class="abbr-item">看空 &rarr; 预期股价下跌，持悲观态度</span>
+        
+        <span class="abbr-item">主线行情 &rarr; 市场主导的持续上涨板块或主题</span>
+        
+        <span class="abbr-item">创业板 &rarr; 深圳证券交易所创业板市场</span>
+        
+        <span class="abbr-item">顺周期 &rarr; 与经济周期同步的行业，如煤炭、有色等</span>
+        
+        <span class="abbr-item">白酒 &rarr; 白酒行业股票，常指贵州茅台等</span>
+        
+        <span class="abbr-item">新能源 &rarr; 新能源行业股票，如光伏、锂电池等</span>
+        
+        <span class="abbr-item">医药 &rarr; 医药行业股票，如药明康德等</span>
+        
+        <span class="abbr-item">启动阶段 &rarr; 行情初期，股价开始上涨</span>
+        
+        <span class="abbr-item">主升阶段 &rarr; 行情中期，股价加速上涨</span>
+        
+        <span class="abbr-item">高潮阶段 &rarr; 行情末期，股价达到顶峰后可能回落</span>
+        
+      </div>
+      
+
+      
+      <table class="sector-table">
+        <thead>
+          <tr><th>板块</th><th>情绪</th><th>相关标的</th><th>核心观点</th></tr>
+        </thead>
+        <tbody>
+          
+          <tr>
+            <td>创业板</td>
+            <td class="sent-neutral">中性</td>
+            <td></td>
+            <td>2013~2015年创业板曾作为主线行情，当前需对比其走势阶段。</td>
+          </tr>
+          
+          <tr>
+            <td>顺周期</td>
+            <td class="sent-neutral">中性</td>
+            <td></td>
+            <td>2016~2018年顺周期板块是主线，当前需判断是否处于类似阶段。</td>
+          </tr>
+          
+          <tr>
+            <td>白酒</td>
+            <td class="sent-neutral">中性</td>
+            <td></td>
+            <td>2019~2021年白酒作为主线之一，当前需映射其行情阶段。</td>
+          </tr>
+          
+          <tr>
+            <td>新能源</td>
+            <td class="sent-neutral">中性</td>
+            <td></td>
+            <td>2019~2021年新能源是主线之一，当前需分析是启动、主升还是高潮。</td>
+          </tr>
+          
+          <tr>
+            <td>医药</td>
+            <td class="sent-neutral">中性</td>
+            <td></td>
+            <td>2019~2021年医药作为主线之一，当前需对比历史走势。</td>
+          </tr>
+          
+        </tbody>
+      </table>
+      
+    </div>
+    
+  </div>
+  
+</div>
+
+<div class="author-block">
+  <div class="author-header">
+    <div>
+      <div class="author-name">波动率就是趋势</div>
+      <div class="author-stance">看空黄金短期走势</div>
+      
+      <div class="author-sectors">
+        
+        <span class="sector-tag">贵金属</span>
+        
+        <span class="sector-tag">黄金</span>
+        
+      </div>
+      
+    </div>
+    <div style="text-align:right;font-size:12px;color:#888">
+      1 篇相关内容
+    </div>
+  </div>
+
+  
+  <div class="author-body">
+    
+    <div class="article-item">
+      <div class="article-title-bar">
+        <div>
+          <span class="article-type-badge">回答</span>
+          <a href="https://www.zhihu.com/question/2043314967013581849/answer/2043428961951166736" style="margin-left:8px;font-size:13px;">5 月 28 日现货黄金跳水，盘中跌破 4400 美元/盎司，受到哪些因素影响？还会持续下跌吗？</a>
+        </div>
+      </div>
+      <div class="article-summary">
+        <strong>核心观点：</strong>现货黄金跌破4400美元，受多重因素影响，短期可能继续下跌。
+      </div>
+
+      
+
+      
+      <table class="sector-table">
+        <thead>
+          <tr><th>板块</th><th>情绪</th><th>相关标的</th><th>核心观点</th></tr>
+        </thead>
+        <tbody>
+          
+          <tr>
+            <td>贵金属</td>
+            <td class="sent-bearish">看空 📉</td>
+            <td></td>
+            <td>现货黄金跳水跌破4400美元，短期承压，可能持续下跌。</td>
+          </tr>
+          
+        </tbody>
+      </table>
+      
+    </div>
+    
+  </div>
+  
+</div>
+
+<div class="author-block">
+  <div class="author-header">
+    <div>
+      <div class="author-name">羊村里最快的羊</div>
+      <div class="author-stance">市场情绪偏多</div>
+      
+      <div class="author-sectors">
+        
+        <span class="sector-tag">CPO</span>
+        
+        <span class="sector-tag">PCB</span>
+        
+        <span class="sector-tag">算力芯片</span>
+        
+      </div>
+      
+    </div>
+    <div style="text-align:right;font-size:12px;color:#888">
+      1 篇相关内容
+    </div>
+  </div>
+
+  
+  <div class="author-body">
+    
+    <div class="article-item">
+      <div class="article-title-bar">
+        <div>
+          <span class="article-type-badge">想法</span>
+          <a href="/pins/2043410794663113521" style="margin-left:8px;font-size:13px;">5月28日复盘连扳热点：4连板：华塑控股，…</a>
+        </div>
+      </div>
+      <div class="article-summary">
+        <strong>核心观点：</strong>CPO、PCB概念领涨，算力芯片活跃，市场情绪偏多。
+      </div>
+
+      
+      <div class="abbr-box">
+        <div class="abbr-title">术语解码（缩写/黑话/谜语）</div>
+        
+        <span class="abbr-item">连扳 &rarr; 连续涨停板</span>
+        
+        <span class="abbr-item">A股 &rarr; 人民币普通股票</span>
+        
+        <span class="abbr-item">CPO &rarr; 共封装光学（Co-packaged Optics），一种光模块技术概念</span>
+        
+        <span class="abbr-item">PCB &rarr; 印制电路板（Printed Circuit Board），电子元器件概念</span>
+        
+        <span class="abbr-item">算力 &rarr; 计算能力，通常指与人工智能、数据中心相关的芯片或服务器概念</span>
+        
+        <span class="abbr-item">芯片 &rarr; 半导体芯片，集成电路概念</span>
+        
+        <span class="abbr-item">主力 &rarr; 主力资金，指大额资金或机构投资者</span>
+        
+        <span class="abbr-item">净流入 &rarr; 资金净流入，即买入资金减去卖出资金的差额</span>
+        
+        <span class="abbr-item">溢价 &rarr; 股价高于内在价值或买入后盈利空间，短线操作中常指追高后的利润</span>
+        
+      </div>
+      
+
+      
+      <table class="sector-table">
+        <thead>
+          <tr><th>板块</th><th>情绪</th><th>相关标的</th><th>核心观点</th></tr>
+        </thead>
+        <tbody>
+          
+          <tr>
+            <td>CPO（共封装光学）</td>
+            <td class="sent-bullish">看多 📈</td>
+            <td><span class="stock-pill">天孚通信</span><span class="stock-pill">新易盛</span><span class="stock-pill">中际旭创</span></td>
+            <td>CPO概念领涨，天孚通信、新易盛股价创历史新高，主力资金大幅流入中际旭创。</td>
+          </tr>
+          
+          <tr>
+            <td>PCB（印制电路板）</td>
+            <td class="sent-bullish">看多 📈</td>
+            <td></td>
+            <td>PCB概念板块涨幅居前，市场关注度高。</td>
+          </tr>
+          
+          <tr>
+            <td>算力芯片</td>
+            <td class="sent-bullish">看多 📈</td>
+            <td><span class="stock-pill">工业富联</span><span class="stock-pill">中兴通讯</span></td>
+            <td>算力、芯片概念板块轮动活跃，工业富联、中兴通讯获主力资金净流入。</td>
+          </tr>
+          
+          <tr>
+            <td>连板个股（短线情绪）</td>
+            <td class="sent-neutral">中性</td>
+            <td><span class="stock-pill">华塑控股</span><span class="stock-pill">华电能源</span><span class="stock-pill">香江控股</span><span class="stock-pill">中京电子</span><span class="stock-pill">江海股份</span><span class="stock-pill">德新科技</span><span class="stock-pill">粤电力A</span><span class="stock-pill">合锻智能</span><span class="stock-pill">艾华集团</span></td>
+            <td>华塑控股4连板为情绪热点，但作者提醒短线需坚持溢价，不要贪多。</td>
+          </tr>
+          
+        </tbody>
+      </table>
+      
+    </div>
+    
+  </div>
+  
+</div>
+
+<div class="author-block">
+  <div class="author-header">
+    <div>
+      <div class="author-name">向阳</div>
+      <div class="author-stance">建议减仓或清仓观望</div>
+      
+    </div>
+    <div style="text-align:right;font-size:12px;color:#888">
+      1 篇相关内容
+    </div>
+  </div>
+
+  
+  <div class="author-body">
+    
+    <div class="article-item">
+      <div class="article-title-bar">
+        <div>
+          <span class="article-type-badge">文章</span>
+          <a href="https://zhuanlan.zhihu.com/p/2043414591045112426" style="margin-left:8px;font-size:13px;">2026.5.28 复盘&跑路计划</a>
+        </div>
+      </div>
+      <div class="article-summary">
+        <strong>核心观点：</strong>作者认为市场风险加剧，建议减仓或清仓，等待更明确信号。
+      </div>
+
+      
+
+      
+    </div>
+    
+  </div>
+  
+</div>
+
+
+<!-- Part 2: 每日行业总结 -->
+<div class="card">
+  <h2>二、每日行业总结</h2>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 宏观政策 -->
+
+
+<!-- 原始来源 -->
+<div class="card">
+  <h2>原始信息来源（共 8 条）</h2>
+  
+  <div class="source-item">
+    <a href="https://www.zhihu.com/question/2043294279125165691/answer/2043389458691659033">创业板指探底回升涨近2%，PCB、CPO走强，如何看待 2026 年 5 月 28 日 A 股行情？</a>
+    <span class="source-meta"> - 水又三人禾 · 2026-05-28 17:53</span>
+  </div>
+  
+  <div class="source-item">
+    <a href="https://zhuanlan.zhihu.com/p/2043371850546270931">琢磨琢磨美联储放鹰的事儿</a>
+    <span class="source-meta"> - 布得布说 · 2026-05-28 17:21</span>
+  </div>
+  
+  <div class="source-item">
+    <a href="https://www.zhihu.com/question/2043314967013581849/answer/2043393308542623931">5 月 28 日现货黄金跳水，盘中跌破 4400 美元/盎司，受到哪些因素影响？还会持续下跌吗？</a>
+    <span class="source-meta"> - 剑锋无尘 · 2026-05-28 18:08</span>
+  </div>
+  
+  <div class="source-item">
+    <a href="https://www.zhihu.com/question/2042146502986953353/answer/2043435036817495217">怎么看待2026年5月29日A股行情？</a>
+    <span class="source-meta"> - 派大星皮皮 · 2026-05-28 20:54</span>
+  </div>
+  
+  <div class="source-item">
+    <a href="/pins/2043373557061832855">评论区我观察到两个现象：1. “我抄底追…</a>
+    <span class="source-meta"> - 派大星皮皮 · 2026-05-28 16:50</span>
+  </div>
+  
+  <div class="source-item">
+    <a href="https://www.zhihu.com/question/2043314967013581849/answer/2043428961951166736">5 月 28 日现货黄金跳水，盘中跌破 4400 美元/盎司，受到哪些因素影响？还会持续下跌吗？</a>
+    <span class="source-meta"> - 波动率就是趋势 · 2026-05-28 20:30</span>
+  </div>
+  
+  <div class="source-item">
+    <a href="/pins/2043410794663113521">5月28日复盘连扳热点：4连板：华塑控股，…</a>
+    <span class="source-meta"> - 羊村里最快的羊 · 2026-05-28 19:24</span>
+  </div>
+  
+  <div class="source-item">
+    <a href="https://zhuanlan.zhihu.com/p/2043414591045112426">2026.5.28 复盘&跑路计划</a>
+    <span class="source-meta"> - 向阳 · 2026-05-28 20:39</span>
+  </div>
+  
+</div>
+
+<div class="footer">
+  本报告由AI自动生成，仅供参考，不构成投资建议。股市有风险，投资需谨慎。
+</div>
+</body>
+</html>

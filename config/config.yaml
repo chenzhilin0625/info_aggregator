@@ -1,0 +1,179 @@
+# ============================================================
+# 知乎财经日报自动分析系统 — 配置文件（DeepSeek 版）
+# 首次使用请填写以下 *** 标注的必填项
+# ============================================================
+
+# === 知乎配置 ===
+zhihu:
+  # *** 必填：浏览器登录知乎后，F12 > Network > 任意请求 > Headers > Cookie
+  #     复制 z_c0=... 的完整值（含 z_c0= 前缀也可以，程序会自动清理）
+  cookie_z_c0: "2|1:0|10:1779877518|4:z_c0|92:Mi4xZFVTLUFRQUFBQUEzaGRUOXRzR3NHeVlBQUFCZ0FsVk5GYUR1YWdCVHhaYXprZWVxd1hORnVlWGdqQ2QwcTQtc0tR|fe39a5ea8703fdb6f32fa1f9434a66e8e5aef9cb291dcbacccddb03e1fff15a4"
+  cookie_last_valid: ""
+  max_pages: 50
+  stale_threshold: 5
+  request_delay_min: 1.0
+  request_delay_max: 2.5
+
+# === DeepSeek API 配置 ===
+deepseek:
+  # *** 必填：DeepSeek API Key（https://platform.deepseek.com/api_keys）
+  api_key: "sk-8171f7606bf74596bd7ad84d6d11353a"
+  # 基础 URL（通常无需修改）
+  base_url: "https://api.deepseek.com"
+  # 第一阶段分类（批量，低成本）- deepseek-chat 足够
+  classify_model: "deepseek-chat"
+  # 第二阶段提取（单条）
+  extract_model: "deepseek-chat"
+  # 第三阶段综合分析（需要推理能力）- deepseek-chat 或 deepseek-reasoner
+  synthesize_model: "deepseek-chat"
+  # 每日费用熔断（USD），超出则跳过综合分析
+  daily_cost_limit_usd: 0.50
+  # 每批分类的内容数量（建议20-30）
+  classify_batch_size: 25
+
+# === 邮件配置 ===
+email:
+  enabled: true
+  smtp_host: "smtp.qq.com"
+  smtp_port: 465
+  use_ssl: true
+  username: "799356840@qq.com"
+  # *** 必填：SMTP授权码（非登录密码！需在邮箱设置中开启SMTP并生成）
+  password: "cqgbfinkthdnbccb"
+  sender_name: "A股日报机器人"
+  recipients:
+    - "799356840@qq.com"
+
+# === 报告输出配置 ===
+output:
+  report_dir: "output/reports"
+  log_dir: "output/logs"
+  keep_days: 30
+
+# === 时间配置 ===
+time:
+  timezone: "Asia/Shanghai"
+  day_start_hour: 0
+
+# === A股板块定义 ===
+sectors:
+  - name: "科技/半导体"
+    keywords:
+      - "芯片"
+      - "半导体"
+      - "集成电路"
+      - "AI"
+      - "人工智能"
+      - "算力"
+      - "GPU"
+      - "存储"
+      - "封装"
+      - "光刻"
+
+  - name: "医药/生物"
+    keywords:
+      - "医药"
+      - "生物科技"
+      - "创新药"
+      - "CXO"
+      - "医疗器械"
+      - "医保"
+      - "集采"
+      - "新药"
+      - "疫苗"
+      - "基因"
+
+  - name: "消费/零售"
+    keywords:
+      - "消费"
+      - "零售"
+      - "餐饮"
+      - "白酒"
+      - "食品"
+      - "电商"
+      - "内需"
+      - "家电"
+      - "服装"
+      - "奢侈品"
+
+  - name: "金融/银行/保险"
+    keywords:
+      - "银行"
+      - "保险"
+      - "券商"
+      - "信托"
+      - "利率"
+      - "存款准备金"
+      - "降息"
+      - "降准"
+      - "货币政策"
+      - "金融监管"
+
+  - name: "新能源/电力"
+    keywords:
+      - "新能源"
+      - "光伏"
+      - "风电"
+      - "储能"
+      - "电动车"
+      - "充电桩"
+      - "电力"
+      - "核电"
+      - "氢能"
+      - "锂电池"
+
+  - name: "房地产/建材"
+    keywords:
+      - "房地产"
+      - "楼市"
+      - "建材"
+      - "水泥"
+      - "地产"
+      - "保交楼"
+      - "限购"
+      - "房贷"
+      - "二手房"
+      - "土地"
+
+  - name: "军工/国防"
+    keywords:
+      - "军工"
+      - "国防"
+      - "航空航天"
+      - "军事"
+      - "武器"
+      - "军费"
+      - "导弹"
+      - "战机"
+      - "国产替代"
+
+  - name: "大宗商品/周期"
+    keywords:
+      - "钢铁"
+      - "煤炭"
+      - "铜"
+      - "铝"
+      - "石油"
+      - "化工"
+      - "大宗商品"
+      - "黄金"
+      - "铁矿石"
+      - "原油"
+
+  - name: "互联网/传媒"
+    keywords:
+      - "互联网"
+      - "平台经济"
+      - "游戏"
+      - "短视频"
+      - "内容"
+      - "传媒"
+      - "广告"
+      - "直播"
+      - "社交媒体"
+      - "反垄断"
+
+# === 数据库配置 ===
+database:
+  path: "output/seen_content.db"
+  retention_days: 7

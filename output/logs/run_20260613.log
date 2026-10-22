@@ -1,0 +1,10 @@
+2026-06-13 23:30:05 [INFO] zhihu_analyst - ============================================================
+2026-06-13 23:30:05 [INFO] zhihu_analyst - A股每日分析启动 (2026-06-13) [DeepSeek]
+2026-06-13 23:30:05 [INFO] zhihu_analyst - ============================================================
+2026-06-13 23:30:05 [DEBUG] zhihu_analyst - 数据库已连接：output/seen_content.db
+2026-06-13 23:30:05 [INFO] zhihu_analyst - 清理 40 条旧内容记录（早于 2026-06-06）
+2026-06-13 23:30:20 [WARNING] zhihu_analyst - 注入 xsrf 时出错: HTTPSConnectionPool(host='www.zhihu.com', port=443): Max retries exceeded with url: / (Caused by ProxyError('Unable to connect to proxy', NewConnectionError("HTTPSConnection(host='127.0.0.1', port=7890): Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。")))
+2026-06-13 23:30:20 [INFO] zhihu_analyst - Verifying Zhihu Cookie...
+2026-06-13 23:30:32 [WARNING] zhihu_analyst - Cookie 验证失败，HTTP 401
+2026-06-13 23:30:32 [ERROR] zhihu_analyst - Cookie invalid or expired!
+2026-06-13 23:30:33 [INFO] zhihu_analyst - Cookie 过期提醒邮件已发送

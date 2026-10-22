@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A股每日分析 - 2026-05-31</title>
+<style>
+  :root {
+    --primary: #1a237e;
+    --primary-light: #e8eaf6;
+    --accent: #ff6f00;
+    --bg: #f0f2f5;
+    --card: #ffffff;
+    --text: #333333;
+    --text-secondary: #666666;
+    --text-muted: #999999;
+    --border: #e8e8e8;
+    --shadow: 0 2px 12px rgba(0,0,0,0.06);
+    --radius: 10px;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    font-size: 15px; line-height: 1.8; color: var(--text); background: var(--bg);
+    max-width: 780px; margin: 0 auto; padding: 24px 16px;
+  }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #0d1b5e 0%, #1a237e 40%, #283593 100%);
+    color: #fff; padding: 28px 32px; border-radius: var(--radius);
+    margin-bottom: 20px; position: relative; overflow: hidden;
+  }
+  .header::after {
+    content: ''; position: absolute; top: -50px; right: -50px;
+    width: 160px; height: 160px; background: rgba(255,255,255,0.04);
+    border-radius: 50%;
+  }
+  .header h1 { font-size: 22px; font-weight: 700; position: relative; z-index: 1; }
+  .header .meta { font-size: 13px; opacity: 0.8; margin-top: 8px; position: relative; z-index: 1; display: flex; flex-wrap: wrap; gap: 6px 18px; }
+  .header .meta-item { display: flex; align-items: center; gap: 4px; }
+  .header .dot { width: 5px; height: 5px; border-radius: 50%; background: rgba(255,255,255,0.4); }
+
+  /* Summary card */
+  .summary-card {
+    background: var(--card); border-radius: var(--radius); padding: 28px 32px;
+    margin-bottom: 12px; box-shadow: var(--shadow);
+  }
+  .summary-card h2 {
+    font-size: 17px; color: var(--primary); margin-bottom: 8px;
+    padding-bottom: 10px; border-bottom: 2px solid var(--primary-light);
+  }
+
+  /* TOC */
+  .toc {
+    background: var(--card); border-radius: var(--radius); padding: 20px 28px;
+    margin-bottom: 20px; box-shadow: var(--shadow);
+  }
+  .toc h3 { font-size: 14px; color: var(--primary); margin-bottom: 10px; }
+  .toc-list { columns: 2; column-gap: 24px; }
+  .toc-item { font-size: 13px; padding: 3px 0; break-inside: avoid; }
+  .toc-item a { color: var(--text-secondary); text-decoration: none; }
+  .toc-item a:hover { color: var(--primary); }
+
+  /* Article card */
+  .article-card {
+    background: var(--card); border-radius: var(--radius);
+    margin-bottom: 16px; box-shadow: var(--shadow); overflow: hidden;
+  }
+  .article-header {
+    display: flex; align-items: center; gap: 14px;
+    padding: 18px 24px; background: #fafbfc;
+    border-bottom: 1px solid var(--border);
+  }
+  .article-icon {
+    width: 42px; height: 42px; border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 20px; flex-shrink: 0;
+  }
+  .icon-article { background: #e3f2fd; }
+  .icon-answer { background: #fce4ec; }
+  .icon-pin { background: #fff3e0; }
+  .article-info { flex: 1; min-width: 0; }
+  .article-title { font-size: 15px; font-weight: 600; color: var(--text); line-height: 1.4; }
+  .article-title a { color: inherit; text-decoration: none; }
+  .article-title a:hover { color: var(--primary); }
+  .article-meta { font-size: 12px; color: var(--text-muted); margin-top: 3px; }
+  .type-badge {
+    display: inline-block; font-size: 11px; font-weight: 600;
+    padding: 2px 8px; border-radius: 4px; letter-spacing: 0.3px;
+  }
+  .badge-article { background: #e3f2fd; color: #1565c0; }
+  .badge-answer { background: #fce4ec; color: #c62828; }
+  .badge-pin { background: #fff3e0; color: #e65100; }
+
+  .article-body {
+    padding: 20px 24px 24px;
+    font-size: 14px; line-height: 1.9;
+  }
+  .article-body p { margin-bottom: 10px; }
+  .article-body strong { color: #1a237e; }
+  .article-body h1, .article-body h2, .article-body h3 { font-size: 15px; color: var(--primary); margin: 16px 0 6px; }
+  .article-body ul, .article-body ol { padding-left: 20px; margin: 6px 0 12px; }
+  .article-body li { margin: 3px 0; }
+  .article-body blockquote {
+    border-left: 3px solid var(--primary-light); padding: 6px 14px;
+    margin: 10px 0; color: var(--text-secondary); background: #fafbfc;
+    border-radius: 0 6px 6px 0;
+  }
+
+  /* Footer */
+  .footer {
+    text-align: center; padding: 20px; color: var(--text-muted);
+    font-size: 12px; border-top: 1px solid var(--border); margin-top: 12px;
+  }
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<div class="header">
+  <h1>📊 A股每日分析报告</h1>
+  <div class="meta">
+    <span class="meta-item">📅 2026-05-31</span>
+    <span class="dot"></span>
+    <span class="meta-item">📥 抓取 18 条</span>
+    <span class="dot"></span>
+    <span class="meta-item">✅ 相关 6 条</span>
+    <span class="dot"></span>
+    <span class="meta-item">⚡ 237s</span>
+    <span class="dot"></span>
+    <span class="meta-item">💰 $0.0047</span>
+  </div>
+</div>
+
+<!-- TOC -->
+
+<div class="toc">
+  <h3>📑 目录</h3>
+  <div class="toc-list">
+    
+    <div class="toc-item">
+      <a href="#item-1">
+        1. 对2026年6月1日A股市场行情，大家有什么看法？
+      </a>
+    </div>
+    
+    <div class="toc-item">
+      <a href="#item-2">
+        2. 美伊达成 60 天停火备忘录框架，霍尔木兹海峡恢复无限制…
+      </a>
+    </div>
+    
+    <div class="toc-item">
+      <a href="#item-3">
+        3. 本轮美股回调时，黄金白银会怎么走？黄金…
+      </a>
+    </div>
+    
+    <div class="toc-item">
+      <a href="#item-4">
+        4. 比亚迪 5月 28 日举办的智能化战略发布会上发布了什么…
+      </a>
+    </div>
+    
+    <div class="toc-item">
+      <a href="#item-5">
+        5. 如何看待 2026 年 6月 1日 A 股行情走势？
+      </a>
+    </div>
+    
+    <div class="toc-item">
+      <a href="#item-6">
+        6. 5月29日复盘连扳热点：5连板：香江控股，…
+      </a>
+    </div>
+    
+  </div>
+</div>
+
+
+<!-- Content summary -->
+<div class="summary-card">
+  <div>
+<div class="article-card" id="item-1">
+  <div class="article-header">
+    <div class="article-icon icon-answer">💬</div>
+    <div class="article-info">
+      <div class="article-title">对2026年6月1日A股市场行情，大家有什么看法？</div>
+      <div class="article-meta"><span class="type-badge badge-answer">回答</span> <span style="font-weight:600;color:#555;">派大星皮皮</span> <a href="https://www.zhihu.com/question/2043613019150841250/answer/2044521463433147078" style="font-size:12px;color:#999;margin-left:6px;">查看原文 →</a></div>
+    </div>
+  </div>
+  <div class="article-body">
+    <p>好的，以下是对您提供内容的总结，字数控制在1000字以内：</p>
+<p>---</p>
+<p><strong>标题：对2026年6月1日A股市场行情，大家有什么看法？</strong></p>
+<p><strong>作者：派大星皮皮</strong></p>
+<p><strong>核心观点：</strong> 当前A股处于牛市调整周期，6月上半月应以防守为主。主线（双创）高位震荡，只卖不买；老牌蓝筹（老登）方向可能迎来喘息，但需精挑细选，不宜盲目配置ETF。个股题材交易难度加大，建议不急于开新仓，重点关注二季度业绩高景气且调整充分的方向。</p>
+<p>---</p>
+<h3>一、5月行情回顾</h3>
+<p>5月A股呈现极致结构化行情：<br><ul><li><strong>双创（创业板、科创板）</strong> 继续创新高，但收出长上影线，显示高位压力。</li><br><li><strong>老登方向（传统蓝筹）</strong> 集体走低，部分板块跌回“924”水平。</li><br><li><strong>中小盘指数</strong> 持续调整。</li><br></ul><br>市场主线“缩圈”并持续抽水，导致主线调整时其他方向泥沙俱下。尽管双创月涨幅约10%，但中旬后个股赚钱效应极差，中证500/1000勉强收红，上证50跌超2%。许多投资者因前期不信、轻仓，后期追高被套，或在高位巨震中操作失误而亏损，再次证明牛市中也存在大量亏钱案例。</p>
+<p>---</p>
+<h3>二、6月市场展望</h3>
+<p>#### 1. 双创高位巨震，趋势转弱<br><ul><li>本周双创主线出现高位放量巨震，虽能创新高（创业板一度超过上证指数），但明显滞涨。</li><br><li><strong>科创50</strong> 周五放天量大跌5%，若无新利好刺激，收复该阴线需较长时间（类比2025年10月9日）。日线MACD出现“323行情”以来首次死叉，趋势由强转弱。</li><br><li><strong>创业板</strong> 情况更复杂：有业绩支撑的“易中天”相对坚挺，新能源和互联网券商可能起到对冲作用，预计将呈现区间宽幅震荡，以时间换空间（类比2025年四季度至2026年一季度）。</li><br></ul><br>#### 2. 关键时间节点<br>6月有三个事件对双创影响较大：<br><ul><li><strong>6月18日凌晨</strong>：美联储议息会议。不降息无悬念，但这是凯文·沃什上任后的首次会议，需关注政策信号。</li><br></ul><br>#### 3. 交易策略建议<br><ul><li><strong>主线（双创）</strong>：若有反复，只卖不买，避免追高。</li><br><li><strong>老登方向</strong>：可能迎来喘息，但仅适合精挑细选个股，不适合配置ETF。</li><br><li><strong>个股题材</strong>：交易难度加大，操作上不急于开新仓。</li><br><li><strong>关注方向</strong>：二季度业绩高景气且调整充分的板块，等待其强度确认。</li><br></ul><br>---</p>
+<h3>三、总结</h3>
+<p>当前市场处于牛市调整周期，6月上半月应以防守为主。主线高位震荡，趋势转弱，需警惕回调风险；老牌蓝筹或有短期机会，但需精选个股。投资者应保持耐心，避免追涨杀跌，重点关注业绩支撑明确且调整到位的方向。</p>
+<p>---</p>
+<p>以上内容已控制在1000字以内，并保留了原文核心观点、数据及策略建议。</p>
+<p>---</p>
+  </div>
+</div>
+
+<div class="article-card" id="item-2">
+  <div class="article-header">
+    <div class="article-icon icon-answer">💬</div>
+    <div class="article-info">
+      <div class="article-title">美伊达成 60 天停火备忘录框架，霍尔木兹海峡恢复无限制通航，油价跳水，黄金转涨，哪些信息值得关注？</div>
+      <div class="article-meta"><span class="type-badge badge-answer">回答</span> <span style="font-weight:600;color:#555;">剑锋无尘</span> <a href="https://www.zhihu.com/question/2043458312344187663/answer/2044479417221633175" style="font-size:12px;color:#999;margin-left:6px;">查看原文 →</a></div>
+    </div>
+  </div>
+  <div class="article-body">
+    <p>根据资深投资研究助手“剑锋无尘”的分析，美伊达成60天停火备忘录框架及霍尔木兹海峡恢复通航后，油价跳水、黄金转涨，但市场关注点已从传统的地缘风险转向更复杂的资产联动。以下为关键信息总结：</p>
+<p><strong>1. 传统指标失效，美股成新焦点</strong><br>黄金、白银对霍尔木兹海峡事件的反应已不灵敏，金油比、美元指数、美债收益率等传统指标也出现脱敏。当前更需关注美股，尤其是科技股和半导体板块，近2个月涨幅过大，回调风险上升。历史数据显示，美股下跌时，黄金、白银的表现取决于市场交易的风险类型（流动性冲击、美元走强、地缘避险、信用风险或衰退降息）。</p>
+<p><strong>2. 黄金与白银的差异化表现</strong><br><ul><li><strong>黄金</strong>：在美股冲击初期可能被抛售，但通常不长期跟跌。低点往往出现在美股连续下跌的第3-5天，若随后美元和真实利率回落，黄金易从风险资产抛售中脱钩。</li><br><li><strong>白银</strong>：风险更高，与美股相关性更强，在风险冲击中易被当作高beta资产抛售。修复速度慢于黄金，但美股低点后风险偏好修复时，白银反弹弹性更强。</li><br></ul><br><strong>3. 历史统计规律</strong><br>标普500连续收跌至少3天时，黄金和白银的低点通常出现在第3-4天附近（2020年以来更明显）。若美股从高位回调，黄金第一天可能抗跌，但若美股继续下跌，组合降杠杆、补保证金、程序化交易共振，黄金和白银可能在第3-5天出现更深的盘中低点。</p>
+<p><strong>4. 当前交易启示</strong><br>若6月美股出现急跌，黄金可能先抗跌后跟跌，白银则更易同步承压。需警惕流动性冲击和美元走强风险，但若触发衰退降息预期，黄金可能逆势上涨。白银的修复路径更依赖美股低点后的风险偏好恢复。</p>
+<p><strong>5. 完整分析框架</strong><br>作者在星球中详细拆解了过去9段美股下跌周期中黄金、白银的不同表现，并分析了历史对当前的启发，包括对本次美股回调后黄金、白银调整路径的预测。核心结论是：黄金、白银是否跟跌美股，取决于市场交易的核心风险类型，而非单一地缘事件。</p>
+<p><strong>总结</strong>：当前市场已从地缘风险转向美股回调风险，黄金、白银的短期走势高度依赖美股下跌的驱动因素（流动性、美元、衰退预期等）。投资者需警惕美股急跌带来的联动抛售，但黄金在特定条件下（如美元走弱、降息预期）可能逆势上涨，白银则需等待风险偏好修复后的弹性机会。</p>
+<p>---</p>
+  </div>
+</div>
+
+<div class="article-card" id="item-3">
+  <div class="article-header">
+    <div class="article-icon icon-pin">💡</div>
+    <div class="article-info">
+      <div class="article-title">本轮美股回调时，黄金白银会怎么走？黄金…</div>
+      <div class="article-meta"><span class="type-badge badge-pin">想法</span> <span style="font-weight:600;color:#555;">剑锋无尘</span> <a href="https://www.zhihu.com/pins/2044524488470090741" style="font-size:12px;color:#999;margin-left:6px;">查看原文 →</a></div>
+    </div>
+  </div>
+  <div class="article-body">
+    <p>作为资深投资研究助手，我对“剑锋无尘”关于本轮美股回调时黄金白银走势的分析进行了总结。核心观点如下：</p>
+<p><strong>核心逻辑：</strong> 黄金在美股回调时并非单一走势，历史上呈现三种模式；白银因兼具工业属性，走势更为复杂。</p>
+<p><strong>黄金的三种可能走势：</strong><br>1.  <strong>全程跟跌：</strong> 当美股暴跌引发流动性危机（如2008年、2020年3月），投资者被迫抛售一切资产换取现金，黄金短期承压下跌。<br>2.  <strong>逆势上涨：</strong> 当美股回调源于经济衰退预期或地缘风险，黄金作为避险资产吸引资金流入，独立走强。<br>3.  <strong>先跌后涨：</strong> 初期受流动性冲击下跌，随后因美联储宽松政策或避险情绪回升而反弹，形成“V型”走势。</p>
+<p><strong>白银的复杂情况：</strong><br><ul><li>白银兼具贵金属避险属性和工业金属属性（光伏、电子等需求）。</li><br><li>若美股回调伴随经济衰退预期，工业需求下滑将拖累白银，跌幅可能大于黄金。</li><br><li>若回调仅为流动性冲击，白银可能跟随黄金先跌后涨，但弹性更大（涨跌幅度均超黄金）。</li><br></ul><br><strong>当前环境判断（基于作者隐含逻辑）：</strong><br><ul><li>若本轮美股回调由高利率、估值压力或技术性调整引发，而非系统性危机，黄金更可能呈现“先跌后涨”或“逆势上涨”。</li><br><li>白银需关注工业需求前景，若衰退风险上升，白银表现将弱于黄金；若仅为短期调整，白银可能跟随黄金反弹但波动更大。</li><br></ul><br><strong>投资启示：</strong><br><ul><li>黄金在流动性危机中短期承压，但中长期受益于宽松政策与避险需求。</li><br><li>白银需警惕工业需求拖累，配置时需结合经济周期判断。</li><br><li>建议投资者关注美联储政策转向信号、市场恐慌指数（VIX）及实际利率变化，以区分回调性质。</li><br></ul><br><strong>总结：</strong> 黄金在美股回调中并非单向避险资产，需区分流动性危机与衰退风险；白银因双重属性，走势更依赖经济基本面。当前环境下，黄金大概率优于白银，但需警惕短期流动性冲击。</p>
+<p>---</p>
+  </div>
+</div>
+
+<div class="article-card" id="item-4">
+  <div class="article-header">
+    <div class="article-icon icon-answer">💬</div>
+    <div class="article-info">
+      <div class="article-title">比亚迪 5月 28 日举办的智能化战略发布会上发布了什么值得关注的新技术？有哪些亮点？</div>
+      <div class="article-meta"><span class="type-badge badge-answer">回答</span> <span style="font-weight:600;color:#555;">茶话股经</span> <a href="https://www.zhihu.com/question/2043356307420177358/answer/2044380699537429508" style="font-size:12px;color:#999;margin-left:6px;">查看原文 →</a></div>
+    </div>
+  </div>
+  <div class="article-body">
+    <p>根据资深投资研究助手对“茶话股经”回答的总结，比亚迪在2023年5月28日举办的智能化战略发布会上，发布了多项值得关注的新技术，亮点主要集中在智能化领域。以下是对内容的提炼：</p>
+<p><strong>核心观点</strong>：作者认为比亚迪的发展潜力被低估，其未来不仅是全球最大车企（预计五年内实现），还将成为全球最大的新能源科技和人工智能集团公司。当前比亚迪仍处于厚积薄发阶段，而非走下坡路。</p>
+<p><strong>新技术亮点</strong>：<br>1. <strong>智能化技术爆发</strong>：发布会重点展示了比亚迪在智能化领域的突破，包括自动驾驶、智能座舱等前沿技术，标志着比亚迪从传统新能源车企向智能化科技公司转型。<br>2. <strong>三电技术成熟</strong>：电池、电机、电控技术持续优化，为后续储能和智能化应用奠定基础。<br>3. <strong>储能业务爆发</strong>：随着新能源产业链完善，储能业务将成为新的利润增长点。<br>4. <strong>潜在方向</strong>：作者推测，比亚迪创始人王传福（船夫哥）可能将利润投入光刻机和高端芯片研发，这符合其长期技术梦想。</p>
+<p><strong>投资启示</strong>：比亚迪的利润增长将进入新阶段，但需关注其技术投入方向（如芯片、光刻机）对短期利润的影响。长期来看，智能化与储能业务是核心驱动力。</p>
+<p><strong>总结</strong>：比亚迪的智能化战略发布会展示了其从车企向科技集团转型的决心，技术储备深厚，未来增长空间广阔。投资者应关注其智能化落地进度及新业务拓展。</p>
+<p>---</p>
+  </div>
+</div>
+
+<div class="article-card" id="item-5">
+  <div class="article-header">
+    <div class="article-icon icon-answer">💬</div>
+    <div class="article-info">
+      <div class="article-title">如何看待 2026 年 6月 1日 A 股行情走势？</div>
+      <div class="article-meta"><span class="type-badge badge-answer">回答</span> <span style="font-weight:600;color:#555;">羊村里最快的羊</span> <a href="https://www.zhihu.com/question/2043619339547539169/answer/2044535508001351493" style="font-size:12px;color:#999;margin-left:6px;">查看原文 →</a></div>
+    </div>
+  </div>
+  <div class="article-body">
+    <p>以下为总结分析：</p>
+<p><strong>一、市场整体表现</strong><br>A股三大指数集体收跌，上证指数跌0.73%，深证成指跌1.81%，创业板指跌2.11%。市场情绪偏弱，上涨家数1542家，下跌家数3884家，涨停71家。板块方面，白酒、煤炭、房地产涨幅居前，电力、大消费零售概念轮动活跃。</p>
+<p><strong>二、重要新闻影响</strong><br>1. <strong>监管加强</strong>：上交所对中韩半导体ETF、全球芯片LOF等溢价基金，以及*ST春天、泰金新能等严重异常波动股票进行重点监控，显示监管层对市场投机行为的警惕，可能抑制相关板块短期炒作。<br>2. <strong>政策利好</strong>：四部门联合提升全民人工智能素养，强调AI赋能教育、人才培育和普及应用，叠加全国首个绿色算力全栈AI平台上线，利好人工智能、算力基础设施板块。<br>3. <strong>反内卷行动</strong>：市场监管总局部署打击劣质低价专项行动，针对“内卷式”竞争行业，可能改善部分行业竞争格局，利好龙头企业和质量导向型公司。</p>
+<p><strong>三、资金与情绪分析</strong><br>1. <strong>主力资金</strong>：亨通光电（40.52亿）、长芯博创（13.36亿）、兴森科技（12.55亿）获主力净流入居前，显示资金聚焦科技硬件方向。<br>2. <strong>游资动向</strong>：国泰海通系营业部活跃，买入方向包括晋控电力（2.07亿）、步步高（1.19亿）、荣旗科技（8216万）等，卖出方向涉及华天科技（1.76亿）、京东方A（1.12亿）等，显示游资在电力、消费、科技间轮动，但对部分高位科技股获利了结。</p>
+<p><strong>四、连板与情绪热点</strong><br><ul><li><strong>5连板</strong>：香江控股、华电能源，显示房地产和电力板块短期情绪较强。</li><br><li><strong>3连板</strong>：粤电力A、合锻智能，延续电力及智能制造热度。</li><br><li><strong>2连板</strong>：天地在线、盛剑科技等，涉及科技、环保等方向。</li><br></ul><br><strong>五、后市展望</strong><br>1. <strong>短期风险</strong>：指数集体回调，下跌家数远超上涨，市场赚钱效应较差。监管对异常波动股票和基金的重点监控，可能压制投机情绪，需警惕高位股回调风险。<br>2. <strong>结构性机会</strong>：<br>   - <strong>政策驱动</strong>：人工智能、绿色算力板块受政策利好，中长期关注AI教育、算力基础设施相关标的。<br>   - <strong>防御性板块</strong>：白酒、煤炭、电力等板块逆势活跃，显示资金避险偏好，可关注低估值、高股息品种。<br>   - <strong>反内卷受益</strong>：劣质低价专项行动利好行业龙头，关注竞争格局改善的细分领域。<br>3. <strong>资金方向</strong>：主力资金流入科技硬件（亨通光电等），游资轮动电力、消费，显示市场主线仍在科技与防御板块间切换。</p>
+<p><strong>总结</strong>：6月1日A股市场整体偏弱，但结构性机会仍存。短期需关注监管趋严对投机情绪的压制，中期可围绕人工智能、绿色算力等政策主线布局，同时留意电力、消费等防御性板块的轮动机会。投资者应控制仓位，避免追高异常波动个股。</p>
+<p>---</p>
+  </div>
+</div>
+
+<div class="article-card" id="item-6">
+  <div class="article-header">
+    <div class="article-icon icon-pin">💡</div>
+    <div class="article-info">
+      <div class="article-title">5月29日复盘连扳热点：5连板：香江控股，…</div>
+      <div class="article-meta"><span class="type-badge badge-pin">想法</span> <span style="font-weight:600;color:#555;">羊村里最快的羊</span> <a href="https://www.zhihu.com/pins/2044382557052176247" style="font-size:12px;color:#999;margin-left:6px;">查看原文 →</a></div>
+    </div>
+  </div>
+  <div class="article-body">
+    <p>以下为总结：</p>
+<p><strong>市场概况</strong>  <br>5月29日A股三大指数集体收跌，上证指数跌0.73%，深证成指跌1.81%，创业板指跌2.11%。市场整体表现偏弱，但部分板块和个股仍存在结构性机会。</p>
+<p><strong>连板热点</strong>  <br><ul><li><strong>5连板</strong>：香江控股、华电能源  </li><br><li><strong>3连板</strong>：粤电力A、合锻智能  </li><br><li><strong>2连板</strong>：天地在线、盛剑科技、天健集团、华锋股份、诺德股份  </li><br></ul>其中，香江控股为情绪热点标的，显示短线资金对其关注度较高。</p>
+<p><strong>板块轮动</strong>  <br><ul><li><strong>涨幅居前</strong>：白酒、煤炭、房地产等板块表现活跃。  </li><br><li><strong>轮动活跃</strong>：电力、大消费零售概念等板块亦有资金关注。  </li><br></ul>板块轮动特征明显，传统蓝筹与消费、电力等题材交替表现。</p>
+<p><strong>资金流向</strong>  <br><ul><li><strong>主力净流入前三</strong>：亨通光电（40.52亿）、长芯博创（13.36亿）、兴森科技（12.55亿）。  </li><br></ul>资金集中流入通信、电子等科技细分领域，显示机构对相关个股的短期偏好。</p>
+<p><strong>操作提示</strong>  <br>作者强调内容仅为历史经验记录，不构成投资依据。短线操作需坚持“溢价”原则，避免贪多。个人观点仅供参考，投资者应独立判断。</p>
+<p><strong>总结</strong>  <br>当日市场整体回调，但连板股和资金流向显示局部热点活跃。香江控股、华电能源等高位连板股需关注后续分歧风险；电力、白酒等板块轮动中可留意低吸机会。资金聚焦科技股，但需警惕指数下行对个股情绪的压制。建议短线投资者控制仓位，严格遵循交易纪律。</p>
+<p>---</p>
+  </div>
+</div></div>
+</div>
+
+<!-- Sources -->
+
+<div class="summary-card">
+  <h2>📋 原始来源</h2>
+  <div style="font-size:13px;color:var(--text-secondary);line-height:2.2;">
+    
+    <div style="padding:4px 0;border-bottom:1px solid #f5f5f5;">
+      <span class="type-badge badge-回答">回答</span>
+      <a href="https://www.zhihu.com/question/2043613019150841250/answer/2044521463433147078" style="margin-left:6px;">对2026年6月1日A股市场行情，大家有什么看法？</a>
+      <a href="#item-1" style="font-size:11px;color:#999;margin-left:4px;">📄 总结</a>
+      <span style="color:var(--text-muted);margin-left:8px;">派大星皮皮 · 2026-05-31 20:51</span>
+    </div>
+    
+    <div style="padding:4px 0;border-bottom:1px solid #f5f5f5;">
+      <span class="type-badge badge-回答">回答</span>
+      <a href="https://www.zhihu.com/question/2043458312344187663/answer/2044479417221633175" style="margin-left:6px;">美伊达成 60 天停火备忘录框架，霍尔木兹海峡恢复无限制通航，油价跳水，黄金转涨，哪些信息值得关注？</a>
+      <a href="#item-2" style="font-size:11px;color:#999;margin-left:4px;">📄 总结</a>
+      <span style="color:var(--text-muted);margin-left:8px;">剑锋无尘 · 2026-05-31 18:04</span>
+    </div>
+    
+    <div style="padding:4px 0;border-bottom:1px solid #f5f5f5;">
+      <span class="type-badge badge-想法">想法</span>
+      <a href="https://www.zhihu.com/pins/2044524488470090741" style="margin-left:6px;">本轮美股回调时，黄金白银会怎么走？黄金…</a>
+      <a href="#item-3" style="font-size:11px;color:#999;margin-left:4px;">📄 总结</a>
+      <span style="color:var(--text-muted);margin-left:8px;">剑锋无尘 · 2026-05-31 21:06</span>
+    </div>
+    
+    <div style="padding:4px 0;border-bottom:1px solid #f5f5f5;">
+      <span class="type-badge badge-回答">回答</span>
+      <a href="https://www.zhihu.com/question/2043356307420177358/answer/2044380699537429508" style="margin-left:6px;">比亚迪 5月 28 日举办的智能化战略发布会上发布了什么值得关注的新技术？有哪些亮点？</a>
+      <a href="#item-4" style="font-size:11px;color:#999;margin-left:4px;">📄 总结</a>
+      <span style="color:var(--text-muted);margin-left:8px;">茶话股经 · 2026-05-31 11:32</span>
+    </div>
+    
+    <div style="padding:4px 0;border-bottom:1px solid #f5f5f5;">
+      <span class="type-badge badge-回答">回答</span>
+      <a href="https://www.zhihu.com/question/2043619339547539169/answer/2044535508001351493" style="margin-left:6px;">如何看待 2026 年 6月 1日 A 股行情走势？</a>
+      <a href="#item-5" style="font-size:11px;color:#999;margin-left:4px;">📄 总结</a>
+      <span style="color:var(--text-muted);margin-left:8px;">羊村里最快的羊 · 2026-05-31 21:47</span>
+    </div>
+    
+    <div style="padding:4px 0;border-bottom:1px solid #f5f5f5;">
+      <span class="type-badge badge-想法">想法</span>
+      <a href="https://www.zhihu.com/pins/2044382557052176247" style="margin-left:6px;">5月29日复盘连扳热点：5连板：香江控股，…</a>
+      <a href="#item-6" style="font-size:11px;color:#999;margin-left:4px;">📄 总结</a>
+      <span style="color:var(--text-muted);margin-left:8px;">羊村里最快的羊 · 2026-05-31 11:46</span>
+    </div>
+    
+  </div>
+</div>
+
+
+<div class="footer">
+  本报告由 AI 自动生成，仅供参考，不构成投资建议。股市有风险，投资需谨慎。
+</div>
+</body>
+</html>

@@ -1,0 +1,10 @@
+2026-06-12 23:30:04 [INFO] zhihu_analyst - ============================================================
+2026-06-12 23:30:04 [INFO] zhihu_analyst - A股每日分析启动 (2026-06-12) [DeepSeek]
+2026-06-12 23:30:04 [INFO] zhihu_analyst - ============================================================
+2026-06-12 23:30:04 [DEBUG] zhihu_analyst - 数据库已连接：output/seen_content.db
+2026-06-12 23:30:04 [INFO] zhihu_analyst - 清理 82 条旧内容记录（早于 2026-06-05）
+2026-06-12 23:30:05 [DEBUG] zhihu_analyst - xsrf token 注入成功
+2026-06-12 23:30:05 [INFO] zhihu_analyst - Verifying Zhihu Cookie...
+2026-06-12 23:30:05 [WARNING] zhihu_analyst - Cookie 验证失败，HTTP 401
+2026-06-12 23:30:05 [ERROR] zhihu_analyst - Cookie invalid or expired!
+2026-06-12 23:30:06 [INFO] zhihu_analyst - Cookie 过期提醒邮件已发送

@@ -1,0 +1,1342 @@
+2026-05-27 21:17:17 [INFO] zhihu_analyst - ============================================================
+2026-05-27 21:17:17 [INFO] zhihu_analyst - A股每日分析系统启动 (2026-05-27) [DeepSeek]
+2026-05-27 21:17:17 [INFO] zhihu_analyst - ============================================================
+2026-05-27 21:17:17 [ERROR] zhihu_analyst - 配置不完整，请检查 config/config.yaml：
+2026-05-27 21:17:17 [ERROR] zhihu_analyst -   x zhihu.cookie_z_c0 未填写
+2026-05-27 21:17:17 [ERROR] zhihu_analyst -   x deepseek.api_key 未填写
+2026-05-27 21:17:17 [ERROR] zhihu_analyst -   x email.username 未填写
+2026-05-27 21:17:17 [ERROR] zhihu_analyst -   x email.password 未填写
+2026-05-27 21:17:17 [ERROR] zhihu_analyst -   x email.recipients 未填写
+2026-05-27 22:25:19 [INFO] zhihu_analyst - ============================================================
+2026-05-27 22:25:19 [INFO] zhihu_analyst - A股每日分析系统启动 (2026-05-27) [DeepSeek]
+2026-05-27 22:25:19 [INFO] zhihu_analyst - ============================================================
+2026-05-27 22:25:19 [DEBUG] zhihu_analyst - 数据库已连接：output/seen_content.db
+2026-05-27 22:25:20 [DEBUG] zhihu_analyst - xsrf token 注入成功
+2026-05-27 22:25:20 [INFO] zhihu_analyst - 验证知乎 Cookie...
+2026-05-27 22:25:20 [INFO] zhihu_analyst - Cookie 验证成功，当前用户：橙汁林
+2026-05-27 22:25:20 [INFO] zhihu_analyst - 今日起始时间戳：1779811200 (2026-05-27 00:00)
+2026-05-27 22:25:20 [INFO] zhihu_analyst - 抓取第 1 页 (after_id=None)
+2026-05-27 22:25:20 [WARNING] zhihu_analyst - get_following_feed 第1次失败: HTTPError: 404 Client Error: Not Found for url: https://www.zhihu.com/api/v3/feed/topstory/following?desktop=true&limit=20，2.9s 后重试...
+2026-05-27 22:25:23 [WARNING] zhihu_analyst - get_following_feed 第2次失败: HTTPError: 404 Client Error: Not Found for url: https://www.zhihu.com/api/v3/feed/topstory/following?desktop=true&limit=20，4.8s 后重试...
+2026-05-27 22:25:28 [ERROR] zhihu_analyst - get_following_feed 已达最大重试次数(3)，最终失败: 404 Client Error: Not Found for url: https://www.zhihu.com/api/v3/feed/topstory/following?desktop=true&limit=20
+2026-05-27 22:27:42 [INFO] zhihu_analyst - ============================================================
+2026-05-27 22:27:42 [INFO] zhihu_analyst - A股每日分析系统启动 (2026-05-27) [DeepSeek]
+2026-05-27 22:27:42 [INFO] zhihu_analyst - ============================================================
+2026-05-27 22:27:42 [DEBUG] zhihu_analyst - 数据库已连接：output/seen_content.db
+2026-05-27 22:27:42 [DEBUG] zhihu_analyst - xsrf token 注入成功
+2026-05-27 22:27:42 [INFO] zhihu_analyst - 验证知乎 Cookie...
+2026-05-27 22:27:42 [INFO] zhihu_analyst - Cookie 验证成功，当前用户：橙汁林
+2026-05-27 22:27:42 [INFO] zhihu_analyst - 今日起始时间戳：1779811200 (2026-05-27 00:00)
+2026-05-27 22:27:42 [INFO] zhihu_analyst - 抓取第 1 页 (after_id=None)
+2026-05-27 22:27:42 [WARNING] zhihu_analyst - get_following_feed 第1次失败: HTTPError: 404 Client Error: Not Found for url: https://www.zhihu.com/api/v4/feed/topstory/following?desktop=true&limit=20，2.6s 后重试...
+2026-05-27 22:27:45 [WARNING] zhihu_analyst - get_following_feed 第2次失败: HTTPError: 404 Client Error: Not Found for url: https://www.zhihu.com/api/v4/feed/topstory/following?desktop=true&limit=20，4.8s 后重试...
+2026-05-27 22:27:50 [ERROR] zhihu_analyst - get_following_feed 已达最大重试次数(3)，最终失败: 404 Client Error: Not Found for url: https://www.zhihu.com/api/v4/feed/topstory/following?desktop=true&limit=20
+2026-05-27 22:31:54 [INFO] zhihu_analyst - ============================================================
+2026-05-27 22:31:54 [INFO] zhihu_analyst - A股每日分析系统启动 (2026-05-27) [DeepSeek]
+2026-05-27 22:31:54 [INFO] zhihu_analyst - ============================================================
+2026-05-27 22:31:54 [DEBUG] zhihu_analyst - 数据库已连接：output/seen_content.db
+2026-05-27 22:31:54 [DEBUG] zhihu_analyst - xsrf token 注入成功
+2026-05-27 22:31:54 [INFO] zhihu_analyst - 验证知乎 Cookie...
+2026-05-27 22:31:55 [INFO] zhihu_analyst - Cookie 验证成功，当前用户：橙汁林
+2026-05-27 22:31:55 [INFO] zhihu_analyst - 今日起始时间戳：1779811200 (2026-05-27 00:00)
+2026-05-27 22:31:55 [INFO] zhihu_analyst - 抓取第 1 页
+2026-05-27 22:31:56 [DEBUG] zhihu_analyst -   第 1 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:31:58 [INFO] zhihu_analyst - 抓取第 2 页
+2026-05-27 22:31:59 [DEBUG] zhihu_analyst -   第 2 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:32:01 [INFO] zhihu_analyst - 抓取第 3 页
+2026-05-27 22:32:03 [DEBUG] zhihu_analyst -   第 3 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:32:05 [INFO] zhihu_analyst - 抓取第 4 页
+2026-05-27 22:32:06 [DEBUG] zhihu_analyst -   第 4 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:32:08 [INFO] zhihu_analyst - 抓取第 5 页
+2026-05-27 22:32:09 [DEBUG] zhihu_analyst -   第 5 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:32:10 [INFO] zhihu_analyst - 抓取第 6 页
+2026-05-27 22:32:12 [DEBUG] zhihu_analyst -   第 6 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:32:14 [INFO] zhihu_analyst - 抓取第 7 页
+2026-05-27 22:32:15 [DEBUG] zhihu_analyst -   第 7 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:32:16 [INFO] zhihu_analyst - 抓取第 8 页
+2026-05-27 22:32:18 [DEBUG] zhihu_analyst -   第 8 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:32:19 [INFO] zhihu_analyst - 抓取第 9 页
+2026-05-27 22:32:20 [DEBUG] zhihu_analyst -   第 9 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:32:22 [INFO] zhihu_analyst - 抓取第 10 页
+2026-05-27 22:32:23 [DEBUG] zhihu_analyst -   第 10 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:32:25 [INFO] zhihu_analyst - 抓取第 11 页
+2026-05-27 22:32:26 [DEBUG] zhihu_analyst -   第 11 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:32:28 [INFO] zhihu_analyst - 抓取第 12 页
+2026-05-27 22:32:29 [DEBUG] zhihu_analyst -   第 12 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:32:32 [INFO] zhihu_analyst - 抓取第 13 页
+2026-05-27 22:32:33 [DEBUG] zhihu_analyst -   第 13 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:32:35 [INFO] zhihu_analyst - 抓取第 14 页
+2026-05-27 22:32:36 [DEBUG] zhihu_analyst -   第 14 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:32:38 [INFO] zhihu_analyst - 抓取第 15 页
+2026-05-27 22:32:40 [DEBUG] zhihu_analyst -   第 15 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:32:41 [INFO] zhihu_analyst - 抓取第 16 页
+2026-05-27 22:32:42 [DEBUG] zhihu_analyst -   第 16 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:32:44 [INFO] zhihu_analyst - 抓取第 17 页
+2026-05-27 22:32:45 [DEBUG] zhihu_analyst -   第 17 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:32:47 [INFO] zhihu_analyst - 抓取第 18 页
+2026-05-27 22:32:48 [DEBUG] zhihu_analyst -   第 18 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:32:50 [INFO] zhihu_analyst - 抓取第 19 页
+2026-05-27 22:32:51 [DEBUG] zhihu_analyst -   第 19 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:32:53 [INFO] zhihu_analyst - 抓取第 20 页
+2026-05-27 22:32:54 [DEBUG] zhihu_analyst -   第 20 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:32:56 [INFO] zhihu_analyst - 抓取第 21 页
+2026-05-27 22:32:58 [DEBUG] zhihu_analyst -   第 21 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:33:00 [INFO] zhihu_analyst - 抓取第 22 页
+2026-05-27 22:33:01 [DEBUG] zhihu_analyst -   第 22 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:33:03 [INFO] zhihu_analyst - 抓取第 23 页
+2026-05-27 22:33:04 [DEBUG] zhihu_analyst -   第 23 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:33:06 [INFO] zhihu_analyst - 抓取第 24 页
+2026-05-27 22:33:08 [DEBUG] zhihu_analyst -   第 24 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:33:09 [INFO] zhihu_analyst - 抓取第 25 页
+2026-05-27 22:33:10 [DEBUG] zhihu_analyst -   第 25 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:33:13 [INFO] zhihu_analyst - 抓取第 26 页
+2026-05-27 22:33:14 [DEBUG] zhihu_analyst -   第 26 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:33:16 [INFO] zhihu_analyst - 抓取第 27 页
+2026-05-27 22:33:18 [DEBUG] zhihu_analyst -   第 27 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:33:19 [INFO] zhihu_analyst - 抓取第 28 页
+2026-05-27 22:33:21 [DEBUG] zhihu_analyst -   第 28 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:33:23 [INFO] zhihu_analyst - 抓取第 29 页
+2026-05-27 22:33:24 [DEBUG] zhihu_analyst -   第 29 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:33:26 [INFO] zhihu_analyst - 抓取第 30 页
+2026-05-27 22:33:27 [DEBUG] zhihu_analyst -   第 30 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:33:29 [INFO] zhihu_analyst - 抓取第 31 页
+2026-05-27 22:33:30 [DEBUG] zhihu_analyst -   第 31 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:33:32 [INFO] zhihu_analyst - 抓取第 32 页
+2026-05-27 22:33:34 [DEBUG] zhihu_analyst -   第 32 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:33:36 [INFO] zhihu_analyst - 抓取第 33 页
+2026-05-27 22:33:37 [DEBUG] zhihu_analyst -   第 33 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:33:39 [INFO] zhihu_analyst - 抓取第 34 页
+2026-05-27 22:33:40 [DEBUG] zhihu_analyst -   第 34 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:33:43 [INFO] zhihu_analyst - 抓取第 35 页
+2026-05-27 22:33:44 [DEBUG] zhihu_analyst -   第 35 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:33:46 [INFO] zhihu_analyst - 抓取第 36 页
+2026-05-27 22:33:48 [DEBUG] zhihu_analyst -   第 36 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:33:50 [INFO] zhihu_analyst - 抓取第 37 页
+2026-05-27 22:33:51 [DEBUG] zhihu_analyst -   第 37 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:33:53 [INFO] zhihu_analyst - 抓取第 38 页
+2026-05-27 22:33:55 [DEBUG] zhihu_analyst -   第 38 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:33:57 [INFO] zhihu_analyst - 抓取第 39 页
+2026-05-27 22:33:58 [DEBUG] zhihu_analyst -   第 39 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:34:00 [INFO] zhihu_analyst - 抓取第 40 页
+2026-05-27 22:34:02 [DEBUG] zhihu_analyst -   第 40 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:34:04 [INFO] zhihu_analyst - 抓取第 41 页
+2026-05-27 22:34:05 [DEBUG] zhihu_analyst -   第 41 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:34:07 [INFO] zhihu_analyst - 抓取第 42 页
+2026-05-27 22:34:09 [DEBUG] zhihu_analyst -   第 42 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:34:10 [INFO] zhihu_analyst - 抓取第 43 页
+2026-05-27 22:34:12 [DEBUG] zhihu_analyst -   第 43 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:34:13 [INFO] zhihu_analyst - 抓取第 44 页
+2026-05-27 22:34:14 [DEBUG] zhihu_analyst -   第 44 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:34:16 [INFO] zhihu_analyst - 抓取第 45 页
+2026-05-27 22:34:17 [DEBUG] zhihu_analyst -   第 45 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:34:19 [INFO] zhihu_analyst - 抓取第 46 页
+2026-05-27 22:34:20 [DEBUG] zhihu_analyst -   第 46 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:34:21 [INFO] zhihu_analyst - 抓取第 47 页
+2026-05-27 22:34:23 [DEBUG] zhihu_analyst -   第 47 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:34:24 [INFO] zhihu_analyst - 抓取第 48 页
+2026-05-27 22:34:25 [DEBUG] zhihu_analyst -   第 48 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:34:27 [INFO] zhihu_analyst - 抓取第 49 页
+2026-05-27 22:34:29 [DEBUG] zhihu_analyst -   第 49 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:34:31 [INFO] zhihu_analyst - 抓取第 50 页
+2026-05-27 22:34:32 [DEBUG] zhihu_analyst -   第 50 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:34:34 [INFO] zhihu_analyst - 抓取完成：共处理 300 条，跳过重复 0 条，今日新内容 0 条
+2026-05-27 22:34:34 [INFO] zhihu_analyst - --dry-run 模式：跳过 AI 分析和邮件发送
+2026-05-27 22:37:02 [INFO] zhihu_analyst - ============================================================
+2026-05-27 22:37:02 [INFO] zhihu_analyst - A股每日分析系统启动 (2026-05-27) [DeepSeek]
+2026-05-27 22:37:02 [INFO] zhihu_analyst - ============================================================
+2026-05-27 22:37:02 [DEBUG] zhihu_analyst - 数据库已连接：output/seen_content.db
+2026-05-27 22:37:02 [DEBUG] zhihu_analyst - xsrf token 注入成功
+2026-05-27 22:37:02 [INFO] zhihu_analyst - 验证知乎 Cookie...
+2026-05-27 22:37:03 [INFO] zhihu_analyst - Cookie 验证成功，当前用户：橙汁林
+2026-05-27 22:37:03 [INFO] zhihu_analyst - 今日起始时间戳：1779811200 (2026-05-27 00:00)
+2026-05-27 22:37:03 [INFO] zhihu_analyst - 抓取第 1 页
+2026-05-27 22:37:04 [DEBUG] zhihu_analyst -   第 1 页：6 条，今日 0 条，连续旧内容 6 条
+2026-05-27 22:37:04 [INFO] zhihu_analyst - 连续 6 条旧内容，停止翻页
+2026-05-27 22:37:04 [INFO] zhihu_analyst - 抓取完成：共处理 6 条，跳过重复 0 条，今日新内容 0 条
+2026-05-27 22:37:04 [INFO] zhihu_analyst - --dry-run 模式：跳过 AI 分析和邮件发送
+2026-05-27 22:39:33 [INFO] zhihu_analyst - ============================================================
+2026-05-27 22:39:33 [INFO] zhihu_analyst - A股每日分析系统启动 (2026-05-27) [DeepSeek]
+2026-05-27 22:39:33 [INFO] zhihu_analyst - ============================================================
+2026-05-27 22:39:33 [DEBUG] zhihu_analyst - 数据库已连接：output/seen_content.db
+2026-05-27 22:39:33 [DEBUG] zhihu_analyst - xsrf token 注入成功
+2026-05-27 22:39:33 [INFO] zhihu_analyst - 验证知乎 Cookie...
+2026-05-27 22:39:34 [INFO] zhihu_analyst - Cookie 验证成功，当前用户：橙汁林
+2026-05-27 22:39:34 [INFO] zhihu_analyst - 今日起始时间戳：1779811200 (2026-05-27 00:00)
+2026-05-27 22:39:34 [INFO] zhihu_analyst - 抓取第 1 页
+2026-05-27 22:39:35 [DEBUG] zhihu_analyst -   第 1 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:39:38 [INFO] zhihu_analyst - 抓取第 2 页
+2026-05-27 22:39:39 [DEBUG] zhihu_analyst -   第 2 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:39:40 [INFO] zhihu_analyst - 抓取第 3 页
+2026-05-27 22:39:41 [DEBUG] zhihu_analyst -   第 3 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:39:43 [INFO] zhihu_analyst - 抓取第 4 页
+2026-05-27 22:39:45 [DEBUG] zhihu_analyst -   第 4 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:39:47 [INFO] zhihu_analyst - 抓取第 5 页
+2026-05-27 22:39:48 [DEBUG] zhihu_analyst -   第 5 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:39:49 [INFO] zhihu_analyst - 抓取第 6 页
+2026-05-27 22:39:51 [DEBUG] zhihu_analyst -   第 6 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:39:53 [INFO] zhihu_analyst - 抓取第 7 页
+2026-05-27 22:39:54 [DEBUG] zhihu_analyst -   第 7 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:39:55 [INFO] zhihu_analyst - 抓取第 8 页
+2026-05-27 22:39:56 [DEBUG] zhihu_analyst -   第 8 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:39:59 [INFO] zhihu_analyst - 抓取第 9 页
+2026-05-27 22:40:00 [DEBUG] zhihu_analyst -   第 9 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:40:02 [INFO] zhihu_analyst - 抓取第 10 页
+2026-05-27 22:40:04 [DEBUG] zhihu_analyst -   第 10 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:40:05 [INFO] zhihu_analyst - 抓取第 11 页
+2026-05-27 22:40:06 [DEBUG] zhihu_analyst -   第 11 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:40:08 [INFO] zhihu_analyst - 抓取第 12 页
+2026-05-27 22:40:09 [DEBUG] zhihu_analyst -   第 12 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:40:12 [INFO] zhihu_analyst - 抓取第 13 页
+2026-05-27 22:40:13 [DEBUG] zhihu_analyst -   第 13 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:40:15 [INFO] zhihu_analyst - 抓取第 14 页
+2026-05-27 22:40:17 [DEBUG] zhihu_analyst -   第 14 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:40:19 [INFO] zhihu_analyst - 抓取第 15 页
+2026-05-27 22:40:20 [DEBUG] zhihu_analyst -   第 15 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:40:22 [INFO] zhihu_analyst - 抓取第 16 页
+2026-05-27 22:40:23 [DEBUG] zhihu_analyst -   第 16 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:40:25 [INFO] zhihu_analyst - 抓取第 17 页
+2026-05-27 22:40:26 [DEBUG] zhihu_analyst -   第 17 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:40:28 [INFO] zhihu_analyst - 抓取第 18 页
+2026-05-27 22:40:29 [DEBUG] zhihu_analyst -   第 18 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:40:31 [INFO] zhihu_analyst - 抓取第 19 页
+2026-05-27 22:40:32 [DEBUG] zhihu_analyst -   第 19 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:40:34 [INFO] zhihu_analyst - 抓取第 20 页
+2026-05-27 22:40:35 [DEBUG] zhihu_analyst -   第 20 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:40:36 [INFO] zhihu_analyst - 抓取第 21 页
+2026-05-27 22:40:38 [DEBUG] zhihu_analyst -   第 21 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:40:39 [INFO] zhihu_analyst - 抓取第 22 页
+2026-05-27 22:40:40 [DEBUG] zhihu_analyst -   第 22 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:40:42 [INFO] zhihu_analyst - 抓取第 23 页
+2026-05-27 22:40:44 [DEBUG] zhihu_analyst -   第 23 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:40:45 [INFO] zhihu_analyst - 抓取第 24 页
+2026-05-27 22:40:46 [DEBUG] zhihu_analyst -   第 24 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:40:48 [INFO] zhihu_analyst - 抓取第 25 页
+2026-05-27 22:40:49 [DEBUG] zhihu_analyst -   第 25 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:40:51 [INFO] zhihu_analyst - 抓取第 26 页
+2026-05-27 22:40:52 [DEBUG] zhihu_analyst -   第 26 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:40:54 [INFO] zhihu_analyst - 抓取第 27 页
+2026-05-27 22:40:55 [DEBUG] zhihu_analyst -   第 27 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:40:56 [INFO] zhihu_analyst - 抓取第 28 页
+2026-05-27 22:40:58 [DEBUG] zhihu_analyst -   第 28 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:40:59 [INFO] zhihu_analyst - 抓取第 29 页
+2026-05-27 22:41:00 [DEBUG] zhihu_analyst -   第 29 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:41:01 [INFO] zhihu_analyst - 抓取第 30 页
+2026-05-27 22:41:03 [DEBUG] zhihu_analyst -   第 30 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:41:04 [INFO] zhihu_analyst - 抓取第 31 页
+2026-05-27 22:41:05 [DEBUG] zhihu_analyst -   第 31 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:41:07 [INFO] zhihu_analyst - 抓取第 32 页
+2026-05-27 22:41:08 [DEBUG] zhihu_analyst -   第 32 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:41:10 [INFO] zhihu_analyst - 抓取第 33 页
+2026-05-27 22:41:12 [DEBUG] zhihu_analyst -   第 33 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:41:13 [INFO] zhihu_analyst - 抓取第 34 页
+2026-05-27 22:41:14 [DEBUG] zhihu_analyst -   第 34 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:41:16 [INFO] zhihu_analyst - 抓取第 35 页
+2026-05-27 22:41:17 [DEBUG] zhihu_analyst -   第 35 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:41:20 [INFO] zhihu_analyst - 抓取第 36 页
+2026-05-27 22:41:21 [DEBUG] zhihu_analyst -   第 36 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:41:23 [INFO] zhihu_analyst - 抓取第 37 页
+2026-05-27 22:41:24 [DEBUG] zhihu_analyst -   第 37 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:41:25 [INFO] zhihu_analyst - 抓取第 38 页
+2026-05-27 22:41:27 [DEBUG] zhihu_analyst -   第 38 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:41:29 [INFO] zhihu_analyst - 抓取第 39 页
+2026-05-27 22:41:31 [DEBUG] zhihu_analyst -   第 39 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:41:32 [INFO] zhihu_analyst - 抓取第 40 页
+2026-05-27 22:41:34 [DEBUG] zhihu_analyst -   第 40 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:41:35 [INFO] zhihu_analyst - 抓取第 41 页
+2026-05-27 22:41:36 [DEBUG] zhihu_analyst -   第 41 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:41:38 [INFO] zhihu_analyst - 抓取第 42 页
+2026-05-27 22:41:39 [DEBUG] zhihu_analyst -   第 42 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:41:41 [INFO] zhihu_analyst - 抓取第 43 页
+2026-05-27 22:41:43 [DEBUG] zhihu_analyst -   第 43 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:41:44 [INFO] zhihu_analyst - 抓取第 44 页
+2026-05-27 22:41:46 [DEBUG] zhihu_analyst -   第 44 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:41:47 [INFO] zhihu_analyst - 抓取第 45 页
+2026-05-27 22:41:48 [DEBUG] zhihu_analyst -   第 45 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:41:49 [INFO] zhihu_analyst - 抓取第 46 页
+2026-05-27 22:41:51 [DEBUG] zhihu_analyst -   第 46 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:41:53 [INFO] zhihu_analyst - 抓取第 47 页
+2026-05-27 22:41:55 [DEBUG] zhihu_analyst -   第 47 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:41:56 [INFO] zhihu_analyst - 抓取第 48 页
+2026-05-27 22:41:57 [DEBUG] zhihu_analyst -   第 48 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:41:59 [INFO] zhihu_analyst - 抓取第 49 页
+2026-05-27 22:42:01 [DEBUG] zhihu_analyst -   第 49 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:42:03 [INFO] zhihu_analyst - 抓取第 50 页
+2026-05-27 22:42:04 [DEBUG] zhihu_analyst -   第 50 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:42:06 [INFO] zhihu_analyst - 抓取完成：共处理 300 条，跳过重复 0 条，今日新内容 300 条
+2026-05-27 22:42:06 [INFO] zhihu_analyst - --dry-run 模式：跳过 AI 分析和邮件发送
+2026-05-27 22:44:07 [INFO] zhihu_analyst - ============================================================
+2026-05-27 22:44:07 [INFO] zhihu_analyst - A股每日分析系统启动 (2026-05-27) [DeepSeek]
+2026-05-27 22:44:07 [INFO] zhihu_analyst - ============================================================
+2026-05-27 22:44:07 [DEBUG] zhihu_analyst - 数据库已连接：output/seen_content.db
+2026-05-27 22:44:07 [DEBUG] zhihu_analyst - xsrf token 注入成功
+2026-05-27 22:44:07 [INFO] zhihu_analyst - 验证知乎 Cookie...
+2026-05-27 22:44:07 [INFO] zhihu_analyst - Cookie 验证成功，当前用户：橙汁林
+2026-05-27 22:44:07 [INFO] zhihu_analyst - 今日起始时间戳：1779811200 (2026-05-27 00:00)
+2026-05-27 22:44:07 [INFO] zhihu_analyst - 抓取第 1 页
+2026-05-27 22:44:09 [DEBUG] zhihu_analyst -   第 1 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:44:11 [INFO] zhihu_analyst - 抓取第 2 页
+2026-05-27 22:44:12 [DEBUG] zhihu_analyst -   第 2 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:44:14 [INFO] zhihu_analyst - 抓取第 3 页
+2026-05-27 22:44:16 [DEBUG] zhihu_analyst -   第 3 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:44:17 [INFO] zhihu_analyst - 抓取第 4 页
+2026-05-27 22:44:19 [DEBUG] zhihu_analyst -   第 4 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:44:20 [INFO] zhihu_analyst - 抓取第 5 页
+2026-05-27 22:44:21 [DEBUG] zhihu_analyst -   第 5 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:44:23 [INFO] zhihu_analyst - 抓取第 6 页
+2026-05-27 22:44:24 [DEBUG] zhihu_analyst -   第 6 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:44:26 [INFO] zhihu_analyst - 抓取第 7 页
+2026-05-27 22:44:27 [DEBUG] zhihu_analyst -   第 7 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:44:29 [INFO] zhihu_analyst - 抓取第 8 页
+2026-05-27 22:44:30 [DEBUG] zhihu_analyst -   第 8 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:44:32 [INFO] zhihu_analyst - 抓取第 9 页
+2026-05-27 22:44:33 [DEBUG] zhihu_analyst -   第 9 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:44:35 [INFO] zhihu_analyst - 抓取第 10 页
+2026-05-27 22:44:36 [DEBUG] zhihu_analyst -   第 10 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:44:37 [INFO] zhihu_analyst - 抓取第 11 页
+2026-05-27 22:44:39 [DEBUG] zhihu_analyst -   第 11 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:44:41 [INFO] zhihu_analyst - 抓取第 12 页
+2026-05-27 22:44:43 [DEBUG] zhihu_analyst -   第 12 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:44:45 [INFO] zhihu_analyst - 抓取第 13 页
+2026-05-27 22:44:46 [DEBUG] zhihu_analyst -   第 13 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:44:49 [INFO] zhihu_analyst - 抓取第 14 页
+2026-05-27 22:44:50 [DEBUG] zhihu_analyst -   第 14 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:44:52 [INFO] zhihu_analyst - 抓取第 15 页
+2026-05-27 22:44:54 [DEBUG] zhihu_analyst -   第 15 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:44:55 [INFO] zhihu_analyst - 抓取第 16 页
+2026-05-27 22:44:57 [DEBUG] zhihu_analyst -   第 16 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:44:58 [INFO] zhihu_analyst - 抓取第 17 页
+2026-05-27 22:45:00 [DEBUG] zhihu_analyst -   第 17 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:45:01 [INFO] zhihu_analyst - 抓取第 18 页
+2026-05-27 22:45:02 [DEBUG] zhihu_analyst -   第 18 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:45:04 [INFO] zhihu_analyst - 抓取第 19 页
+2026-05-27 22:45:05 [DEBUG] zhihu_analyst -   第 19 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:45:08 [INFO] zhihu_analyst - 抓取第 20 页
+2026-05-27 22:45:09 [DEBUG] zhihu_analyst -   第 20 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:45:10 [INFO] zhihu_analyst - 抓取第 21 页
+2026-05-27 22:45:12 [DEBUG] zhihu_analyst -   第 21 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:45:14 [INFO] zhihu_analyst - 抓取第 22 页
+2026-05-27 22:45:15 [DEBUG] zhihu_analyst -   第 22 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:45:17 [INFO] zhihu_analyst - 抓取第 23 页
+2026-05-27 22:45:18 [DEBUG] zhihu_analyst -   第 23 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:45:20 [INFO] zhihu_analyst - 抓取第 24 页
+2026-05-27 22:45:22 [DEBUG] zhihu_analyst -   第 24 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:45:23 [INFO] zhihu_analyst - 抓取第 25 页
+2026-05-27 22:45:24 [DEBUG] zhihu_analyst -   第 25 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:45:26 [INFO] zhihu_analyst - 抓取第 26 页
+2026-05-27 22:45:27 [DEBUG] zhihu_analyst -   第 26 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:45:29 [INFO] zhihu_analyst - 抓取第 27 页
+2026-05-27 22:45:31 [DEBUG] zhihu_analyst -   第 27 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:45:32 [INFO] zhihu_analyst - 抓取第 28 页
+2026-05-27 22:45:33 [DEBUG] zhihu_analyst -   第 28 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:45:35 [INFO] zhihu_analyst - 抓取第 29 页
+2026-05-27 22:45:36 [DEBUG] zhihu_analyst -   第 29 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:45:38 [INFO] zhihu_analyst - 抓取第 30 页
+2026-05-27 22:45:39 [DEBUG] zhihu_analyst -   第 30 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:45:42 [INFO] zhihu_analyst - 抓取第 31 页
+2026-05-27 22:45:43 [DEBUG] zhihu_analyst -   第 31 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:45:45 [INFO] zhihu_analyst - 抓取第 32 页
+2026-05-27 22:45:46 [DEBUG] zhihu_analyst -   第 32 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:45:47 [INFO] zhihu_analyst - 抓取第 33 页
+2026-05-27 22:45:49 [DEBUG] zhihu_analyst -   第 33 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:45:51 [INFO] zhihu_analyst - 抓取第 34 页
+2026-05-27 22:45:52 [DEBUG] zhihu_analyst -   第 34 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:45:54 [INFO] zhihu_analyst - 抓取第 35 页
+2026-05-27 22:45:55 [DEBUG] zhihu_analyst -   第 35 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:45:57 [INFO] zhihu_analyst - 抓取第 36 页
+2026-05-27 22:45:58 [DEBUG] zhihu_analyst -   第 36 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:45:59 [INFO] zhihu_analyst - 抓取第 37 页
+2026-05-27 22:46:00 [DEBUG] zhihu_analyst -   第 37 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:46:02 [INFO] zhihu_analyst - 抓取第 38 页
+2026-05-27 22:46:03 [DEBUG] zhihu_analyst -   第 38 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:46:06 [INFO] zhihu_analyst - 抓取第 39 页
+2026-05-27 22:46:07 [DEBUG] zhihu_analyst -   第 39 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:46:08 [INFO] zhihu_analyst - 抓取第 40 页
+2026-05-27 22:46:09 [DEBUG] zhihu_analyst -   第 40 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:46:11 [INFO] zhihu_analyst - 抓取第 41 页
+2026-05-27 22:46:13 [DEBUG] zhihu_analyst -   第 41 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:46:15 [INFO] zhihu_analyst - 抓取第 42 页
+2026-05-27 22:46:16 [DEBUG] zhihu_analyst -   第 42 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:46:18 [INFO] zhihu_analyst - 抓取第 43 页
+2026-05-27 22:46:19 [DEBUG] zhihu_analyst -   第 43 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:46:21 [INFO] zhihu_analyst - 抓取第 44 页
+2026-05-27 22:46:23 [DEBUG] zhihu_analyst -   第 44 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:46:24 [INFO] zhihu_analyst - 抓取第 45 页
+2026-05-27 22:46:26 [DEBUG] zhihu_analyst -   第 45 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:46:27 [INFO] zhihu_analyst - 抓取第 46 页
+2026-05-27 22:46:28 [DEBUG] zhihu_analyst -   第 46 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:46:30 [INFO] zhihu_analyst - 抓取第 47 页
+2026-05-27 22:46:31 [DEBUG] zhihu_analyst -   第 47 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:46:32 [INFO] zhihu_analyst - 抓取第 48 页
+2026-05-27 22:46:33 [DEBUG] zhihu_analyst -   第 48 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:46:36 [INFO] zhihu_analyst - 抓取第 49 页
+2026-05-27 22:46:37 [DEBUG] zhihu_analyst -   第 49 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:46:39 [INFO] zhihu_analyst - 抓取第 50 页
+2026-05-27 22:46:40 [DEBUG] zhihu_analyst -   第 50 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 22:46:42 [INFO] zhihu_analyst - 抓取完成：共处理 300 条，跳过重复 0 条，今日新内容 300 条
+2026-05-27 22:46:42 [INFO] zhihu_analyst - 分类第 1/12 批（25 条）
+2026-05-27 22:46:43 [DEBUG] zhihu_analyst - [deepseek-chat] in=2376 out=51 cache_hit=0 cost=$0.00070 累计=$0.0007
+2026-05-27 22:46:43 [INFO] zhihu_analyst -   批次 1：相关 5/25 条
+2026-05-27 22:46:43 [INFO] zhihu_analyst - 分类第 2/12 批（25 条）
+2026-05-27 22:46:45 [DEBUG] zhihu_analyst - [deepseek-chat] in=2421 out=51 cache_hit=0 cost=$0.00071 累计=$0.0014
+2026-05-27 22:46:45 [INFO] zhihu_analyst -   批次 2：相关 8/25 条
+2026-05-27 22:46:45 [INFO] zhihu_analyst - 分类第 3/12 批（25 条）
+2026-05-27 22:46:47 [DEBUG] zhihu_analyst - [deepseek-chat] in=2584 out=53 cache_hit=0 cost=$0.00076 累计=$0.0022
+2026-05-27 22:46:47 [INFO] zhihu_analyst -   批次 3：相关 4/25 条
+2026-05-27 22:46:47 [INFO] zhihu_analyst - 分类第 4/12 批（25 条）
+2026-05-27 22:46:48 [DEBUG] zhihu_analyst - [deepseek-chat] in=2316 out=51 cache_hit=0 cost=$0.00068 累计=$0.0028
+2026-05-27 22:46:48 [INFO] zhihu_analyst -   批次 4：相关 4/25 条
+2026-05-27 22:46:48 [INFO] zhihu_analyst - 分类第 5/12 批（25 条）
+2026-05-27 22:46:50 [DEBUG] zhihu_analyst - [deepseek-chat] in=2596 out=51 cache_hit=0 cost=$0.00076 累计=$0.0036
+2026-05-27 22:46:50 [INFO] zhihu_analyst -   批次 5：相关 6/25 条
+2026-05-27 22:46:50 [INFO] zhihu_analyst - 分类第 6/12 批（25 条）
+2026-05-27 22:46:51 [DEBUG] zhihu_analyst - [deepseek-chat] in=2540 out=51 cache_hit=0 cost=$0.00074 累计=$0.0043
+2026-05-27 22:46:51 [INFO] zhihu_analyst -   批次 6：相关 10/25 条
+2026-05-27 22:46:51 [INFO] zhihu_analyst - 分类第 7/12 批（25 条）
+2026-05-27 22:46:52 [DEBUG] zhihu_analyst - [deepseek-chat] in=2036 out=51 cache_hit=0 cost=$0.00061 累计=$0.0049
+2026-05-27 22:46:52 [INFO] zhihu_analyst -   批次 7：相关 4/25 条
+2026-05-27 22:46:52 [INFO] zhihu_analyst - 分类第 8/12 批（25 条）
+2026-05-27 22:46:54 [DEBUG] zhihu_analyst - [deepseek-chat] in=2314 out=51 cache_hit=0 cost=$0.00068 累计=$0.0056
+2026-05-27 22:46:54 [INFO] zhihu_analyst -   批次 8：相关 4/25 条
+2026-05-27 22:46:54 [INFO] zhihu_analyst - 分类第 9/12 批（25 条）
+2026-05-27 22:46:55 [DEBUG] zhihu_analyst - [deepseek-chat] in=2401 out=51 cache_hit=0 cost=$0.00070 累计=$0.0063
+2026-05-27 22:46:55 [INFO] zhihu_analyst -   批次 9：相关 3/25 条
+2026-05-27 22:46:55 [INFO] zhihu_analyst - 分类第 10/12 批（25 条）
+2026-05-27 22:46:57 [DEBUG] zhihu_analyst - [deepseek-chat] in=2574 out=51 cache_hit=0 cost=$0.00075 累计=$0.0071
+2026-05-27 22:46:57 [INFO] zhihu_analyst -   批次 10：相关 4/25 条
+2026-05-27 22:46:57 [INFO] zhihu_analyst - 分类第 11/12 批（25 条）
+2026-05-27 22:46:58 [DEBUG] zhihu_analyst - [deepseek-chat] in=2350 out=53 cache_hit=0 cost=$0.00069 累计=$0.0078
+2026-05-27 22:46:58 [INFO] zhihu_analyst -   批次 11：相关 4/25 条
+2026-05-27 22:46:58 [INFO] zhihu_analyst - 分类第 12/12 批（25 条）
+2026-05-27 22:47:00 [DEBUG] zhihu_analyst - [deepseek-chat] in=2570 out=51 cache_hit=0 cost=$0.00075 累计=$0.0085
+2026-05-27 22:47:00 [INFO] zhihu_analyst -   批次 12：相关 5/25 条
+2026-05-27 22:47:00 [INFO] zhihu_analyst - 分类完成：相关 61/300 条
+2026-05-27 22:47:00 [INFO] zhihu_analyst - 提取 1/61: answer_2042640330110022075
+2026-05-27 22:47:01 [DEBUG] zhihu_analyst - [deepseek-chat] in=413 out=78 cache_hit=0 cost=$0.00020 累计=$0.0087
+2026-05-27 22:47:01 [INFO] zhihu_analyst - 提取 2/61: answer_2042644013132543782
+2026-05-27 22:47:03 [DEBUG] zhihu_analyst - [deepseek-chat] in=897 out=70 cache_hit=0 cost=$0.00032 累计=$0.0090
+2026-05-27 22:47:03 [INFO] zhihu_analyst - 提取 3/61: answer_2043006789004916502
+2026-05-27 22:47:05 [DEBUG] zhihu_analyst - [deepseek-chat] in=509 out=100 cache_hit=256 cost=$0.00025 累计=$0.0093
+2026-05-27 22:47:05 [INFO] zhihu_analyst - 提取 4/61: answer_2036003458227123940
+2026-05-27 22:47:06 [DEBUG] zhihu_analyst - [deepseek-chat] in=409 out=71 cache_hit=256 cost=$0.00019 累计=$0.0095
+2026-05-27 22:47:06 [INFO] zhihu_analyst - 提取 5/61: answer_2042567905565479343
+2026-05-27 22:47:08 [DEBUG] zhihu_analyst - [deepseek-chat] in=880 out=83 cache_hit=256 cost=$0.00033 累计=$0.0098
+2026-05-27 22:47:08 [INFO] zhihu_analyst - 提取 6/61: answer_2043082188883752716
+2026-05-27 22:47:10 [DEBUG] zhihu_analyst - [deepseek-chat] in=861 out=95 cache_hit=256 cost=$0.00034 累计=$0.0101
+2026-05-27 22:47:10 [INFO] zhihu_analyst - 提取 7/61: answer_2039695577093510207
+2026-05-27 22:47:11 [DEBUG] zhihu_analyst - [deepseek-chat] in=488 out=66 cache_hit=256 cost=$0.00020 累计=$0.0104
+2026-05-27 22:47:11 [INFO] zhihu_analyst - 提取 8/61: answer_1981770467774853277
+2026-05-27 22:47:13 [DEBUG] zhihu_analyst - [deepseek-chat] in=875 out=109 cache_hit=256 cost=$0.00036 累计=$0.0107
+2026-05-27 22:47:13 [INFO] zhihu_analyst - 提取 9/61: answer_2043019725601501682
+2026-05-27 22:47:14 [DEBUG] zhihu_analyst - [deepseek-chat] in=431 out=70 cache_hit=256 cost=$0.00019 累计=$0.0109
+2026-05-27 22:47:14 [INFO] zhihu_analyst - 提取 10/61: answer_2041574566573692866
+2026-05-27 22:47:15 [DEBUG] zhihu_analyst - [deepseek-chat] in=393 out=70 cache_hit=256 cost=$0.00018 累计=$0.0111
+2026-05-27 22:47:15 [INFO] zhihu_analyst - 提取 11/61: answer_1940581598652261266
+2026-05-27 22:47:16 [DEBUG] zhihu_analyst - [deepseek-chat] in=892 out=56 cache_hit=256 cost=$0.00030 累计=$0.0114
+2026-05-27 22:47:16 [INFO] zhihu_analyst - 提取 12/61: answer_2042963544044569961
+2026-05-27 22:47:19 [DEBUG] zhihu_analyst - [deepseek-chat] in=862 out=77 cache_hit=256 cost=$0.00032 累计=$0.0117
+2026-05-27 22:47:19 [INFO] zhihu_analyst - 提取 13/61: answer_2042989699887797222
+2026-05-27 22:47:20 [DEBUG] zhihu_analyst - [deepseek-chat] in=892 out=70 cache_hit=256 cost=$0.00032 累计=$0.0120
+2026-05-27 22:47:20 [INFO] zhihu_analyst - 提取 14/61: answer_2042933273211429158
+2026-05-27 22:47:21 [DEBUG] zhihu_analyst - [deepseek-chat] in=474 out=70 cache_hit=256 cost=$0.00020 累计=$0.0122
+2026-05-27 22:47:21 [INFO] zhihu_analyst - 提取 15/61: answer_1926948057242632573
+2026-05-27 22:47:22 [DEBUG] zhihu_analyst - [deepseek-chat] in=863 out=56 cache_hit=256 cost=$0.00029 累计=$0.0125
+2026-05-27 22:47:22 [INFO] zhihu_analyst - 提取 16/61: answer_2043015547491727044
+2026-05-27 22:47:24 [DEBUG] zhihu_analyst - [deepseek-chat] in=905 out=112 cache_hit=256 cost=$0.00037 累计=$0.0129
+2026-05-27 22:47:24 [INFO] zhihu_analyst - 提取 17/61: answer_2040348307160048165
+2026-05-27 22:47:25 [DEBUG] zhihu_analyst - [deepseek-chat] in=429 out=70 cache_hit=256 cost=$0.00019 累计=$0.0131
+2026-05-27 22:47:25 [INFO] zhihu_analyst - 提取 18/61: answer_2041490314783887637
+2026-05-27 22:47:27 [DEBUG] zhihu_analyst - [deepseek-chat] in=879 out=105 cache_hit=256 cost=$0.00035 累计=$0.0134
+2026-05-27 22:47:27 [INFO] zhihu_analyst - 提取 19/61: answer_2042582291139008070
+2026-05-27 22:47:29 [DEBUG] zhihu_analyst - [deepseek-chat] in=513 out=90 cache_hit=256 cost=$0.00024 累计=$0.0137
+2026-05-27 22:47:29 [INFO] zhihu_analyst - 提取 20/61: answer_2041861838183326753
+2026-05-27 22:47:30 [DEBUG] zhihu_analyst - [deepseek-chat] in=897 out=90 cache_hit=256 cost=$0.00034 累计=$0.0140
+2026-05-27 22:47:30 [INFO] zhihu_analyst - 提取 21/61: answer_3624254582
+2026-05-27 22:47:31 [DEBUG] zhihu_analyst - [deepseek-chat] in=488 out=56 cache_hit=256 cost=$0.00019 累计=$0.0142
+2026-05-27 22:47:31 [INFO] zhihu_analyst - 提取 22/61: answer_2037417161216501223
+2026-05-27 22:47:34 [DEBUG] zhihu_analyst - [deepseek-chat] in=583 out=75 cache_hit=256 cost=$0.00024 累计=$0.0144
+2026-05-27 22:47:34 [INFO] zhihu_analyst - 提取 23/61: answer_2042891999813038245
+2026-05-27 22:47:35 [DEBUG] zhihu_analyst - [deepseek-chat] in=831 out=71 cache_hit=256 cost=$0.00030 累计=$0.0147
+2026-05-27 22:47:35 [INFO] zhihu_analyst - 提取 24/61: answer_2042544222964802555
+2026-05-27 22:47:37 [DEBUG] zhihu_analyst - [deepseek-chat] in=524 out=90 cache_hit=256 cost=$0.00024 累计=$0.0150
+2026-05-27 22:47:37 [INFO] zhihu_analyst - 提取 25/61: answer_2041696780669155313
+2026-05-27 22:47:38 [DEBUG] zhihu_analyst - [deepseek-chat] in=457 out=77 cache_hit=256 cost=$0.00021 累计=$0.0152
+2026-05-27 22:47:38 [INFO] zhihu_analyst - 提取 26/61: answer_2042755463255741905
+2026-05-27 22:47:40 [DEBUG] zhihu_analyst - [deepseek-chat] in=580 out=98 cache_hit=256 cost=$0.00026 累计=$0.0155
+2026-05-27 22:47:40 [INFO] zhihu_analyst - 提取 27/61: answer_2041122345193104374
+2026-05-27 22:47:42 [DEBUG] zhihu_analyst - [deepseek-chat] in=713 out=81 cache_hit=256 cost=$0.00028 累计=$0.0157
+2026-05-27 22:47:42 [INFO] zhihu_analyst - 提取 28/61: answer_2038979107929724619
+2026-05-27 22:47:44 [DEBUG] zhihu_analyst - [deepseek-chat] in=522 out=78 cache_hit=256 cost=$0.00023 累计=$0.0160
+2026-05-27 22:47:44 [INFO] zhihu_analyst - 提取 29/61: answer_2042913022407176982
+2026-05-27 22:47:45 [DEBUG] zhihu_analyst - [deepseek-chat] in=677 out=70 cache_hit=256 cost=$0.00026 累计=$0.0162
+2026-05-27 22:47:45 [INFO] zhihu_analyst - 提取 30/61: answer_2029681571062391428
+2026-05-27 22:47:46 [DEBUG] zhihu_analyst - [deepseek-chat] in=392 out=67 cache_hit=256 cost=$0.00018 累计=$0.0164
+2026-05-27 22:47:46 [INFO] zhihu_analyst - 提取 31/61: answer_2042876074711839119
+2026-05-27 22:47:47 [DEBUG] zhihu_analyst - [deepseek-chat] in=911 out=56 cache_hit=256 cost=$0.00031 累计=$0.0167
+2026-05-27 22:47:47 [INFO] zhihu_analyst - 提取 32/61: answer_2041828514215760959
+2026-05-27 22:47:48 [DEBUG] zhihu_analyst - [deepseek-chat] in=455 out=56 cache_hit=256 cost=$0.00018 累计=$0.0169
+2026-05-27 22:47:48 [INFO] zhihu_analyst - 提取 33/61: answer_2040375620144731999
+2026-05-27 22:47:50 [DEBUG] zhihu_analyst - [deepseek-chat] in=539 out=74 cache_hit=256 cost=$0.00023 累计=$0.0171
+2026-05-27 22:47:50 [INFO] zhihu_analyst - 提取 34/61: answer_2042710965154841446
+2026-05-27 22:47:51 [DEBUG] zhihu_analyst - [deepseek-chat] in=450 out=64 cache_hit=256 cost=$0.00019 累计=$0.0173
+2026-05-27 22:47:51 [INFO] zhihu_analyst - 提取 35/61: answer_2041320535775241022
+2026-05-27 22:47:52 [DEBUG] zhihu_analyst - [deepseek-chat] in=900 out=90 cache_hit=256 cost=$0.00034 累计=$0.0177
+2026-05-27 22:47:52 [INFO] zhihu_analyst - 提取 36/61: answer_2042916011947684797
+2026-05-27 22:47:53 [DEBUG] zhihu_analyst - [deepseek-chat] in=890 out=56 cache_hit=256 cost=$0.00030 累计=$0.0180
+2026-05-27 22:47:53 [INFO] zhihu_analyst - 提取 37/61: answer_2038888405958964193
+2026-05-27 22:47:54 [DEBUG] zhihu_analyst - [deepseek-chat] in=711 out=71 cache_hit=256 cost=$0.00027 累计=$0.0182
+2026-05-27 22:47:54 [INFO] zhihu_analyst - 提取 38/61: answer_2038945518127141597
+2026-05-27 22:47:56 [DEBUG] zhihu_analyst - [deepseek-chat] in=417 out=73 cache_hit=256 cost=$0.00019 累计=$0.0184
+2026-05-27 22:47:56 [INFO] zhihu_analyst - 提取 39/61: answer_2040796014160893206
+2026-05-27 22:47:57 [DEBUG] zhihu_analyst - [deepseek-chat] in=811 out=77 cache_hit=256 cost=$0.00030 累计=$0.0187
+2026-05-27 22:47:57 [INFO] zhihu_analyst - 提取 40/61: answer_2042386211466129534
+2026-05-27 22:47:59 [DEBUG] zhihu_analyst - [deepseek-chat] in=509 out=105 cache_hit=256 cost=$0.00025 累计=$0.0190
+2026-05-27 22:47:59 [INFO] zhihu_analyst - 提取 41/61: answer_2043099126758364552
+2026-05-27 22:48:00 [DEBUG] zhihu_analyst - [deepseek-chat] in=880 out=56 cache_hit=256 cost=$0.00030 累计=$0.0193
+2026-05-27 22:48:00 [INFO] zhihu_analyst - 提取 42/61: answer_2036549079702955082
+2026-05-27 22:48:01 [DEBUG] zhihu_analyst - [deepseek-chat] in=386 out=64 cache_hit=256 cost=$0.00017 累计=$0.0195
+2026-05-27 22:48:01 [INFO] zhihu_analyst - 提取 43/61: answer_2042581949059970866
+2026-05-27 22:48:03 [DEBUG] zhihu_analyst - [deepseek-chat] in=456 out=71 cache_hit=256 cost=$0.00020 累计=$0.0197
+2026-05-27 22:48:03 [INFO] zhihu_analyst - 提取 44/61: answer_2039308018655957074
+2026-05-27 22:48:04 [DEBUG] zhihu_analyst - [deepseek-chat] in=468 out=56 cache_hit=256 cost=$0.00019 累计=$0.0198
+2026-05-27 22:48:04 [INFO] zhihu_analyst - 提取 45/61: answer_2041993554332013499
+2026-05-27 22:48:05 [DEBUG] zhihu_analyst - [deepseek-chat] in=451 out=56 cache_hit=256 cost=$0.00018 累计=$0.0200
+2026-05-27 22:48:05 [INFO] zhihu_analyst - 提取 46/61: answer_2041814026884232560
+2026-05-27 22:48:06 [DEBUG] zhihu_analyst - [deepseek-chat] in=416 out=56 cache_hit=256 cost=$0.00017 累计=$0.0202
+2026-05-27 22:48:06 [INFO] zhihu_analyst - 提取 47/61: answer_2042911750358557334
+2026-05-27 22:48:07 [DEBUG] zhihu_analyst - [deepseek-chat] in=884 out=63 cache_hit=256 cost=$0.00031 累计=$0.0205
+2026-05-27 22:48:07 [INFO] zhihu_analyst - 提取 48/61: answer_2040393861210629405
+2026-05-27 22:48:09 [DEBUG] zhihu_analyst - [deepseek-chat] in=870 out=56 cache_hit=256 cost=$0.00030 累计=$0.0208
+2026-05-27 22:48:09 [INFO] zhihu_analyst - 提取 49/61: answer_2042690962292568891
+2026-05-27 22:48:11 [DEBUG] zhihu_analyst - [deepseek-chat] in=845 out=62 cache_hit=256 cost=$0.00030 累计=$0.0211
+2026-05-27 22:48:11 [INFO] zhihu_analyst - 提取 50/61: answer_2036759245018878355
+2026-05-27 22:48:12 [DEBUG] zhihu_analyst - [deepseek-chat] in=773 out=68 cache_hit=256 cost=$0.00028 累计=$0.0214
+2026-05-27 22:48:12 [INFO] zhihu_analyst - 提取 51/61: answer_1948374478288578266
+2026-05-27 22:48:13 [DEBUG] zhihu_analyst - [deepseek-chat] in=512 out=71 cache_hit=256 cost=$0.00022 累计=$0.0216
+2026-05-27 22:48:13 [INFO] zhihu_analyst - 提取 52/61: answer_2043086439974442938
+2026-05-27 22:48:14 [DEBUG] zhihu_analyst - [deepseek-chat] in=900 out=61 cache_hit=256 cost=$0.00031 累计=$0.0219
+2026-05-27 22:48:14 [INFO] zhihu_analyst - 提取 53/61: answer_2037840658027788152
+2026-05-27 22:48:15 [DEBUG] zhihu_analyst - [deepseek-chat] in=861 out=68 cache_hit=256 cost=$0.00031 累计=$0.0222
+2026-05-27 22:48:15 [INFO] zhihu_analyst - 提取 54/61: answer_2042880140036855261
+2026-05-27 22:48:17 [DEBUG] zhihu_analyst - [deepseek-chat] in=803 out=130 cache_hit=256 cost=$0.00036 累计=$0.0226
+2026-05-27 22:48:17 [INFO] zhihu_analyst - 提取 55/61: answer_2038606775100888181
+2026-05-27 22:48:18 [DEBUG] zhihu_analyst - [deepseek-chat] in=450 out=56 cache_hit=256 cost=$0.00018 累计=$0.0228
+2026-05-27 22:48:18 [INFO] zhihu_analyst - 提取 56/61: answer_2041968132475056154
+2026-05-27 22:48:20 [DEBUG] zhihu_analyst - [deepseek-chat] in=624 out=72 cache_hit=256 cost=$0.00025 累计=$0.0230
+2026-05-27 22:48:20 [INFO] zhihu_analyst - 提取 57/61: answer_2036103368112862760
+2026-05-27 22:48:21 [DEBUG] zhihu_analyst - [deepseek-chat] in=462 out=94 cache_hit=256 cost=$0.00023 累计=$0.0232
+2026-05-27 22:48:21 [INFO] zhihu_analyst - 提取 58/61: answer_2036009314511475373
+2026-05-27 22:48:22 [DEBUG] zhihu_analyst - [deepseek-chat] in=413 out=82 cache_hit=256 cost=$0.00020 累计=$0.0234
+2026-05-27 22:48:22 [INFO] zhihu_analyst - 提取 59/61: answer_2042757590250149504
+2026-05-27 22:48:24 [DEBUG] zhihu_analyst - [deepseek-chat] in=499 out=95 cache_hit=256 cost=$0.00024 累计=$0.0237
+2026-05-27 22:48:24 [INFO] zhihu_analyst - 提取 60/61: answer_2042645886501749114
+2026-05-27 22:48:26 [DEBUG] zhihu_analyst - [deepseek-chat] in=897 out=98 cache_hit=256 cost=$0.00035 累计=$0.0240
+2026-05-27 22:48:26 [INFO] zhihu_analyst - 提取 61/61: answer_2039988768845862170
+2026-05-27 22:48:28 [DEBUG] zhihu_analyst - [deepseek-chat] in=628 out=56 cache_hit=256 cost=$0.00023 累计=$0.0243
+2026-05-27 22:48:28 [INFO] zhihu_analyst - 需综合分析的板块：9 个
+2026-05-27 22:48:28 [INFO] zhihu_analyst - 综合分析板块：科技/半导体（9 条信息）
+2026-05-27 22:48:32 [DEBUG] zhihu_analyst - [deepseek-chat] in=1067 out=463 cache_hit=0 cost=$0.00080 累计=$0.0251
+2026-05-27 22:48:32 [INFO] zhihu_analyst - 综合分析板块：医药/生物（3 条信息）
+2026-05-27 22:48:36 [DEBUG] zhihu_analyst - [deepseek-chat] in=560 out=354 cache_hit=0 cost=$0.00054 累计=$0.0256
+2026-05-27 22:48:36 [INFO] zhihu_analyst - 综合分析板块：消费/零售（7 条信息）
+2026-05-27 22:48:41 [DEBUG] zhihu_analyst - [deepseek-chat] in=956 out=432 cache_hit=0 cost=$0.00073 累计=$0.0263
+2026-05-27 22:48:41 [INFO] zhihu_analyst - 综合分析板块：金融/银行/保险（2 条信息）
+2026-05-27 22:48:45 [DEBUG] zhihu_analyst - [deepseek-chat] in=562 out=311 cache_hit=0 cost=$0.00049 累计=$0.0268
+2026-05-27 22:48:45 [INFO] zhihu_analyst - 综合分析板块：新能源/电力（7 条信息）
+2026-05-27 22:48:50 [DEBUG] zhihu_analyst - [deepseek-chat] in=879 out=456 cache_hit=0 cost=$0.00074 累计=$0.0276
+2026-05-27 22:48:50 [INFO] zhihu_analyst - 综合分析板块：房地产/建材（2 条信息）
+2026-05-27 22:48:53 [DEBUG] zhihu_analyst - [deepseek-chat] in=532 out=218 cache_hit=0 cost=$0.00038 累计=$0.0280
+2026-05-27 22:48:53 [INFO] zhihu_analyst - 综合分析板块：军工/国防（6 条信息）
+2026-05-27 22:48:57 [DEBUG] zhihu_analyst - [deepseek-chat] in=774 out=403 cache_hit=0 cost=$0.00065 累计=$0.0286
+2026-05-27 22:48:57 [INFO] zhihu_analyst - 综合分析板块：大宗商品/周期（1 条信息）
+2026-05-27 22:49:00 [DEBUG] zhihu_analyst - [deepseek-chat] in=460 out=260 cache_hit=0 cost=$0.00041 累计=$0.0290
+2026-05-27 22:49:00 [INFO] zhihu_analyst - 综合分析板块：互联网/传媒（3 条信息）
+2026-05-27 22:49:04 [DEBUG] zhihu_analyst - [deepseek-chat] in=578 out=322 cache_hit=0 cost=$0.00051 累计=$0.0295
+2026-05-27 22:49:04 [INFO] zhihu_analyst - 综合分析完成。API调用82次，输入75046token，输出8419token，总费用约 $0.0295
+2026-05-27 22:49:04 [INFO] zhihu_analyst - 报告已保存：output\reports\report_2026-05-27.html 和 output\reports\report_2026-05-27.md
+2026-05-27 22:49:04 [INFO] zhihu_analyst - ============================================================
+2026-05-27 22:49:04 [INFO] zhihu_analyst - 执行完成！总耗时 296.8s
+2026-05-27 22:49:04 [INFO] zhihu_analyst - 抓取：300条，相关：61条
+2026-05-27 22:49:04 [INFO] zhihu_analyst - API调用82次，输入75046token，输出8419token，总费用约 $0.0295
+2026-05-27 22:49:04 [INFO] zhihu_analyst - 报告：output\reports\report_2026-05-27.html
+2026-05-27 22:49:04 [INFO] zhihu_analyst - ============================================================
+2026-05-27 23:03:25 [INFO] zhihu_analyst - ============================================================
+2026-05-27 23:03:25 [INFO] zhihu_analyst - A股每日分析系统启动 (2026-05-27) [DeepSeek]
+2026-05-27 23:03:25 [INFO] zhihu_analyst - ============================================================
+2026-05-27 23:03:25 [DEBUG] zhihu_analyst - 数据库已连接：output/seen_content.db
+2026-05-27 23:03:25 [DEBUG] zhihu_analyst - xsrf token 注入成功
+2026-05-27 23:03:25 [INFO] zhihu_analyst - 验证知乎 Cookie...
+2026-05-27 23:03:25 [INFO] zhihu_analyst - Cookie 验证成功，当前用户：橙汁林
+2026-05-27 23:03:25 [ERROR] zhihu_analyst - 获取关注列表失败（第0页）: 403 Client Error: Forbidden for url: https://www.zhihu.com/api/v4/members/cheng-zhi-lin-55/followees?limit=40&offset=0
+2026-05-27 23:03:25 [INFO] zhihu_analyst - 已获取关注列表：0 人
+2026-05-27 23:03:25 [INFO] zhihu_analyst - 今日起始时间戳：1779811200 (2026-05-27 00:00)
+2026-05-27 23:03:25 [INFO] zhihu_analyst - 抓取第 1 页
+2026-05-27 23:03:26 [DEBUG] zhihu_analyst -   第 1 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:03:28 [INFO] zhihu_analyst - 抓取第 2 页
+2026-05-27 23:03:29 [DEBUG] zhihu_analyst -   第 2 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:03:31 [INFO] zhihu_analyst - 抓取第 3 页
+2026-05-27 23:03:33 [DEBUG] zhihu_analyst -   第 3 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:03:34 [INFO] zhihu_analyst - 抓取第 4 页
+2026-05-27 23:03:36 [DEBUG] zhihu_analyst -   第 4 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:03:37 [INFO] zhihu_analyst - 抓取第 5 页
+2026-05-27 23:03:38 [DEBUG] zhihu_analyst -   第 5 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:03:40 [INFO] zhihu_analyst - 抓取第 6 页
+2026-05-27 23:03:41 [DEBUG] zhihu_analyst -   第 6 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:03:43 [INFO] zhihu_analyst - 抓取第 7 页
+2026-05-27 23:03:44 [DEBUG] zhihu_analyst -   第 7 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:03:46 [INFO] zhihu_analyst - 抓取第 8 页
+2026-05-27 23:03:47 [DEBUG] zhihu_analyst -   第 8 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:03:49 [INFO] zhihu_analyst - 抓取第 9 页
+2026-05-27 23:03:51 [DEBUG] zhihu_analyst -   第 9 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:03:53 [INFO] zhihu_analyst - 抓取第 10 页
+2026-05-27 23:03:54 [DEBUG] zhihu_analyst -   第 10 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:03:55 [INFO] zhihu_analyst - 抓取第 11 页
+2026-05-27 23:03:57 [DEBUG] zhihu_analyst -   第 11 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:03:58 [INFO] zhihu_analyst - 抓取第 12 页
+2026-05-27 23:03:59 [DEBUG] zhihu_analyst -   第 12 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:04:01 [INFO] zhihu_analyst - 抓取第 13 页
+2026-05-27 23:04:02 [DEBUG] zhihu_analyst -   第 13 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:04:04 [INFO] zhihu_analyst - 抓取第 14 页
+2026-05-27 23:04:06 [DEBUG] zhihu_analyst -   第 14 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:04:08 [INFO] zhihu_analyst - 抓取第 15 页
+2026-05-27 23:04:09 [DEBUG] zhihu_analyst -   第 15 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:04:12 [INFO] zhihu_analyst - 抓取第 16 页
+2026-05-27 23:04:13 [DEBUG] zhihu_analyst -   第 16 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:04:15 [INFO] zhihu_analyst - 抓取第 17 页
+2026-05-27 23:04:16 [DEBUG] zhihu_analyst -   第 17 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:04:19 [INFO] zhihu_analyst - 抓取第 18 页
+2026-05-27 23:04:20 [DEBUG] zhihu_analyst -   第 18 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:04:23 [INFO] zhihu_analyst - 抓取第 19 页
+2026-05-27 23:04:24 [DEBUG] zhihu_analyst -   第 19 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:04:25 [INFO] zhihu_analyst - 抓取第 20 页
+2026-05-27 23:04:27 [DEBUG] zhihu_analyst -   第 20 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:04:29 [INFO] zhihu_analyst - 抓取第 21 页
+2026-05-27 23:04:30 [DEBUG] zhihu_analyst -   第 21 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:04:31 [INFO] zhihu_analyst - 抓取第 22 页
+2026-05-27 23:04:33 [DEBUG] zhihu_analyst -   第 22 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:04:35 [INFO] zhihu_analyst - 抓取第 23 页
+2026-05-27 23:04:36 [DEBUG] zhihu_analyst -   第 23 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:04:38 [INFO] zhihu_analyst - 抓取第 24 页
+2026-05-27 23:04:40 [DEBUG] zhihu_analyst -   第 24 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:04:42 [INFO] zhihu_analyst - 抓取第 25 页
+2026-05-27 23:04:43 [DEBUG] zhihu_analyst -   第 25 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:04:45 [INFO] zhihu_analyst - 抓取第 26 页
+2026-05-27 23:04:46 [DEBUG] zhihu_analyst -   第 26 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:04:48 [INFO] zhihu_analyst - 抓取第 27 页
+2026-05-27 23:04:49 [DEBUG] zhihu_analyst -   第 27 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:04:51 [INFO] zhihu_analyst - 抓取第 28 页
+2026-05-27 23:04:52 [DEBUG] zhihu_analyst -   第 28 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:04:54 [INFO] zhihu_analyst - 抓取第 29 页
+2026-05-27 23:04:55 [DEBUG] zhihu_analyst -   第 29 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:04:57 [INFO] zhihu_analyst - 抓取第 30 页
+2026-05-27 23:04:58 [DEBUG] zhihu_analyst -   第 30 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:05:01 [INFO] zhihu_analyst - 抓取第 31 页
+2026-05-27 23:05:02 [DEBUG] zhihu_analyst -   第 31 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:05:03 [INFO] zhihu_analyst - 抓取第 32 页
+2026-05-27 23:05:04 [DEBUG] zhihu_analyst -   第 32 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:05:05 [INFO] zhihu_analyst - 抓取第 33 页
+2026-05-27 23:05:07 [DEBUG] zhihu_analyst -   第 33 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:05:09 [INFO] zhihu_analyst - 抓取第 34 页
+2026-05-27 23:05:10 [DEBUG] zhihu_analyst -   第 34 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:05:13 [INFO] zhihu_analyst - 抓取第 35 页
+2026-05-27 23:05:14 [DEBUG] zhihu_analyst -   第 35 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:05:15 [INFO] zhihu_analyst - 抓取第 36 页
+2026-05-27 23:05:16 [DEBUG] zhihu_analyst -   第 36 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:05:19 [INFO] zhihu_analyst - 抓取第 37 页
+2026-05-27 23:05:20 [DEBUG] zhihu_analyst -   第 37 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:05:21 [INFO] zhihu_analyst - 抓取第 38 页
+2026-05-27 23:05:22 [DEBUG] zhihu_analyst -   第 38 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:05:25 [INFO] zhihu_analyst - 抓取第 39 页
+2026-05-27 23:05:26 [DEBUG] zhihu_analyst -   第 39 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:05:27 [INFO] zhihu_analyst - 抓取第 40 页
+2026-05-27 23:05:29 [DEBUG] zhihu_analyst -   第 40 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:05:30 [INFO] zhihu_analyst - 抓取第 41 页
+2026-05-27 23:05:31 [DEBUG] zhihu_analyst -   第 41 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:05:33 [INFO] zhihu_analyst - 抓取第 42 页
+2026-05-27 23:05:34 [DEBUG] zhihu_analyst -   第 42 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:05:37 [INFO] zhihu_analyst - 抓取第 43 页
+2026-05-27 23:05:38 [DEBUG] zhihu_analyst -   第 43 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:05:40 [INFO] zhihu_analyst - 抓取第 44 页
+2026-05-27 23:05:41 [DEBUG] zhihu_analyst -   第 44 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:05:42 [INFO] zhihu_analyst - 抓取第 45 页
+2026-05-27 23:05:44 [DEBUG] zhihu_analyst -   第 45 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:05:45 [INFO] zhihu_analyst - 抓取第 46 页
+2026-05-27 23:05:46 [DEBUG] zhihu_analyst -   第 46 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:05:47 [INFO] zhihu_analyst - 抓取第 47 页
+2026-05-27 23:05:49 [DEBUG] zhihu_analyst -   第 47 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:05:50 [INFO] zhihu_analyst - 抓取第 48 页
+2026-05-27 23:05:51 [DEBUG] zhihu_analyst -   第 48 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:05:54 [INFO] zhihu_analyst - 抓取第 49 页
+2026-05-27 23:05:55 [DEBUG] zhihu_analyst -   第 49 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:05:57 [INFO] zhihu_analyst - 抓取第 50 页
+2026-05-27 23:05:58 [DEBUG] zhihu_analyst -   第 50 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:06:00 [INFO] zhihu_analyst - 抓取完成：共处理 300 条，跳过重复 0 条，今日新内容 300 条
+2026-05-27 23:06:00 [INFO] zhihu_analyst - 分类第 1/12 批（25 条）
+2026-05-27 23:06:02 [DEBUG] zhihu_analyst - [deepseek-chat] in=2235 out=51 cache_hit=0 cost=$0.00066 累计=$0.0007
+2026-05-27 23:06:02 [INFO] zhihu_analyst -   批次 1：相关 5/25 条
+2026-05-27 23:06:02 [INFO] zhihu_analyst - 分类第 2/12 批（25 条）
+2026-05-27 23:06:04 [DEBUG] zhihu_analyst - [deepseek-chat] in=2442 out=51 cache_hit=0 cost=$0.00072 累计=$0.0014
+2026-05-27 23:06:04 [INFO] zhihu_analyst -   批次 2：相关 9/25 条
+2026-05-27 23:06:04 [INFO] zhihu_analyst - 分类第 3/12 批（25 条）
+2026-05-27 23:06:06 [DEBUG] zhihu_analyst - [deepseek-chat] in=2135 out=51 cache_hit=0 cost=$0.00063 累计=$0.0020
+2026-05-27 23:06:06 [INFO] zhihu_analyst -   批次 3：相关 6/25 条
+2026-05-27 23:06:06 [INFO] zhihu_analyst - 分类第 4/12 批（25 条）
+2026-05-27 23:06:07 [DEBUG] zhihu_analyst - [deepseek-chat] in=2563 out=51 cache_hit=0 cost=$0.00075 累计=$0.0028
+2026-05-27 23:06:07 [INFO] zhihu_analyst -   批次 4：相关 6/25 条
+2026-05-27 23:06:07 [INFO] zhihu_analyst - 分类第 5/12 批（25 条）
+2026-05-27 23:06:08 [DEBUG] zhihu_analyst - [deepseek-chat] in=2292 out=51 cache_hit=0 cost=$0.00067 累计=$0.0034
+2026-05-27 23:06:08 [INFO] zhihu_analyst -   批次 5：相关 2/25 条
+2026-05-27 23:06:08 [INFO] zhihu_analyst - 分类第 6/12 批（25 条）
+2026-05-27 23:06:10 [DEBUG] zhihu_analyst - [deepseek-chat] in=2452 out=51 cache_hit=0 cost=$0.00072 累计=$0.0041
+2026-05-27 23:06:10 [INFO] zhihu_analyst -   批次 6：相关 2/25 条
+2026-05-27 23:06:10 [INFO] zhihu_analyst - 分类第 7/12 批（25 条）
+2026-05-27 23:06:11 [DEBUG] zhihu_analyst - [deepseek-chat] in=2397 out=51 cache_hit=0 cost=$0.00070 累计=$0.0049
+2026-05-27 23:06:11 [INFO] zhihu_analyst -   批次 7：相关 6/25 条
+2026-05-27 23:06:11 [INFO] zhihu_analyst - 分类第 8/12 批（25 条）
+2026-05-27 23:06:13 [DEBUG] zhihu_analyst - [deepseek-chat] in=2480 out=51 cache_hit=0 cost=$0.00073 累计=$0.0056
+2026-05-27 23:06:13 [INFO] zhihu_analyst -   批次 8：相关 2/25 条
+2026-05-27 23:06:13 [INFO] zhihu_analyst - 分类第 9/12 批（25 条）
+2026-05-27 23:06:14 [DEBUG] zhihu_analyst - [deepseek-chat] in=2307 out=51 cache_hit=0 cost=$0.00068 累计=$0.0063
+2026-05-27 23:06:14 [INFO] zhihu_analyst -   批次 9：相关 6/25 条
+2026-05-27 23:06:14 [INFO] zhihu_analyst - 分类第 10/12 批（25 条）
+2026-05-27 23:06:16 [DEBUG] zhihu_analyst - [deepseek-chat] in=2535 out=51 cache_hit=0 cost=$0.00074 累计=$0.0070
+2026-05-27 23:06:16 [INFO] zhihu_analyst -   批次 10：相关 7/25 条
+2026-05-27 23:06:16 [INFO] zhihu_analyst - 分类第 11/12 批（25 条）
+2026-05-27 23:06:17 [DEBUG] zhihu_analyst - [deepseek-chat] in=2464 out=51 cache_hit=0 cost=$0.00072 累计=$0.0077
+2026-05-27 23:06:17 [INFO] zhihu_analyst -   批次 11：相关 4/25 条
+2026-05-27 23:06:17 [INFO] zhihu_analyst - 分类第 12/12 批（25 条）
+2026-05-27 23:06:18 [DEBUG] zhihu_analyst - [deepseek-chat] in=2702 out=51 cache_hit=0 cost=$0.00079 累计=$0.0085
+2026-05-27 23:06:18 [INFO] zhihu_analyst -   批次 12：相关 7/25 条
+2026-05-27 23:06:18 [INFO] zhihu_analyst - 分类完成：相关 62/300 条
+2026-05-27 23:06:18 [INFO] zhihu_analyst - 提取 1/62: answer_2042746813070016917
+2026-05-27 23:06:20 [DEBUG] zhihu_analyst - [deepseek-chat] in=905 out=136 cache_hit=256 cost=$0.00039 累计=$0.0089
+2026-05-27 23:06:20 [INFO] zhihu_analyst - 提取 2/62: answer_2042234211055264345
+2026-05-27 23:06:22 [DEBUG] zhihu_analyst - [deepseek-chat] in=395 out=66 cache_hit=256 cost=$0.00018 累计=$0.0091
+2026-05-27 23:06:22 [INFO] zhihu_analyst - 提取 3/62: answer_2043035002389234082
+2026-05-27 23:06:23 [DEBUG] zhihu_analyst - [deepseek-chat] in=912 out=142 cache_hit=256 cost=$0.00040 累计=$0.0095
+2026-05-27 23:06:23 [INFO] zhihu_analyst - 提取 4/62: answer_2043018915257784110
+2026-05-27 23:06:25 [DEBUG] zhihu_analyst - [deepseek-chat] in=855 out=127 cache_hit=256 cost=$0.00037 累计=$0.0099
+2026-05-27 23:06:25 [INFO] zhihu_analyst - 提取 5/62: answer_2013367939269670729
+2026-05-27 23:06:27 [DEBUG] zhihu_analyst - [deepseek-chat] in=889 out=100 cache_hit=256 cost=$0.00035 累计=$0.0102
+2026-05-27 23:06:27 [INFO] zhihu_analyst - 提取 6/62: article_2043016157784012655
+2026-05-27 23:06:28 [DEBUG] zhihu_analyst - [deepseek-chat] in=848 out=87 cache_hit=256 cost=$0.00032 累计=$0.0105
+2026-05-27 23:06:28 [INFO] zhihu_analyst - 提取 7/62: answer_2041854743715239514
+2026-05-27 23:06:30 [DEBUG] zhihu_analyst - [deepseek-chat] in=410 out=90 cache_hit=256 cost=$0.00021 累计=$0.0107
+2026-05-27 23:06:30 [INFO] zhihu_analyst - 提取 8/62: answer_2040075683964113001
+2026-05-27 23:06:31 [DEBUG] zhihu_analyst - [deepseek-chat] in=823 out=82 cache_hit=256 cost=$0.00031 累计=$0.0110
+2026-05-27 23:06:31 [INFO] zhihu_analyst - 提取 9/62: answer_2042732574548694322
+2026-05-27 23:06:32 [DEBUG] zhihu_analyst - [deepseek-chat] in=542 out=75 cache_hit=256 cost=$0.00023 累计=$0.0113
+2026-05-27 23:06:32 [INFO] zhihu_analyst - 提取 10/62: answer_2040078370126422838
+2026-05-27 23:06:34 [DEBUG] zhihu_analyst - [deepseek-chat] in=410 out=69 cache_hit=256 cost=$0.00019 累计=$0.0115
+2026-05-27 23:06:34 [INFO] zhihu_analyst - 提取 11/62: answer_2041685406383616916
+2026-05-27 23:06:35 [DEBUG] zhihu_analyst - [deepseek-chat] in=414 out=72 cache_hit=256 cost=$0.00019 累计=$0.0117
+2026-05-27 23:06:35 [INFO] zhihu_analyst - 提取 12/62: answer_2040585098886641605
+2026-05-27 23:06:36 [DEBUG] zhihu_analyst - [deepseek-chat] in=400 out=77 cache_hit=256 cost=$0.00019 累计=$0.0118
+2026-05-27 23:06:36 [INFO] zhihu_analyst - 提取 13/62: answer_2042887907694924022
+2026-05-27 23:06:38 [DEBUG] zhihu_analyst - [deepseek-chat] in=825 out=95 cache_hit=256 cost=$0.00033 累计=$0.0122
+2026-05-27 23:06:38 [INFO] zhihu_analyst - 提取 14/62: answer_2042761126685958981
+2026-05-27 23:06:39 [DEBUG] zhihu_analyst - [deepseek-chat] in=541 out=85 cache_hit=256 cost=$0.00024 累计=$0.0124
+2026-05-27 23:06:39 [INFO] zhihu_analyst - 提取 15/62: answer_2042699217303508519
+2026-05-27 23:06:41 [DEBUG] zhihu_analyst - [deepseek-chat] in=881 out=86 cache_hit=256 cost=$0.00033 累计=$0.0127
+2026-05-27 23:06:41 [INFO] zhihu_analyst - 提取 16/62: answer_2043073910158128217
+2026-05-27 23:06:43 [DEBUG] zhihu_analyst - [deepseek-chat] in=674 out=148 cache_hit=256 cost=$0.00034 累计=$0.0131
+2026-05-27 23:06:43 [INFO] zhihu_analyst - 提取 17/62: answer_2042572046329279113
+2026-05-27 23:06:45 [DEBUG] zhihu_analyst - [deepseek-chat] in=526 out=86 cache_hit=256 cost=$0.00024 累计=$0.0133
+2026-05-27 23:06:45 [INFO] zhihu_analyst - 提取 18/62: answer_2036495126588040826
+2026-05-27 23:06:46 [DEBUG] zhihu_analyst - [deepseek-chat] in=401 out=56 cache_hit=256 cost=$0.00017 累计=$0.0135
+2026-05-27 23:06:46 [INFO] zhihu_analyst - 提取 19/62: answer_2042293873146386371
+2026-05-27 23:06:47 [DEBUG] zhihu_analyst - [deepseek-chat] in=480 out=56 cache_hit=256 cost=$0.00019 累计=$0.0137
+2026-05-27 23:06:47 [INFO] zhihu_analyst - 提取 20/62: answer_1891078232289296581
+2026-05-27 23:06:48 [DEBUG] zhihu_analyst - [deepseek-chat] in=393 out=56 cache_hit=256 cost=$0.00017 累计=$0.0139
+2026-05-27 23:06:48 [INFO] zhihu_analyst - 提取 21/62: answer_2041487159757103380
+2026-05-27 23:06:50 [DEBUG] zhihu_analyst - [deepseek-chat] in=876 out=92 cache_hit=256 cost=$0.00034 累计=$0.0142
+2026-05-27 23:06:50 [INFO] zhihu_analyst - 提取 22/62: answer_2042912164768478170
+2026-05-27 23:06:51 [DEBUG] zhihu_analyst - [deepseek-chat] in=727 out=105 cache_hit=256 cost=$0.00031 累计=$0.0145
+2026-05-27 23:06:51 [INFO] zhihu_analyst - 提取 23/62: answer_2042767629354546968
+2026-05-27 23:06:52 [DEBUG] zhihu_analyst - [deepseek-chat] in=874 out=68 cache_hit=256 cost=$0.00031 累计=$0.0148
+2026-05-27 23:06:52 [INFO] zhihu_analyst - 提取 24/62: answer_2042753910511863161
+2026-05-27 23:06:53 [DEBUG] zhihu_analyst - [deepseek-chat] in=640 out=56 cache_hit=256 cost=$0.00023 累计=$0.0151
+2026-05-27 23:06:53 [INFO] zhihu_analyst - 提取 25/62: answer_2043077504278294592
+2026-05-27 23:06:55 [DEBUG] zhihu_analyst - [deepseek-chat] in=890 out=133 cache_hit=256 cost=$0.00039 累计=$0.0154
+2026-05-27 23:06:55 [INFO] zhihu_analyst - 提取 26/62: answer_2037267636048884230
+2026-05-27 23:06:57 [DEBUG] zhihu_analyst - [deepseek-chat] in=876 out=102 cache_hit=256 cost=$0.00035 累计=$0.0158
+2026-05-27 23:06:57 [INFO] zhihu_analyst - 提取 27/62: answer_2032626177798563045
+2026-05-27 23:06:58 [DEBUG] zhihu_analyst - [deepseek-chat] in=713 out=107 cache_hit=256 cost=$0.00031 累计=$0.0161
+2026-05-27 23:06:58 [INFO] zhihu_analyst - 提取 28/62: answer_2042770907811279079
+2026-05-27 23:07:00 [DEBUG] zhihu_analyst - [deepseek-chat] in=416 out=71 cache_hit=256 cost=$0.00019 累计=$0.0163
+2026-05-27 23:07:00 [INFO] zhihu_analyst - 提取 29/62: answer_2042886877087266728
+2026-05-27 23:07:01 [DEBUG] zhihu_analyst - [deepseek-chat] in=543 out=68 cache_hit=256 cost=$0.00022 累计=$0.0165
+2026-05-27 23:07:01 [INFO] zhihu_analyst - 提取 30/62: answer_2042723450779959680
+2026-05-27 23:07:03 [DEBUG] zhihu_analyst - [deepseek-chat] in=623 out=92 cache_hit=256 cost=$0.00027 累计=$0.0168
+2026-05-27 23:07:03 [INFO] zhihu_analyst - 提取 31/62: answer_2042784434328429802
+2026-05-27 23:07:04 [DEBUG] zhihu_analyst - [deepseek-chat] in=610 out=99 cache_hit=256 cost=$0.00027 累计=$0.0171
+2026-05-27 23:07:04 [INFO] zhihu_analyst - 提取 32/62: answer_2043091117965563569
+2026-05-27 23:07:06 [DEBUG] zhihu_analyst - [deepseek-chat] in=882 out=94 cache_hit=256 cost=$0.00034 累计=$0.0174
+2026-05-27 23:07:06 [INFO] zhihu_analyst - 提取 33/62: answer_2042685817722863947
+2026-05-27 23:07:07 [DEBUG] zhihu_analyst - [deepseek-chat] in=625 out=69 cache_hit=256 cost=$0.00024 累计=$0.0176
+2026-05-27 23:07:07 [INFO] zhihu_analyst - 提取 34/62: answer_2041375025614280226
+2026-05-27 23:07:08 [DEBUG] zhihu_analyst - [deepseek-chat] in=411 out=78 cache_hit=256 cost=$0.00020 累计=$0.0178
+2026-05-27 23:07:08 [INFO] zhihu_analyst - 提取 35/62: answer_1972045576548877004
+2026-05-27 23:07:09 [DEBUG] zhihu_analyst - [deepseek-chat] in=791 out=68 cache_hit=256 cost=$0.00029 累计=$0.0181
+2026-05-27 23:07:09 [INFO] zhihu_analyst - 提取 36/62: answer_2043103530442045286
+2026-05-27 23:07:11 [DEBUG] zhihu_analyst - [deepseek-chat] in=875 out=90 cache_hit=256 cost=$0.00034 累计=$0.0185
+2026-05-27 23:07:11 [INFO] zhihu_analyst - 提取 37/62: answer_2040651942872011318
+2026-05-27 23:07:13 [DEBUG] zhihu_analyst - [deepseek-chat] in=410 out=63 cache_hit=256 cost=$0.00018 累计=$0.0186
+2026-05-27 23:07:13 [INFO] zhihu_analyst - 提取 38/62: answer_2039802996914139792
+2026-05-27 23:07:14 [DEBUG] zhihu_analyst - [deepseek-chat] in=591 out=77 cache_hit=256 cost=$0.00024 累计=$0.0189
+2026-05-27 23:07:14 [INFO] zhihu_analyst - 提取 39/62: answer_2042775458022954619
+2026-05-27 23:07:16 [DEBUG] zhihu_analyst - [deepseek-chat] in=893 out=85 cache_hit=256 cost=$0.00033 累计=$0.0192
+2026-05-27 23:07:16 [INFO] zhihu_analyst - 提取 40/62: answer_2042402525941339599
+2026-05-27 23:07:17 [DEBUG] zhihu_analyst - [deepseek-chat] in=551 out=69 cache_hit=256 cost=$0.00022 累计=$0.0194
+2026-05-27 23:07:17 [INFO] zhihu_analyst - 提取 41/62: answer_2043009218056389578
+2026-05-27 23:07:18 [DEBUG] zhihu_analyst - [deepseek-chat] in=754 out=80 cache_hit=256 cost=$0.00029 累计=$0.0197
+2026-05-27 23:07:18 [INFO] zhihu_analyst - 提取 42/62: answer_1973731253695042781
+2026-05-27 23:07:19 [DEBUG] zhihu_analyst - [deepseek-chat] in=457 out=56 cache_hit=256 cost=$0.00018 累计=$0.0199
+2026-05-27 23:07:19 [INFO] zhihu_analyst - 提取 43/62: answer_2042788997697631812
+2026-05-27 23:07:20 [DEBUG] zhihu_analyst - [deepseek-chat] in=445 out=56 cache_hit=256 cost=$0.00018 累计=$0.0201
+2026-05-27 23:07:20 [INFO] zhihu_analyst - 提取 44/62: answer_2042193252665775837
+2026-05-27 23:07:22 [DEBUG] zhihu_analyst - [deepseek-chat] in=480 out=74 cache_hit=256 cost=$0.00021 累计=$0.0203
+2026-05-27 23:07:22 [INFO] zhihu_analyst - 提取 45/62: answer_2041825264305434852
+2026-05-27 23:07:23 [DEBUG] zhihu_analyst - [deepseek-chat] in=478 out=71 cache_hit=256 cost=$0.00021 累计=$0.0205
+2026-05-27 23:07:23 [INFO] zhihu_analyst - 提取 46/62: answer_2043082457281558241
+2026-05-27 23:07:24 [DEBUG] zhihu_analyst - [deepseek-chat] in=455 out=68 cache_hit=256 cost=$0.00020 累计=$0.0207
+2026-05-27 23:07:24 [INFO] zhihu_analyst - 提取 47/62: answer_2042608276488115026
+2026-05-27 23:07:26 [DEBUG] zhihu_analyst - [deepseek-chat] in=880 out=112 cache_hit=256 cost=$0.00036 累计=$0.0211
+2026-05-27 23:07:26 [INFO] zhihu_analyst - 提取 48/62: answer_2042602847162857285
+2026-05-27 23:07:28 [DEBUG] zhihu_analyst - [deepseek-chat] in=459 out=92 cache_hit=256 cost=$0.00023 累计=$0.0213
+2026-05-27 23:07:28 [INFO] zhihu_analyst - 提取 49/62: answer_2022287227913340860
+2026-05-27 23:07:29 [DEBUG] zhihu_analyst - [deepseek-chat] in=470 out=67 cache_hit=256 cost=$0.00020 累计=$0.0215
+2026-05-27 23:07:29 [INFO] zhihu_analyst - 提取 50/62: answer_2042913259779520018
+2026-05-27 23:07:30 [DEBUG] zhihu_analyst - [deepseek-chat] in=583 out=82 cache_hit=256 cost=$0.00025 累计=$0.0217
+2026-05-27 23:07:30 [INFO] zhihu_analyst - 提取 51/62: answer_2042274270697484465
+2026-05-27 23:07:32 [DEBUG] zhihu_analyst - [deepseek-chat] in=826 out=79 cache_hit=256 cost=$0.00031 累计=$0.0221
+2026-05-27 23:07:32 [INFO] zhihu_analyst - 提取 52/62: answer_2043021054252253558
+2026-05-27 23:07:34 [DEBUG] zhihu_analyst - [deepseek-chat] in=858 out=113 cache_hit=256 cost=$0.00036 累计=$0.0224
+2026-05-27 23:07:34 [INFO] zhihu_analyst - 提取 53/62: answer_2042294258942599666
+2026-05-27 23:07:36 [DEBUG] zhihu_analyst - [deepseek-chat] in=596 out=107 cache_hit=256 cost=$0.00028 累计=$0.0227
+2026-05-27 23:07:36 [INFO] zhihu_analyst - 提取 54/62: answer_2043040725844152866
+2026-05-27 23:07:37 [DEBUG] zhihu_analyst - [deepseek-chat] in=882 out=116 cache_hit=256 cost=$0.00037 累计=$0.0231
+2026-05-27 23:07:37 [INFO] zhihu_analyst - 提取 55/62: answer_2041102579308958453
+2026-05-27 23:07:38 [DEBUG] zhihu_analyst - [deepseek-chat] in=412 out=56 cache_hit=256 cost=$0.00017 累计=$0.0232
+2026-05-27 23:07:38 [INFO] zhihu_analyst - 提取 56/62: answer_2042343307867600278
+2026-05-27 23:07:40 [DEBUG] zhihu_analyst - [deepseek-chat] in=569 out=90 cache_hit=256 cost=$0.00025 累计=$0.0235
+2026-05-27 23:07:40 [INFO] zhihu_analyst - 提取 57/62: answer_2037219529353385474
+2026-05-27 23:07:41 [DEBUG] zhihu_analyst - [deepseek-chat] in=495 out=72 cache_hit=256 cost=$0.00021 累计=$0.0237
+2026-05-27 23:07:41 [INFO] zhihu_analyst - 提取 58/62: answer_2035456327372256850
+2026-05-27 23:07:42 [DEBUG] zhihu_analyst - [deepseek-chat] in=409 out=66 cache_hit=256 cost=$0.00018 累计=$0.0239
+2026-05-27 23:07:42 [INFO] zhihu_analyst - 提取 59/62: answer_2042956569936187991
+2026-05-27 23:07:44 [DEBUG] zhihu_analyst - [deepseek-chat] in=863 out=65 cache_hit=256 cost=$0.00030 累计=$0.0242
+2026-05-27 23:07:44 [INFO] zhihu_analyst - 提取 60/62: answer_2042953159056918174
+2026-05-27 23:07:45 [DEBUG] zhihu_analyst - [deepseek-chat] in=843 out=56 cache_hit=256 cost=$0.00029 累计=$0.0245
+2026-05-27 23:07:45 [INFO] zhihu_analyst - 提取 61/62: answer_2042612697083143642
+2026-05-27 23:07:46 [DEBUG] zhihu_analyst - [deepseek-chat] in=462 out=56 cache_hit=256 cost=$0.00019 累计=$0.0247
+2026-05-27 23:07:46 [INFO] zhihu_analyst - 提取 62/62: answer_2043080415649468615
+2026-05-27 23:07:47 [DEBUG] zhihu_analyst - [deepseek-chat] in=924 out=69 cache_hit=256 cost=$0.00033 累计=$0.0250
+2026-05-27 23:07:47 [INFO] zhihu_analyst - 需综合分析的板块：8 个
+2026-05-27 23:07:47 [INFO] zhihu_analyst - 综合分析板块：科技/半导体（20 条信息）
+2026-05-27 23:07:53 [DEBUG] zhihu_analyst - [deepseek-chat] in=2128 out=524 cache_hit=0 cost=$0.00115 累计=$0.0261
+2026-05-27 23:07:53 [INFO] zhihu_analyst - 综合分析板块：医药/生物（3 条信息）
+2026-05-27 23:07:56 [DEBUG] zhihu_analyst - [deepseek-chat] in=583 out=284 cache_hit=0 cost=$0.00047 累计=$0.0266
+2026-05-27 23:07:56 [INFO] zhihu_analyst - 综合分析板块：消费/零售（10 条信息）
+2026-05-27 23:08:01 [DEBUG] zhihu_analyst - [deepseek-chat] in=1138 out=432 cache_hit=0 cost=$0.00078 累计=$0.0274
+2026-05-27 23:08:01 [INFO] zhihu_analyst - 综合分析板块：金融/银行/保险（4 条信息）
+2026-05-27 23:08:05 [DEBUG] zhihu_analyst - [deepseek-chat] in=686 out=337 cache_hit=0 cost=$0.00056 累计=$0.0279
+2026-05-27 23:08:05 [INFO] zhihu_analyst - 综合分析板块：新能源/电力（8 条信息）
+2026-05-27 23:08:10 [DEBUG] zhihu_analyst - [deepseek-chat] in=995 out=459 cache_hit=0 cost=$0.00077 累计=$0.0287
+2026-05-27 23:08:10 [INFO] zhihu_analyst - 综合分析板块：房地产/建材（2 条信息）
+2026-05-27 23:08:14 [DEBUG] zhihu_analyst - [deepseek-chat] in=545 out=264 cache_hit=0 cost=$0.00044 累计=$0.0292
+2026-05-27 23:08:14 [INFO] zhihu_analyst - 综合分析板块：大宗商品/周期（5 条信息）
+2026-05-27 23:08:18 [DEBUG] zhihu_analyst - [deepseek-chat] in=877 out=394 cache_hit=0 cost=$0.00067 累计=$0.0298
+2026-05-27 23:08:18 [INFO] zhihu_analyst - 综合分析板块：互联网/传媒（2 条信息）
+2026-05-27 23:08:21 [DEBUG] zhihu_analyst - [deepseek-chat] in=516 out=249 cache_hit=0 cost=$0.00041 累计=$0.0302
+2026-05-27 23:08:21 [INFO] zhihu_analyst - 综合分析完成。API调用82次，输入76413token，输出8735token，总费用约 $0.0302
+2026-05-27 23:08:21 [INFO] zhihu_analyst - 报告已保存：output\reports\report_2026-05-27.html 和 output\reports\report_2026-05-27.md
+2026-05-27 23:08:21 [INFO] zhihu_analyst - ============================================================
+2026-05-27 23:08:21 [INFO] zhihu_analyst - 执行完成！总耗时 296.5s
+2026-05-27 23:08:21 [INFO] zhihu_analyst - 抓取：300条，相关：62条
+2026-05-27 23:08:21 [INFO] zhihu_analyst - API调用82次，输入76413token，输出8735token，总费用约 $0.0302
+2026-05-27 23:08:21 [INFO] zhihu_analyst - 报告：output\reports\report_2026-05-27.html
+2026-05-27 23:08:21 [INFO] zhihu_analyst - ============================================================
+2026-05-27 23:09:41 [INFO] zhihu_analyst - ============================================================
+2026-05-27 23:09:41 [INFO] zhihu_analyst - A股每日分析系统启动 (2026-05-27) [DeepSeek]
+2026-05-27 23:09:41 [INFO] zhihu_analyst - ============================================================
+2026-05-27 23:09:41 [DEBUG] zhihu_analyst - 数据库已连接：output/seen_content.db
+2026-05-27 23:09:41 [DEBUG] zhihu_analyst - xsrf token 注入成功
+2026-05-27 23:09:41 [INFO] zhihu_analyst - 验证知乎 Cookie...
+2026-05-27 23:09:41 [INFO] zhihu_analyst - Cookie 验证成功，当前用户：橙汁林
+2026-05-27 23:09:41 [INFO] zhihu_analyst - 已获取关注列表：49 人
+2026-05-27 23:09:41 [INFO] zhihu_analyst - 今日起始时间戳：1779811200 (2026-05-27 00:00)
+2026-05-27 23:09:41 [INFO] zhihu_analyst - 抓取第 1 页
+2026-05-27 23:09:43 [DEBUG] zhihu_analyst -   第 1 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:09:44 [INFO] zhihu_analyst - 抓取第 2 页
+2026-05-27 23:09:46 [DEBUG] zhihu_analyst -   第 2 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:09:47 [INFO] zhihu_analyst - 抓取第 3 页
+2026-05-27 23:09:48 [DEBUG] zhihu_analyst -   第 3 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:09:50 [INFO] zhihu_analyst - 抓取第 4 页
+2026-05-27 23:09:51 [DEBUG] zhihu_analyst -   第 4 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:09:53 [INFO] zhihu_analyst - 抓取第 5 页
+2026-05-27 23:09:55 [DEBUG] zhihu_analyst -   第 5 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:09:56 [INFO] zhihu_analyst - 抓取第 6 页
+2026-05-27 23:09:58 [DEBUG] zhihu_analyst -   第 6 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:10:00 [INFO] zhihu_analyst - 抓取第 7 页
+2026-05-27 23:10:01 [DEBUG] zhihu_analyst -   第 7 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:10:03 [INFO] zhihu_analyst - 抓取第 8 页
+2026-05-27 23:10:04 [DEBUG] zhihu_analyst -   第 8 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:10:06 [INFO] zhihu_analyst - 抓取第 9 页
+2026-05-27 23:10:07 [DEBUG] zhihu_analyst -   第 9 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:10:09 [INFO] zhihu_analyst - 抓取第 10 页
+2026-05-27 23:10:10 [DEBUG] zhihu_analyst -   第 10 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:10:12 [INFO] zhihu_analyst - 抓取第 11 页
+2026-05-27 23:10:13 [DEBUG] zhihu_analyst -   第 11 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:10:14 [INFO] zhihu_analyst - 抓取第 12 页
+2026-05-27 23:10:16 [DEBUG] zhihu_analyst -   第 12 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:10:18 [INFO] zhihu_analyst - 抓取第 13 页
+2026-05-27 23:10:19 [DEBUG] zhihu_analyst -   第 13 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:10:21 [INFO] zhihu_analyst - 抓取第 14 页
+2026-05-27 23:10:22 [DEBUG] zhihu_analyst -   第 14 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:10:24 [INFO] zhihu_analyst - 抓取第 15 页
+2026-05-27 23:10:25 [DEBUG] zhihu_analyst -   第 15 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:10:27 [INFO] zhihu_analyst - 抓取第 16 页
+2026-05-27 23:10:28 [DEBUG] zhihu_analyst -   第 16 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:10:31 [INFO] zhihu_analyst - 抓取第 17 页
+2026-05-27 23:10:32 [DEBUG] zhihu_analyst -   第 17 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:10:33 [INFO] zhihu_analyst - 抓取第 18 页
+2026-05-27 23:10:34 [DEBUG] zhihu_analyst -   第 18 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:10:36 [INFO] zhihu_analyst - 抓取第 19 页
+2026-05-27 23:10:37 [DEBUG] zhihu_analyst -   第 19 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:10:39 [INFO] zhihu_analyst - 抓取第 20 页
+2026-05-27 23:10:40 [DEBUG] zhihu_analyst -   第 20 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:10:41 [INFO] zhihu_analyst - 抓取第 21 页
+2026-05-27 23:10:43 [DEBUG] zhihu_analyst -   第 21 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:10:44 [INFO] zhihu_analyst - 抓取第 22 页
+2026-05-27 23:10:45 [DEBUG] zhihu_analyst -   第 22 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:10:48 [INFO] zhihu_analyst - 抓取第 23 页
+2026-05-27 23:10:49 [DEBUG] zhihu_analyst -   第 23 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:10:50 [INFO] zhihu_analyst - 抓取第 24 页
+2026-05-27 23:10:51 [DEBUG] zhihu_analyst -   第 24 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:10:53 [INFO] zhihu_analyst - 抓取第 25 页
+2026-05-27 23:10:54 [DEBUG] zhihu_analyst -   第 25 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:10:55 [INFO] zhihu_analyst - 抓取第 26 页
+2026-05-27 23:10:57 [DEBUG] zhihu_analyst -   第 26 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:10:58 [INFO] zhihu_analyst - 抓取第 27 页
+2026-05-27 23:10:59 [DEBUG] zhihu_analyst -   第 27 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:11:01 [INFO] zhihu_analyst - 抓取第 28 页
+2026-05-27 23:11:03 [DEBUG] zhihu_analyst -   第 28 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:11:05 [INFO] zhihu_analyst - 抓取第 29 页
+2026-05-27 23:11:06 [DEBUG] zhihu_analyst -   第 29 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:11:08 [INFO] zhihu_analyst - 抓取第 30 页
+2026-05-27 23:11:09 [DEBUG] zhihu_analyst -   第 30 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:11:11 [INFO] zhihu_analyst - 抓取第 31 页
+2026-05-27 23:11:12 [DEBUG] zhihu_analyst -   第 31 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:11:14 [INFO] zhihu_analyst - 抓取第 32 页
+2026-05-27 23:11:15 [DEBUG] zhihu_analyst -   第 32 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:11:16 [INFO] zhihu_analyst - 抓取第 33 页
+2026-05-27 23:11:17 [DEBUG] zhihu_analyst -   第 33 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:11:19 [INFO] zhihu_analyst - 抓取第 34 页
+2026-05-27 23:11:21 [DEBUG] zhihu_analyst -   第 34 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:11:23 [INFO] zhihu_analyst - 抓取第 35 页
+2026-05-27 23:11:24 [DEBUG] zhihu_analyst -   第 35 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:11:25 [INFO] zhihu_analyst - 抓取第 36 页
+2026-05-27 23:11:26 [DEBUG] zhihu_analyst -   第 36 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:11:29 [INFO] zhihu_analyst - 抓取第 37 页
+2026-05-27 23:11:30 [DEBUG] zhihu_analyst -   第 37 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:11:32 [INFO] zhihu_analyst - 抓取第 38 页
+2026-05-27 23:11:33 [DEBUG] zhihu_analyst -   第 38 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:11:36 [INFO] zhihu_analyst - 抓取第 39 页
+2026-05-27 23:11:37 [DEBUG] zhihu_analyst -   第 39 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:11:39 [INFO] zhihu_analyst - 抓取第 40 页
+2026-05-27 23:11:40 [DEBUG] zhihu_analyst -   第 40 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:11:42 [INFO] zhihu_analyst - 抓取第 41 页
+2026-05-27 23:11:43 [DEBUG] zhihu_analyst -   第 41 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:11:44 [INFO] zhihu_analyst - 抓取第 42 页
+2026-05-27 23:11:46 [DEBUG] zhihu_analyst -   第 42 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:11:47 [INFO] zhihu_analyst - 抓取第 43 页
+2026-05-27 23:11:48 [DEBUG] zhihu_analyst -   第 43 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:11:51 [INFO] zhihu_analyst - 抓取第 44 页
+2026-05-27 23:11:52 [DEBUG] zhihu_analyst -   第 44 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:11:54 [INFO] zhihu_analyst - 抓取第 45 页
+2026-05-27 23:11:56 [DEBUG] zhihu_analyst -   第 45 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:11:58 [INFO] zhihu_analyst - 抓取第 46 页
+2026-05-27 23:11:59 [DEBUG] zhihu_analyst -   第 46 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:12:01 [INFO] zhihu_analyst - 抓取第 47 页
+2026-05-27 23:12:03 [DEBUG] zhihu_analyst -   第 47 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:12:04 [INFO] zhihu_analyst - 抓取第 48 页
+2026-05-27 23:12:06 [DEBUG] zhihu_analyst -   第 48 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:12:07 [INFO] zhihu_analyst - 抓取第 49 页
+2026-05-27 23:12:08 [DEBUG] zhihu_analyst -   第 49 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:12:09 [INFO] zhihu_analyst - 抓取第 50 页
+2026-05-27 23:12:10 [DEBUG] zhihu_analyst -   第 50 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:12:12 [INFO] zhihu_analyst - 抓取完成：共处理 300 条，跳过重复 0 条，今日新内容 5 条
+2026-05-27 23:12:12 [INFO] zhihu_analyst - 分类第 1/1 批（5 条）
+2026-05-27 23:12:13 [DEBUG] zhihu_analyst - [deepseek-chat] in=663 out=11 cache_hit=0 cost=$0.00019 累计=$0.0002
+2026-05-27 23:12:13 [INFO] zhihu_analyst -   批次 1：相关 0/5 条
+2026-05-27 23:12:13 [INFO] zhihu_analyst - 分类完成：相关 0/5 条
+2026-05-27 23:12:13 [INFO] zhihu_analyst - 报告已保存：output\reports\report_2026-05-27.html 和 output\reports\report_2026-05-27.md
+2026-05-27 23:12:13 [INFO] zhihu_analyst - ============================================================
+2026-05-27 23:12:13 [INFO] zhihu_analyst - 执行完成！总耗时 152.7s
+2026-05-27 23:12:13 [INFO] zhihu_analyst - 抓取：5条，相关：0条
+2026-05-27 23:12:13 [INFO] zhihu_analyst - API调用1次，输入663token，输出11token，总费用约 $0.0002
+2026-05-27 23:12:13 [INFO] zhihu_analyst - 报告：output\reports\report_2026-05-27.html
+2026-05-27 23:12:13 [INFO] zhihu_analyst - ============================================================
+2026-05-27 23:15:42 [INFO] zhihu_analyst - ============================================================
+2026-05-27 23:15:42 [INFO] zhihu_analyst - A股每日分析系统启动 (2026-05-27) [DeepSeek]
+2026-05-27 23:15:42 [INFO] zhihu_analyst - ============================================================
+2026-05-27 23:15:42 [DEBUG] zhihu_analyst - 数据库已连接：output/seen_content.db
+2026-05-27 23:15:42 [DEBUG] zhihu_analyst - xsrf token 注入成功
+2026-05-27 23:15:42 [INFO] zhihu_analyst - 验证知乎 Cookie...
+2026-05-27 23:15:42 [INFO] zhihu_analyst - Cookie 验证成功，当前用户：橙汁林
+2026-05-27 23:15:43 [INFO] zhihu_analyst - 已获取关注列表：49 人
+2026-05-27 23:15:43 [INFO] zhihu_analyst - 今日起始时间戳：1779811200 (2026-05-27 00:00)
+2026-05-27 23:15:43 [INFO] zhihu_analyst - 开始遍历 49 位关注用户的最近内容...
+2026-05-27 23:16:00 [INFO] zhihu_analyst -   已检查 10/49 人，收集 3 条今日内容
+2026-05-27 23:16:18 [INFO] zhihu_analyst -   已检查 20/49 人，收集 5 条今日内容
+2026-05-27 23:16:29 [DEBUG] zhihu_analyst - 获取用户 tang-xiao-yun-47 内容失败: 410 Client Error: Gone for url: https://www.zhihu.com/api/v4/members/tang-xiao-yun-47/answers?limit=5&sort_by=created
+2026-05-27 23:16:33 [INFO] zhihu_analyst -   已检查 30/49 人，收集 9 条今日内容
+2026-05-27 23:16:51 [INFO] zhihu_analyst -   已检查 40/49 人，收集 16 条今日内容
+2026-05-27 23:16:51 [DEBUG] zhihu_analyst - 获取用户 camp-18-2 内容失败: 410 Client Error: Gone for url: https://www.zhihu.com/api/v4/members/camp-18-2/answers?limit=5&sort_by=created
+2026-05-27 23:17:06 [INFO] zhihu_analyst - 关注用户遍历完成：共收集 18 条今日内容
+2026-05-27 23:17:06 [INFO] zhihu_analyst - 分类第 1/1 批（18 条）
+2026-05-27 23:17:08 [DEBUG] zhihu_analyst - [deepseek-chat] in=764 out=37 cache_hit=0 cost=$0.00025 累计=$0.0002
+2026-05-27 23:17:08 [INFO] zhihu_analyst -   批次 1：相关 10/18 条
+2026-05-27 23:17:08 [INFO] zhihu_analyst - 分类完成：相关 10/18 条
+2026-05-27 23:17:08 [INFO] zhihu_analyst - 提取 1/10: answer_2043065474334864775
+2026-05-27 23:17:09 [DEBUG] zhihu_analyst - [deepseek-chat] in=385 out=56 cache_hit=256 cost=$0.00017 累计=$0.0004
+2026-05-27 23:17:09 [INFO] zhihu_analyst - 提取 2/10: answer_2043102795742565817
+2026-05-27 23:17:10 [DEBUG] zhihu_analyst - [deepseek-chat] in=403 out=75 cache_hit=256 cost=$0.00019 累计=$0.0006
+2026-05-27 23:17:10 [INFO] zhihu_analyst - 提取 3/10: answer_2042873518677872756
+2026-05-27 23:17:11 [DEBUG] zhihu_analyst - [deepseek-chat] in=386 out=56 cache_hit=256 cost=$0.00017 累计=$0.0008
+2026-05-27 23:17:11 [INFO] zhihu_analyst - 提取 4/10: answer_2043101856516281213
+2026-05-27 23:17:12 [DEBUG] zhihu_analyst - [deepseek-chat] in=392 out=75 cache_hit=256 cost=$0.00019 累计=$0.0010
+2026-05-27 23:17:12 [INFO] zhihu_analyst - 提取 5/10: answer_2042982557239743521
+2026-05-27 23:17:13 [DEBUG] zhihu_analyst - [deepseek-chat] in=401 out=70 cache_hit=256 cost=$0.00019 累计=$0.0011
+2026-05-27 23:17:13 [INFO] zhihu_analyst - 提取 6/10: answer_2042986714541642081
+2026-05-27 23:17:15 [DEBUG] zhihu_analyst - [deepseek-chat] in=387 out=56 cache_hit=256 cost=$0.00017 累计=$0.0013
+2026-05-27 23:17:15 [INFO] zhihu_analyst - 提取 7/10: answer_2042925853542175581
+2026-05-27 23:17:16 [DEBUG] zhihu_analyst - [deepseek-chat] in=382 out=56 cache_hit=256 cost=$0.00016 累计=$0.0015
+2026-05-27 23:17:16 [INFO] zhihu_analyst - 提取 8/10: answer_2043033592700437606
+2026-05-27 23:17:17 [DEBUG] zhihu_analyst - [deepseek-chat] in=386 out=76 cache_hit=256 cost=$0.00019 累计=$0.0017
+2026-05-27 23:17:17 [INFO] zhihu_analyst - 提取 9/10: answer_2043001015713141974
+2026-05-27 23:17:18 [DEBUG] zhihu_analyst - [deepseek-chat] in=386 out=56 cache_hit=256 cost=$0.00017 累计=$0.0018
+2026-05-27 23:17:18 [INFO] zhihu_analyst - 提取 10/10: answer_2042818175520305541
+2026-05-27 23:17:19 [DEBUG] zhihu_analyst - [deepseek-chat] in=397 out=68 cache_hit=256 cost=$0.00018 累计=$0.0020
+2026-05-27 23:17:19 [INFO] zhihu_analyst - 需综合分析的板块：3 个
+2026-05-27 23:17:19 [INFO] zhihu_analyst - 综合分析板块：科技/半导体（1 条信息）
+2026-05-27 23:17:22 [DEBUG] zhihu_analyst - [deepseek-chat] in=440 out=197 cache_hit=0 cost=$0.00034 累计=$0.0023
+2026-05-27 23:17:22 [INFO] zhihu_analyst - 综合分析板块：消费/零售（2 条信息）
+2026-05-27 23:17:26 [DEBUG] zhihu_analyst - [deepseek-chat] in=514 out=299 cache_hit=0 cost=$0.00047 累计=$0.0028
+2026-05-27 23:17:26 [INFO] zhihu_analyst - 综合分析板块：新能源/电力（1 条信息）
+2026-05-27 23:17:29 [DEBUG] zhihu_analyst - [deepseek-chat] in=433 out=234 cache_hit=0 cost=$0.00037 累计=$0.0032
+2026-05-27 23:17:29 [INFO] zhihu_analyst - 综合分析完成。API调用14次，输入6056token，输出1411token，总费用约 $0.0032
+2026-05-27 23:17:29 [INFO] zhihu_analyst - 报告已保存：output\reports\report_2026-05-27.html 和 output\reports\report_2026-05-27.md
+2026-05-27 23:17:29 [INFO] zhihu_analyst - ============================================================
+2026-05-27 23:17:29 [INFO] zhihu_analyst - 执行完成！总耗时 107.2s
+2026-05-27 23:17:29 [INFO] zhihu_analyst - 抓取：18条，相关：10条
+2026-05-27 23:17:29 [INFO] zhihu_analyst - API调用14次，输入6056token，输出1411token，总费用约 $0.0032
+2026-05-27 23:17:29 [INFO] zhihu_analyst - 报告：output\reports\report_2026-05-27.html
+2026-05-27 23:17:29 [INFO] zhihu_analyst - ============================================================
+2026-05-27 23:28:49 [INFO] zhihu_analyst - ============================================================
+2026-05-27 23:28:49 [INFO] zhihu_analyst - A股每日分析系统启动 (2026-05-27) [DeepSeek]
+2026-05-27 23:28:49 [INFO] zhihu_analyst - ============================================================
+2026-05-27 23:28:49 [DEBUG] zhihu_analyst - 数据库已连接：output/seen_content.db
+2026-05-27 23:28:50 [DEBUG] zhihu_analyst - xsrf token 注入成功
+2026-05-27 23:28:50 [INFO] zhihu_analyst - 验证知乎 Cookie...
+2026-05-27 23:28:50 [INFO] zhihu_analyst - Cookie 验证成功，当前用户：橙汁林
+2026-05-27 23:28:51 [INFO] zhihu_analyst - 已获取关注列表：49 人
+2026-05-27 23:28:51 [INFO] zhihu_analyst - 今日起始时间戳：1779811200 (2026-05-27 00:00)
+2026-05-27 23:28:51 [INFO] zhihu_analyst - 开始遍历 49 位关注用户的最近内容...
+2026-05-27 23:29:08 [INFO] zhihu_analyst -   已检查 10/49 人，收集 0 条今日内容
+2026-05-27 23:29:23 [INFO] zhihu_analyst -   已检查 20/49 人，收集 0 条今日内容
+2026-05-27 23:29:28 [DEBUG] zhihu_analyst - 获取用户 tang-xiao-yun-47 内容失败: 410 Client Error: Gone for url: https://www.zhihu.com/api/v4/members/tang-xiao-yun-47/answers?limit=5&sort_by=created
+2026-05-27 23:29:38 [INFO] zhihu_analyst -   已检查 30/49 人，收集 0 条今日内容
+2026-05-27 23:29:55 [INFO] zhihu_analyst -   已检查 40/49 人，收集 0 条今日内容
+2026-05-27 23:29:57 [DEBUG] zhihu_analyst - 获取用户 camp-18-2 内容失败: 410 Client Error: Gone for url: https://www.zhihu.com/api/v4/members/camp-18-2/answers?limit=5&sort_by=created
+2026-05-27 23:30:08 [INFO] zhihu_analyst - 关注用户遍历完成：共收集 0 条今日内容
+2026-05-27 23:30:08 [INFO] zhihu_analyst - 关注用户今日无新内容，降级使用推荐流...
+2026-05-27 23:30:08 [INFO] zhihu_analyst - 抓取第 1 页
+2026-05-27 23:30:09 [DEBUG] zhihu_analyst -   第 1 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:30:11 [INFO] zhihu_analyst - 抓取第 2 页
+2026-05-27 23:30:12 [DEBUG] zhihu_analyst -   第 2 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:30:14 [INFO] zhihu_analyst - 抓取第 3 页
+2026-05-27 23:30:15 [DEBUG] zhihu_analyst -   第 3 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:30:17 [INFO] zhihu_analyst - 抓取第 4 页
+2026-05-27 23:30:18 [DEBUG] zhihu_analyst -   第 4 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:30:20 [INFO] zhihu_analyst - 抓取第 5 页
+2026-05-27 23:30:21 [DEBUG] zhihu_analyst -   第 5 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:30:23 [INFO] zhihu_analyst - 抓取第 6 页
+2026-05-27 23:30:24 [DEBUG] zhihu_analyst -   第 6 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:30:25 [INFO] zhihu_analyst - 抓取第 7 页
+2026-05-27 23:30:27 [DEBUG] zhihu_analyst -   第 7 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:30:28 [INFO] zhihu_analyst - 抓取第 8 页
+2026-05-27 23:30:29 [DEBUG] zhihu_analyst -   第 8 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:30:32 [INFO] zhihu_analyst - 抓取第 9 页
+2026-05-27 23:30:33 [DEBUG] zhihu_analyst -   第 9 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:30:34 [INFO] zhihu_analyst - 抓取第 10 页
+2026-05-27 23:30:35 [DEBUG] zhihu_analyst -   第 10 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:30:38 [INFO] zhihu_analyst - 抓取第 11 页
+2026-05-27 23:30:39 [DEBUG] zhihu_analyst -   第 11 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:30:41 [INFO] zhihu_analyst - 抓取第 12 页
+2026-05-27 23:30:42 [DEBUG] zhihu_analyst -   第 12 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:30:44 [INFO] zhihu_analyst - 抓取第 13 页
+2026-05-27 23:30:45 [DEBUG] zhihu_analyst -   第 13 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:30:46 [INFO] zhihu_analyst - 抓取第 14 页
+2026-05-27 23:30:47 [DEBUG] zhihu_analyst -   第 14 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:30:49 [INFO] zhihu_analyst - 抓取第 15 页
+2026-05-27 23:30:51 [DEBUG] zhihu_analyst -   第 15 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:30:53 [INFO] zhihu_analyst - 抓取第 16 页
+2026-05-27 23:30:54 [DEBUG] zhihu_analyst -   第 16 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:30:55 [INFO] zhihu_analyst - 抓取第 17 页
+2026-05-27 23:30:57 [DEBUG] zhihu_analyst -   第 17 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:30:59 [INFO] zhihu_analyst - 抓取第 18 页
+2026-05-27 23:31:00 [DEBUG] zhihu_analyst -   第 18 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:31:03 [INFO] zhihu_analyst - 抓取第 19 页
+2026-05-27 23:31:04 [DEBUG] zhihu_analyst -   第 19 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:31:05 [INFO] zhihu_analyst - 抓取第 20 页
+2026-05-27 23:31:07 [DEBUG] zhihu_analyst -   第 20 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:31:08 [INFO] zhihu_analyst - 抓取第 21 页
+2026-05-27 23:31:09 [DEBUG] zhihu_analyst -   第 21 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:31:11 [INFO] zhihu_analyst - 抓取第 22 页
+2026-05-27 23:31:12 [DEBUG] zhihu_analyst -   第 22 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:31:14 [INFO] zhihu_analyst - 抓取第 23 页
+2026-05-27 23:31:16 [DEBUG] zhihu_analyst -   第 23 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:31:18 [INFO] zhihu_analyst - 抓取第 24 页
+2026-05-27 23:31:19 [DEBUG] zhihu_analyst -   第 24 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:31:21 [INFO] zhihu_analyst - 抓取第 25 页
+2026-05-27 23:31:23 [DEBUG] zhihu_analyst -   第 25 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:31:24 [INFO] zhihu_analyst - 抓取第 26 页
+2026-05-27 23:31:26 [DEBUG] zhihu_analyst -   第 26 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:31:28 [INFO] zhihu_analyst - 抓取第 27 页
+2026-05-27 23:31:29 [DEBUG] zhihu_analyst -   第 27 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:31:31 [INFO] zhihu_analyst - 抓取第 28 页
+2026-05-27 23:31:32 [DEBUG] zhihu_analyst -   第 28 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:31:33 [INFO] zhihu_analyst - 抓取第 29 页
+2026-05-27 23:31:34 [DEBUG] zhihu_analyst -   第 29 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:31:37 [INFO] zhihu_analyst - 抓取第 30 页
+2026-05-27 23:31:38 [DEBUG] zhihu_analyst -   第 30 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:31:40 [INFO] zhihu_analyst - 抓取第 31 页
+2026-05-27 23:31:42 [DEBUG] zhihu_analyst -   第 31 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:31:44 [INFO] zhihu_analyst - 抓取第 32 页
+2026-05-27 23:31:45 [DEBUG] zhihu_analyst -   第 32 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:31:46 [INFO] zhihu_analyst - 抓取第 33 页
+2026-05-27 23:31:47 [DEBUG] zhihu_analyst -   第 33 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:31:48 [INFO] zhihu_analyst - 抓取第 34 页
+2026-05-27 23:31:49 [DEBUG] zhihu_analyst -   第 34 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:31:51 [INFO] zhihu_analyst - 抓取第 35 页
+2026-05-27 23:31:52 [DEBUG] zhihu_analyst -   第 35 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:31:53 [INFO] zhihu_analyst - 抓取第 36 页
+2026-05-27 23:31:54 [DEBUG] zhihu_analyst -   第 36 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:31:57 [INFO] zhihu_analyst - 抓取第 37 页
+2026-05-27 23:31:58 [DEBUG] zhihu_analyst -   第 37 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:32:00 [INFO] zhihu_analyst - 抓取第 38 页
+2026-05-27 23:32:01 [DEBUG] zhihu_analyst -   第 38 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:32:04 [INFO] zhihu_analyst - 抓取第 39 页
+2026-05-27 23:32:05 [DEBUG] zhihu_analyst -   第 39 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:32:07 [INFO] zhihu_analyst - 抓取第 40 页
+2026-05-27 23:32:08 [DEBUG] zhihu_analyst -   第 40 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:32:10 [INFO] zhihu_analyst - 抓取第 41 页
+2026-05-27 23:32:11 [DEBUG] zhihu_analyst -   第 41 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:32:13 [INFO] zhihu_analyst - 抓取第 42 页
+2026-05-27 23:32:14 [DEBUG] zhihu_analyst -   第 42 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:32:15 [INFO] zhihu_analyst - 抓取第 43 页
+2026-05-27 23:32:17 [DEBUG] zhihu_analyst -   第 43 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:32:19 [INFO] zhihu_analyst - 抓取第 44 页
+2026-05-27 23:32:20 [DEBUG] zhihu_analyst -   第 44 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:32:21 [INFO] zhihu_analyst - 抓取第 45 页
+2026-05-27 23:32:23 [DEBUG] zhihu_analyst -   第 45 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:32:24 [INFO] zhihu_analyst - 抓取第 46 页
+2026-05-27 23:32:25 [DEBUG] zhihu_analyst -   第 46 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:32:26 [INFO] zhihu_analyst - 抓取第 47 页
+2026-05-27 23:32:27 [DEBUG] zhihu_analyst -   第 47 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:32:30 [INFO] zhihu_analyst - 抓取第 48 页
+2026-05-27 23:32:31 [DEBUG] zhihu_analyst -   第 48 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:32:33 [INFO] zhihu_analyst - 抓取第 49 页
+2026-05-27 23:32:34 [DEBUG] zhihu_analyst -   第 49 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:32:36 [INFO] zhihu_analyst - 抓取第 50 页
+2026-05-27 23:32:37 [DEBUG] zhihu_analyst -   第 50 页：6 条，今日 6 条，连续旧内容 0 条
+2026-05-27 23:32:39 [INFO] zhihu_analyst - 抓取完成：共处理 300 条，跳过重复 4 条，今日新内容 3 条
+2026-05-27 23:32:39 [INFO] zhihu_analyst - 分类第 1/1 批（3 条）
+2026-05-27 23:32:40 [DEBUG] zhihu_analyst - [deepseek-chat] in=540 out=7 cache_hit=0 cost=$0.00015 累计=$0.0002
+2026-05-27 23:32:40 [INFO] zhihu_analyst -   批次 1：相关 2/3 条
+2026-05-27 23:32:40 [INFO] zhihu_analyst - 分类完成：相关 2/3 条
+2026-05-27 23:32:40 [INFO] zhihu_analyst - 提取 1/2: answer_2041427963527296660
+2026-05-27 23:32:42 [DEBUG] zhihu_analyst - [deepseek-chat] in=662 out=119 cache_hit=256 cost=$0.00031 累计=$0.0005
+2026-05-27 23:32:42 [INFO] zhihu_analyst - 提取 2/2: answer_1979334317101559848
+2026-05-27 23:32:43 [DEBUG] zhihu_analyst - [deepseek-chat] in=767 out=71 cache_hit=256 cost=$0.00029 累计=$0.0007
+2026-05-27 23:32:43 [INFO] zhihu_analyst - 需综合分析的板块：2 个
+2026-05-27 23:32:43 [INFO] zhihu_analyst - 综合分析板块：金融/银行/保险（1 条信息）
+2026-05-27 23:32:46 [DEBUG] zhihu_analyst - [deepseek-chat] in=484 out=226 cache_hit=0 cost=$0.00038 累计=$0.0011
+2026-05-27 23:32:46 [INFO] zhihu_analyst - 综合分析板块：新能源/电力（1 条信息）
+2026-05-27 23:32:49 [DEBUG] zhihu_analyst - [deepseek-chat] in=439 out=185 cache_hit=0 cost=$0.00032 累计=$0.0014
+2026-05-27 23:32:49 [INFO] zhihu_analyst - 综合分析完成。API调用5次，输入2892token，输出608token，总费用约 $0.0014
+2026-05-27 23:32:49 [INFO] zhihu_analyst - 报告已保存：output\reports\report_2026-05-27.html 和 output\reports\report_2026-05-27.md
+2026-05-27 23:32:49 [INFO] zhihu_analyst - ============================================================
+2026-05-27 23:32:49 [INFO] zhihu_analyst - 执行完成！总耗时 239.2s
+2026-05-27 23:32:49 [INFO] zhihu_analyst - 抓取：3条，相关：2条
+2026-05-27 23:32:49 [INFO] zhihu_analyst - API调用5次，输入2892token，输出608token，总费用约 $0.0014
+2026-05-27 23:32:49 [INFO] zhihu_analyst - 报告：output\reports\report_2026-05-27.html
+2026-05-27 23:32:49 [INFO] zhihu_analyst - ============================================================
+2026-05-27 23:35:48 [INFO] zhihu_analyst - ============================================================
+2026-05-27 23:35:48 [INFO] zhihu_analyst - A股每日分析系统启动 (2026-05-27) [DeepSeek]
+2026-05-27 23:35:48 [INFO] zhihu_analyst - ============================================================
+2026-05-27 23:35:48 [DEBUG] zhihu_analyst - 数据库已连接：output/seen_content.db
+2026-05-27 23:35:49 [DEBUG] zhihu_analyst - xsrf token 注入成功
+2026-05-27 23:35:49 [INFO] zhihu_analyst - 验证知乎 Cookie...
+2026-05-27 23:35:49 [INFO] zhihu_analyst - Cookie 验证成功，当前用户：橙汁林
+2026-05-27 23:35:49 [INFO] zhihu_analyst - 已获取关注列表：49 人
+2026-05-27 23:35:49 [INFO] zhihu_analyst - 今日起始时间戳：1779811200 (2026-05-27 00:00)
+2026-05-27 23:35:49 [INFO] zhihu_analyst - 开始遍历 49 位关注用户的最近内容...
+2026-05-27 23:35:50 [DEBUG] zhihu_analyst - 获取用户 camp-18-2 内容失败: 410 Client Error: Gone for url: https://www.zhihu.com/api/v4/members/camp-18-2/answers?limit=5&sort_by=created
+2026-05-27 23:36:05 [INFO] zhihu_analyst -   已检查 10/49 人，收集 2 条今日内容
+2026-05-27 23:36:22 [INFO] zhihu_analyst -   已检查 20/49 人，收集 2 条今日内容
+2026-05-27 23:36:27 [DEBUG] zhihu_analyst - 获取用户 tang-xiao-yun-47 内容失败: 410 Client Error: Gone for url: https://www.zhihu.com/api/v4/members/tang-xiao-yun-47/answers?limit=5&sort_by=created
+2026-05-27 23:36:37 [INFO] zhihu_analyst -   已检查 30/49 人，收集 7 条今日内容
+2026-05-27 23:36:51 [INFO] zhihu_analyst -   已检查 40/49 人，收集 18 条今日内容
+2026-05-27 23:37:06 [INFO] zhihu_analyst - 关注用户遍历完成：共收集 21 条今日内容
+2026-05-27 23:37:06 [INFO] zhihu_analyst - 分类第 1/1 批（21 条）
+2026-05-27 23:37:08 [DEBUG] zhihu_analyst - [deepseek-chat] in=826 out=43 cache_hit=0 cost=$0.00027 累计=$0.0003
+2026-05-27 23:37:08 [INFO] zhihu_analyst -   批次 1：相关 11/21 条
+2026-05-27 23:37:08 [INFO] zhihu_analyst - 分类完成：相关 11/21 条
+2026-05-27 23:37:08 [INFO] zhihu_analyst - 提取 1/11: answer_2043102795742565817
+2026-05-27 23:37:09 [DEBUG] zhihu_analyst - [deepseek-chat] in=403 out=79 cache_hit=384 cost=$0.00020 累计=$0.0005
+2026-05-27 23:37:09 [INFO] zhihu_analyst - 提取 2/11: answer_2043033592700437606
+2026-05-27 23:37:10 [DEBUG] zhihu_analyst - [deepseek-chat] in=386 out=77 cache_hit=384 cost=$0.00019 累计=$0.0007
+2026-05-27 23:37:10 [INFO] zhihu_analyst - 提取 3/11: answer_2043018915257784110
+2026-05-27 23:37:12 [DEBUG] zhihu_analyst - [deepseek-chat] in=377 out=66 cache_hit=256 cost=$0.00017 累计=$0.0008
+2026-05-27 23:37:12 [INFO] zhihu_analyst - 提取 4/11: answer_2043001015713141974
+2026-05-27 23:37:13 [DEBUG] zhihu_analyst - [deepseek-chat] in=386 out=56 cache_hit=384 cost=$0.00017 累计=$0.0010
+2026-05-27 23:37:13 [INFO] zhihu_analyst - 提取 5/11: answer_2043021164755387434
+2026-05-27 23:37:14 [DEBUG] zhihu_analyst - [deepseek-chat] in=378 out=56 cache_hit=256 cost=$0.00016 累计=$0.0012
+2026-05-27 23:37:14 [INFO] zhihu_analyst - 提取 6/11: answer_2042986714541642081
+2026-05-27 23:37:15 [DEBUG] zhihu_analyst - [deepseek-chat] in=387 out=56 cache_hit=384 cost=$0.00017 累计=$0.0013
+2026-05-27 23:37:15 [INFO] zhihu_analyst - 提取 7/11: answer_2042925853542175581
+2026-05-27 23:37:16 [DEBUG] zhihu_analyst - [deepseek-chat] in=382 out=56 cache_hit=256 cost=$0.00016 累计=$0.0015
+2026-05-27 23:37:16 [INFO] zhihu_analyst - 提取 8/11: answer_2043043396139450818
+2026-05-27 23:37:17 [DEBUG] zhihu_analyst - [deepseek-chat] in=397 out=56 cache_hit=256 cost=$0.00017 累计=$0.0017
+2026-05-27 23:37:17 [INFO] zhihu_analyst - 提取 9/11: answer_2042982557239743521
+2026-05-27 23:37:18 [DEBUG] zhihu_analyst - [deepseek-chat] in=401 out=70 cache_hit=384 cost=$0.00019 累计=$0.0018
+2026-05-27 23:37:18 [INFO] zhihu_analyst - 提取 10/11: answer_2042873518677872756
+2026-05-27 23:37:19 [DEBUG] zhihu_analyst - [deepseek-chat] in=386 out=56 cache_hit=384 cost=$0.00017 累计=$0.0020
+2026-05-27 23:37:19 [INFO] zhihu_analyst - 提取 11/11: answer_2043065474334864775
+2026-05-27 23:37:20 [DEBUG] zhihu_analyst - [deepseek-chat] in=385 out=56 cache_hit=384 cost=$0.00017 累计=$0.0022
+2026-05-27 23:37:20 [INFO] zhihu_analyst - 需综合分析的板块：3 个
+2026-05-27 23:37:20 [INFO] zhihu_analyst - 综合分析板块：科技/半导体（1 条信息）
+2026-05-27 23:37:22 [DEBUG] zhihu_analyst - [deepseek-chat] in=440 out=188 cache_hit=384 cost=$0.00033 累计=$0.0025
+2026-05-27 23:37:22 [INFO] zhihu_analyst - 综合分析板块：消费/零售（1 条信息）
+2026-05-27 23:37:24 [DEBUG] zhihu_analyst - [deepseek-chat] in=453 out=214 cache_hit=0 cost=$0.00036 累计=$0.0029
+2026-05-27 23:37:24 [INFO] zhihu_analyst - 综合分析板块：大宗商品/周期（1 条信息）
+2026-05-27 23:37:27 [DEBUG] zhihu_analyst - [deepseek-chat] in=438 out=169 cache_hit=0 cost=$0.00030 累计=$0.0032
+2026-05-27 23:37:27 [INFO] zhihu_analyst - 综合分析完成。API调用15次，输入6425token，输出1298token，总费用约 $0.0032
+2026-05-27 23:37:27 [INFO] zhihu_analyst - 报告已保存：output\reports\report_2026-05-27.html 和 output\reports\report_2026-05-27.md
+2026-05-27 23:37:27 [INFO] zhihu_analyst - ============================================================
+2026-05-27 23:37:27 [INFO] zhihu_analyst - 执行完成！总耗时 98.2s
+2026-05-27 23:37:27 [INFO] zhihu_analyst - 抓取：21条，相关：11条
+2026-05-27 23:37:27 [INFO] zhihu_analyst - API调用15次，输入6425token，输出1298token，总费用约 $0.0032
+2026-05-27 23:37:27 [INFO] zhihu_analyst - 报告：output\reports\report_2026-05-27.html
+2026-05-27 23:37:27 [INFO] zhihu_analyst - ============================================================
+2026-05-27 23:52:54 [INFO] zhihu_analyst - ============================================================
+2026-05-27 23:52:54 [INFO] zhihu_analyst - A股每日分析系统启动 (2026-05-27) [DeepSeek]
+2026-05-27 23:52:54 [INFO] zhihu_analyst - ============================================================
+2026-05-27 23:52:54 [DEBUG] zhihu_analyst - 数据库已连接：output/seen_content.db
+2026-05-27 23:52:54 [DEBUG] zhihu_analyst - xsrf token 注入成功
+2026-05-27 23:52:54 [INFO] zhihu_analyst - 验证知乎 Cookie...
+2026-05-27 23:52:54 [INFO] zhihu_analyst - Cookie 验证成功，当前用户：橙汁林
+2026-05-27 23:52:55 [INFO] zhihu_analyst - 已获取关注列表：49 人
+2026-05-27 23:52:55 [INFO] zhihu_analyst - 今日起始时间戳：1779811200 (2026-05-27 00:00)
+2026-05-27 23:52:55 [INFO] zhihu_analyst - 开始遍历 49 位关注用户的最近内容...
+2026-05-27 23:53:14 [INFO] zhihu_analyst -   已检查 10/49 人，收集 2 条今日内容
+2026-05-27 23:53:15 [DEBUG] zhihu_analyst - 获取用户 camp-18-2 内容失败: 410 Client Error: Gone for url: https://www.zhihu.com/api/v4/members/camp-18-2/answers?limit=5&sort_by=created
+2026-05-27 23:53:31 [INFO] zhihu_analyst -   已检查 20/49 人，收集 13 条今日内容
+2026-05-27 23:53:37 [DEBUG] zhihu_analyst - 获取用户 tang-xiao-yun-47 内容失败: 410 Client Error: Gone for url: https://www.zhihu.com/api/v4/members/tang-xiao-yun-47/answers?limit=5&sort_by=created
+2026-05-27 23:53:49 [INFO] zhihu_analyst -   已检查 30/49 人，收集 31 条今日内容
+2026-05-27 23:54:10 [INFO] zhihu_analyst -   已检查 40/49 人，收集 39 条今日内容
+2026-05-27 23:54:29 [INFO] zhihu_analyst - 关注用户遍历完成：共收集 49 条今日内容
+2026-05-27 23:54:29 [INFO] zhihu_analyst - 分类第 1/2 批（25 条）
+2026-05-27 23:54:31 [DEBUG] zhihu_analyst - [deepseek-chat] in=1158 out=51 cache_hit=0 cost=$0.00037 累计=$0.0004
+2026-05-27 23:54:31 [INFO] zhihu_analyst -   批次 1：相关 15/25 条
+2026-05-27 23:54:31 [INFO] zhihu_analyst - 分类第 2/2 批（24 条）
+2026-05-27 23:54:32 [DEBUG] zhihu_analyst - [deepseek-chat] in=1670 out=49 cache_hit=0 cost=$0.00050 累计=$0.0009
+2026-05-27 23:54:32 [INFO] zhihu_analyst -   批次 2：相关 18/24 条
+2026-05-27 23:54:32 [INFO] zhihu_analyst - 分类完成：相关 33/49 条
+2026-05-27 23:54:32 [INFO] zhihu_analyst - 提取 1/33: article_2043023533685609209
+2026-05-27 23:54:33 [DEBUG] zhihu_analyst - [deepseek-chat] in=373 out=56 cache_hit=256 cost=$0.00016 累计=$0.0010
+2026-05-27 23:54:33 [INFO] zhihu_analyst - 提取 2/33: answer_2042873518677872756
+2026-05-27 23:54:34 [DEBUG] zhihu_analyst - [deepseek-chat] in=386 out=56 cache_hit=384 cost=$0.00017 累计=$0.0012
+2026-05-27 23:54:34 [INFO] zhihu_analyst - 提取 3/33: answer_2043102795742565817
+2026-05-27 23:54:35 [DEBUG] zhihu_analyst - [deepseek-chat] in=403 out=66 cache_hit=384 cost=$0.00018 累计=$0.0014
+2026-05-27 23:54:35 [INFO] zhihu_analyst - 提取 4/33: article_2042891551467116239
+2026-05-27 23:54:36 [DEBUG] zhihu_analyst - [deepseek-chat] in=378 out=62 cache_hit=256 cost=$0.00017 累计=$0.0016
+2026-05-27 23:54:36 [INFO] zhihu_analyst - 提取 5/33: pin_2042938396553872237
+2026-05-27 23:54:38 [DEBUG] zhihu_analyst - [deepseek-chat] in=571 out=78 cache_hit=256 cost=$0.00024 累计=$0.0018
+2026-05-27 23:54:38 [INFO] zhihu_analyst - 提取 6/33: pin_2042916973705704424
+2026-05-27 23:54:39 [DEBUG] zhihu_analyst - [deepseek-chat] in=864 out=70 cache_hit=256 cost=$0.00031 累计=$0.0021
+2026-05-27 23:54:39 [INFO] zhihu_analyst - 提取 7/33: answer_2043033592700437606
+2026-05-27 23:54:40 [DEBUG] zhihu_analyst - [deepseek-chat] in=386 out=77 cache_hit=384 cost=$0.00019 累计=$0.0023
+2026-05-27 23:54:40 [INFO] zhihu_analyst - 提取 8/33: answer_2043001015713141974
+2026-05-27 23:54:41 [DEBUG] zhihu_analyst - [deepseek-chat] in=386 out=56 cache_hit=384 cost=$0.00017 累计=$0.0025
+2026-05-27 23:54:41 [INFO] zhihu_analyst - 提取 9/33: answer_2042818175520305541
+2026-05-27 23:54:42 [DEBUG] zhihu_analyst - [deepseek-chat] in=397 out=70 cache_hit=384 cost=$0.00018 累计=$0.0026
+2026-05-27 23:54:42 [INFO] zhihu_analyst - 提取 10/33: answer_2042986714541642081
+2026-05-27 23:54:43 [DEBUG] zhihu_analyst - [deepseek-chat] in=387 out=56 cache_hit=384 cost=$0.00017 累计=$0.0028
+2026-05-27 23:54:43 [INFO] zhihu_analyst - 提取 11/33: answer_2042925853542175581
+2026-05-27 23:54:44 [DEBUG] zhihu_analyst - [deepseek-chat] in=382 out=56 cache_hit=256 cost=$0.00016 累计=$0.0030
+2026-05-27 23:54:44 [INFO] zhihu_analyst - 提取 12/33: answer_2043018915257784110
+2026-05-27 23:54:45 [DEBUG] zhihu_analyst - [deepseek-chat] in=377 out=66 cache_hit=256 cost=$0.00017 累计=$0.0031
+2026-05-27 23:54:45 [INFO] zhihu_analyst - 提取 13/33: pin_2043019011236034385
+2026-05-27 23:54:46 [DEBUG] zhihu_analyst - [deepseek-chat] in=446 out=94 cache_hit=256 cost=$0.00022 累计=$0.0034
+2026-05-27 23:54:46 [INFO] zhihu_analyst - 提取 14/33: article_2042712951753376992
+2026-05-27 23:54:47 [DEBUG] zhihu_analyst - [deepseek-chat] in=377 out=56 cache_hit=256 cost=$0.00016 累计=$0.0035
+2026-05-27 23:54:47 [INFO] zhihu_analyst - 提取 15/33: pin_2043051935566139679
+2026-05-27 23:54:49 [DEBUG] zhihu_analyst - [deepseek-chat] in=747 out=212 cache_hit=256 cost=$0.00043 累计=$0.0040
+2026-05-27 23:54:49 [INFO] zhihu_analyst - 提取 16/33: pin_2042985857699907555
+2026-05-27 23:54:50 [DEBUG] zhihu_analyst - [deepseek-chat] in=653 out=80 cache_hit=256 cost=$0.00026 累计=$0.0042
+2026-05-27 23:54:50 [INFO] zhihu_analyst - 提取 17/33: pin_2042925184907202969
+2026-05-27 23:54:51 [DEBUG] zhihu_analyst - [deepseek-chat] in=536 out=71 cache_hit=256 cost=$0.00022 累计=$0.0045
+2026-05-27 23:54:51 [INFO] zhihu_analyst - 提取 18/33: pin_2042880528521630095
+2026-05-27 23:54:53 [DEBUG] zhihu_analyst - [deepseek-chat] in=559 out=117 cache_hit=256 cost=$0.00028 累计=$0.0047
+2026-05-27 23:54:53 [INFO] zhihu_analyst - 提取 19/33: article_2043008822080443974
+2026-05-27 23:54:54 [DEBUG] zhihu_analyst - [deepseek-chat] in=376 out=56 cache_hit=256 cost=$0.00016 累计=$0.0049
+2026-05-27 23:54:54 [INFO] zhihu_analyst - 提取 20/33: pin_2042959862397678175
+2026-05-27 23:54:55 [DEBUG] zhihu_analyst - [deepseek-chat] in=602 out=69 cache_hit=256 cost=$0.00024 累计=$0.0051
+2026-05-27 23:54:55 [INFO] zhihu_analyst - 提取 21/33: pin_2042934205546549603
+2026-05-27 23:54:56 [DEBUG] zhihu_analyst - [deepseek-chat] in=872 out=74 cache_hit=256 cost=$0.00032 累计=$0.0055
+2026-05-27 23:54:56 [INFO] zhihu_analyst - 提取 22/33: article_2043016157784012655
+2026-05-27 23:54:57 [DEBUG] zhihu_analyst - [deepseek-chat] in=380 out=66 cache_hit=256 cost=$0.00018 累计=$0.0056
+2026-05-27 23:54:57 [INFO] zhihu_analyst - 提取 23/33: article_2042982017231583012
+2026-05-27 23:54:58 [DEBUG] zhihu_analyst - [deepseek-chat] in=376 out=56 cache_hit=256 cost=$0.00016 累计=$0.0058
+2026-05-27 23:54:58 [INFO] zhihu_analyst - 提取 24/33: answer_2043101856516281213
+2026-05-27 23:54:59 [DEBUG] zhihu_analyst - [deepseek-chat] in=392 out=75 cache_hit=384 cost=$0.00019 累计=$0.0060
+2026-05-27 23:54:59 [INFO] zhihu_analyst - 提取 25/33: answer_2042982557239743521
+2026-05-27 23:55:00 [DEBUG] zhihu_analyst - [deepseek-chat] in=401 out=70 cache_hit=384 cost=$0.00019 累计=$0.0062
+2026-05-27 23:55:00 [INFO] zhihu_analyst - 提取 26/33: pin_2042772793616491705
+2026-05-27 23:55:02 [DEBUG] zhihu_analyst - [deepseek-chat] in=401 out=67 cache_hit=256 cost=$0.00018 累计=$0.0063
+2026-05-27 23:55:02 [INFO] zhihu_analyst - 提取 27/33: pin_2042771519210776271
+2026-05-27 23:55:03 [DEBUG] zhihu_analyst - [deepseek-chat] in=403 out=76 cache_hit=256 cost=$0.00019 累计=$0.0065
+2026-05-27 23:55:03 [INFO] zhihu_analyst - 提取 28/33: pin_2042769585917646787
+2026-05-27 23:55:04 [DEBUG] zhihu_analyst - [deepseek-chat] in=451 out=66 cache_hit=256 cost=$0.00019 累计=$0.0067
+2026-05-27 23:55:04 [INFO] zhihu_analyst - 提取 29/33: answer_2043065474334864775
+2026-05-27 23:55:05 [DEBUG] zhihu_analyst - [deepseek-chat] in=385 out=56 cache_hit=384 cost=$0.00017 累计=$0.0069
+2026-05-27 23:55:05 [INFO] zhihu_analyst - 提取 30/33: pin_2042996329429848985
+2026-05-27 23:55:07 [DEBUG] zhihu_analyst - [deepseek-chat] in=708 out=76 cache_hit=256 cost=$0.00027 累计=$0.0072
+2026-05-27 23:55:07 [INFO] zhihu_analyst - 提取 31/33: pin_2042917801678067576
+2026-05-27 23:55:08 [DEBUG] zhihu_analyst - [deepseek-chat] in=451 out=73 cache_hit=256 cost=$0.00020 累计=$0.0074
+2026-05-27 23:55:08 [INFO] zhihu_analyst - 提取 32/33: pin_2042911454685287438
+2026-05-27 23:55:09 [DEBUG] zhihu_analyst - [deepseek-chat] in=394 out=56 cache_hit=256 cost=$0.00017 累计=$0.0075
+2026-05-27 23:55:09 [INFO] zhihu_analyst - 提取 33/33: pin_2042908899012039213
+2026-05-27 23:55:10 [DEBUG] zhihu_analyst - [deepseek-chat] in=514 out=79 cache_hit=256 cost=$0.00023 累计=$0.0078
+2026-05-27 23:55:10 [INFO] zhihu_analyst - 需综合分析的板块：5 个
+2026-05-27 23:55:10 [INFO] zhihu_analyst - 综合分析板块：科技/半导体（6 条信息）
+2026-05-27 23:55:14 [DEBUG] zhihu_analyst - [deepseek-chat] in=850 out=352 cache_hit=0 cost=$0.00062 累计=$0.0084
+2026-05-27 23:55:14 [INFO] zhihu_analyst - 综合分析板块：消费/零售（4 条信息）
+2026-05-27 23:55:18 [DEBUG] zhihu_analyst - [deepseek-chat] in=715 out=360 cache_hit=0 cost=$0.00059 累计=$0.0090
+2026-05-27 23:55:18 [INFO] zhihu_analyst - 综合分析板块：新能源/电力（5 条信息）
+2026-05-27 23:55:21 [DEBUG] zhihu_analyst - [deepseek-chat] in=748 out=329 cache_hit=0 cost=$0.00056 累计=$0.0095
+2026-05-27 23:55:21 [INFO] zhihu_analyst - 综合分析板块：军工/国防（1 条信息）
+2026-05-27 23:55:24 [DEBUG] zhihu_analyst - [deepseek-chat] in=527 out=261 cache_hit=0 cost=$0.00043 累计=$0.0100
+2026-05-27 23:55:24 [INFO] zhihu_analyst - 综合分析板块：大宗商品/周期（4 条信息）
+2026-05-27 23:55:28 [DEBUG] zhihu_analyst - [deepseek-chat] in=615 out=340 cache_hit=0 cost=$0.00054 累计=$0.0105
+2026-05-27 23:55:28 [INFO] zhihu_analyst - 综合分析完成。API调用40次，输入21997token，输出4156token，总费用约 $0.0105
+2026-05-27 23:55:28 [INFO] zhihu_analyst - 报告已保存：output\reports\report_2026-05-27.html 和 output\reports\report_2026-05-27.md
+2026-05-27 23:55:28 [INFO] zhihu_analyst - ============================================================
+2026-05-27 23:55:28 [INFO] zhihu_analyst - 执行完成！总耗时 154.1s
+2026-05-27 23:55:28 [INFO] zhihu_analyst - 抓取：49条，相关：33条
+2026-05-27 23:55:28 [INFO] zhihu_analyst - API调用40次，输入21997token，输出4156token，总费用约 $0.0105
+2026-05-27 23:55:28 [INFO] zhihu_analyst - 报告：output\reports\report_2026-05-27.html
+2026-05-27 23:55:28 [INFO] zhihu_analyst - ============================================================

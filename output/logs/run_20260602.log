@@ -1,0 +1,185 @@
+2026-06-02 01:17:11 [INFO] zhihu_analyst - ============================================================
+2026-06-02 01:17:11 [INFO] zhihu_analyst - A股每日分析启动 (2026-06-01) [DeepSeek]
+2026-06-02 01:17:11 [INFO] zhihu_analyst - ============================================================
+2026-06-02 01:17:11 [DEBUG] zhihu_analyst - 数据库已连接：output/seen_content.db
+2026-06-02 01:17:12 [DEBUG] zhihu_analyst - xsrf token 注入成功
+2026-06-02 01:17:12 [INFO] zhihu_analyst - Verifying Zhihu Cookie...
+2026-06-02 01:17:12 [INFO] zhihu_analyst - Cookie 验证成功，当前用户：橙汁林
+2026-06-02 01:17:12 [INFO] zhihu_analyst - 已获取关注列表：49 人
+2026-06-02 01:17:12 [INFO] zhihu_analyst - 今日起始时间戳：1780243200 (2026-06-01 00:00)
+2026-06-02 01:17:12 [INFO] zhihu_analyst - 抓取第 1 页
+2026-06-02 01:17:13 [DEBUG] zhihu_analyst -   第 1 页：6 条，今日 6 条，连续旧内容 0 条
+2026-06-02 01:17:16 [INFO] zhihu_analyst - 抓取第 2 页
+2026-06-02 01:17:17 [DEBUG] zhihu_analyst -   第 2 页：6 条，今日 6 条，连续旧内容 0 条
+2026-06-02 01:17:19 [INFO] zhihu_analyst - 抓取第 3 页
+2026-06-02 01:17:20 [DEBUG] zhihu_analyst -   第 3 页：6 条，今日 6 条，连续旧内容 0 条
+2026-06-02 01:17:22 [INFO] zhihu_analyst - 抓取第 4 页
+2026-06-02 01:17:24 [DEBUG] zhihu_analyst -   第 4 页：6 条，今日 6 条，连续旧内容 0 条
+2026-06-02 01:17:25 [INFO] zhihu_analyst - 抓取第 5 页
+2026-06-02 01:17:26 [DEBUG] zhihu_analyst -   第 5 页：6 条，今日 6 条，连续旧内容 0 条
+2026-06-02 01:17:28 [INFO] zhihu_analyst - 抓取第 6 页
+2026-06-02 01:17:29 [DEBUG] zhihu_analyst -   第 6 页：6 条，今日 6 条，连续旧内容 0 条
+2026-06-02 01:17:31 [INFO] zhihu_analyst - 抓取第 7 页
+2026-06-02 01:17:32 [DEBUG] zhihu_analyst -   第 7 页：6 条，今日 6 条，连续旧内容 0 条
+2026-06-02 01:17:34 [INFO] zhihu_analyst - 抓取第 8 页
+2026-06-02 01:17:36 [DEBUG] zhihu_analyst -   第 8 页：6 条，今日 6 条，连续旧内容 0 条
+2026-06-02 01:17:37 [INFO] zhihu_analyst - 抓取第 9 页
+2026-06-02 01:17:38 [DEBUG] zhihu_analyst -   第 9 页：6 条，今日 6 条，连续旧内容 0 条
+2026-06-02 01:17:40 [INFO] zhihu_analyst - 抓取第 10 页
+2026-06-02 01:17:41 [DEBUG] zhihu_analyst -   第 10 页：6 条，今日 6 条，连续旧内容 0 条
+2026-06-02 01:17:42 [INFO] zhihu_analyst - 抓取第 11 页
+2026-06-02 01:17:43 [DEBUG] zhihu_analyst -   第 11 页：6 条，今日 6 条，连续旧内容 0 条
+2026-06-02 01:17:46 [INFO] zhihu_analyst - 抓取第 12 页
+2026-06-02 01:17:47 [DEBUG] zhihu_analyst -   第 12 页：6 条，今日 6 条，连续旧内容 0 条
+2026-06-02 01:17:50 [INFO] zhihu_analyst - 抓取第 13 页
+2026-06-02 01:17:51 [DEBUG] zhihu_analyst -   第 13 页：6 条，今日 6 条，连续旧内容 0 条
+2026-06-02 01:17:53 [INFO] zhihu_analyst - 抓取第 14 页
+2026-06-02 01:17:54 [DEBUG] zhihu_analyst -   第 14 页：6 条，今日 6 条，连续旧内容 0 条
+2026-06-02 01:17:56 [INFO] zhihu_analyst - 抓取第 15 页
+2026-06-02 01:17:57 [DEBUG] zhihu_analyst -   第 15 页：6 条，今日 6 条，连续旧内容 0 条
+2026-06-02 01:17:59 [INFO] zhihu_analyst - 抓取第 16 页
+2026-06-02 01:18:00 [DEBUG] zhihu_analyst -   第 16 页：6 条，今日 6 条，连续旧内容 0 条
+2026-06-02 01:18:02 [INFO] zhihu_analyst - 抓取第 17 页
+2026-06-02 01:18:03 [DEBUG] zhihu_analyst -   第 17 页：6 条，今日 6 条，连续旧内容 0 条
+2026-06-02 01:18:05 [INFO] zhihu_analyst - 抓取第 18 页
+2026-06-02 01:18:06 [DEBUG] zhihu_analyst -   第 18 页：6 条，今日 6 条，连续旧内容 0 条
+2026-06-02 01:18:08 [INFO] zhihu_analyst - 抓取第 19 页
+2026-06-02 01:18:09 [DEBUG] zhihu_analyst -   第 19 页：6 条，今日 6 条，连续旧内容 0 条
+2026-06-02 01:18:11 [INFO] zhihu_analyst - 抓取第 20 页
+2026-06-02 01:18:12 [DEBUG] zhihu_analyst -   第 20 页：6 条，今日 6 条，连续旧内容 0 条
+2026-06-02 01:18:14 [INFO] zhihu_analyst - 抓取第 21 页
+2026-06-02 01:18:15 [DEBUG] zhihu_analyst -   第 21 页：6 条，今日 6 条，连续旧内容 0 条
+2026-06-02 01:18:17 [INFO] zhihu_analyst - 抓取第 22 页
+2026-06-02 01:18:18 [DEBUG] zhihu_analyst -   第 22 页：6 条，今日 6 条，连续旧内容 0 条
+2026-06-02 01:18:20 [INFO] zhihu_analyst - 抓取第 23 页
+2026-06-02 01:18:21 [DEBUG] zhihu_analyst -   第 23 页：6 条，今日 6 条，连续旧内容 0 条
+2026-06-02 01:18:22 [INFO] zhihu_analyst - 抓取第 24 页
+2026-06-02 01:18:23 [DEBUG] zhihu_analyst -   第 24 页：6 条，今日 6 条，连续旧内容 0 条
+2026-06-02 01:18:24 [INFO] zhihu_analyst - 抓取第 25 页
+2026-06-02 01:18:25 [DEBUG] zhihu_analyst -   第 25 页：6 条，今日 6 条，连续旧内容 0 条
+2026-06-02 01:18:26 [INFO] zhihu_analyst - 抓取第 26 页
+2026-06-02 01:18:27 [DEBUG] zhihu_analyst -   第 26 页：6 条，今日 6 条，连续旧内容 0 条
+2026-06-02 01:18:29 [INFO] zhihu_analyst - 抓取第 27 页
+2026-06-02 01:18:30 [DEBUG] zhihu_analyst -   第 27 页：6 条，今日 6 条，连续旧内容 0 条
+2026-06-02 01:18:32 [INFO] zhihu_analyst - 抓取第 28 页
+2026-06-02 01:18:33 [DEBUG] zhihu_analyst -   第 28 页：6 条，今日 6 条，连续旧内容 0 条
+2026-06-02 01:18:34 [INFO] zhihu_analyst - 抓取第 29 页
+2026-06-02 01:18:36 [DEBUG] zhihu_analyst -   第 29 页：6 条，今日 6 条，连续旧内容 0 条
+2026-06-02 01:18:37 [INFO] zhihu_analyst - 抓取第 30 页
+2026-06-02 01:18:38 [DEBUG] zhihu_analyst -   第 30 页：6 条，今日 6 条，连续旧内容 0 条
+2026-06-02 01:18:40 [INFO] zhihu_analyst - 抓取第 31 页
+2026-06-02 01:18:42 [DEBUG] zhihu_analyst -   第 31 页：6 条，今日 6 条，连续旧内容 0 条
+2026-06-02 01:18:44 [INFO] zhihu_analyst - 抓取第 32 页
+2026-06-02 01:18:45 [DEBUG] zhihu_analyst -   第 32 页：6 条，今日 6 条，连续旧内容 0 条
+2026-06-02 01:18:47 [INFO] zhihu_analyst - 抓取第 33 页
+2026-06-02 01:18:48 [DEBUG] zhihu_analyst -   第 33 页：6 条，今日 6 条，连续旧内容 0 条
+2026-06-02 01:18:51 [INFO] zhihu_analyst - 抓取第 34 页
+2026-06-02 01:18:52 [DEBUG] zhihu_analyst -   第 34 页：6 条，今日 6 条，连续旧内容 0 条
+2026-06-02 01:18:53 [INFO] zhihu_analyst - 抓取第 35 页
+2026-06-02 01:18:54 [DEBUG] zhihu_analyst -   第 35 页：6 条，今日 6 条，连续旧内容 0 条
+2026-06-02 01:18:56 [INFO] zhihu_analyst - 抓取第 36 页
+2026-06-02 01:18:57 [DEBUG] zhihu_analyst -   第 36 页：6 条，今日 6 条，连续旧内容 0 条
+2026-06-02 01:18:58 [INFO] zhihu_analyst - 抓取第 37 页
+2026-06-02 01:18:59 [DEBUG] zhihu_analyst -   第 37 页：6 条，今日 6 条，连续旧内容 0 条
+2026-06-02 01:19:01 [INFO] zhihu_analyst - 抓取第 38 页
+2026-06-02 01:19:02 [DEBUG] zhihu_analyst -   第 38 页：6 条，今日 6 条，连续旧内容 0 条
+2026-06-02 01:19:04 [INFO] zhihu_analyst - 抓取第 39 页
+2026-06-02 01:19:06 [DEBUG] zhihu_analyst -   第 39 页：6 条，今日 6 条，连续旧内容 0 条
+2026-06-02 01:19:07 [INFO] zhihu_analyst - 抓取第 40 页
+2026-06-02 01:19:08 [DEBUG] zhihu_analyst -   第 40 页：6 条，今日 6 条，连续旧内容 0 条
+2026-06-02 01:19:09 [INFO] zhihu_analyst - 抓取第 41 页
+2026-06-02 01:19:10 [DEBUG] zhihu_analyst -   第 41 页：6 条，今日 6 条，连续旧内容 0 条
+2026-06-02 01:19:12 [INFO] zhihu_analyst - 抓取第 42 页
+2026-06-02 01:19:13 [DEBUG] zhihu_analyst -   第 42 页：6 条，今日 6 条，连续旧内容 0 条
+2026-06-02 01:19:15 [INFO] zhihu_analyst - 抓取第 43 页
+2026-06-02 01:19:16 [DEBUG] zhihu_analyst -   第 43 页：6 条，今日 6 条，连续旧内容 0 条
+2026-06-02 01:19:17 [INFO] zhihu_analyst - 抓取第 44 页
+2026-06-02 01:19:19 [DEBUG] zhihu_analyst -   第 44 页：6 条，今日 6 条，连续旧内容 0 条
+2026-06-02 01:19:21 [INFO] zhihu_analyst - 抓取第 45 页
+2026-06-02 01:19:22 [DEBUG] zhihu_analyst -   第 45 页：6 条，今日 6 条，连续旧内容 0 条
+2026-06-02 01:19:24 [INFO] zhihu_analyst - 抓取第 46 页
+2026-06-02 01:19:25 [DEBUG] zhihu_analyst -   第 46 页：6 条，今日 6 条，连续旧内容 0 条
+2026-06-02 01:19:27 [INFO] zhihu_analyst - 抓取第 47 页
+2026-06-02 01:19:28 [DEBUG] zhihu_analyst -   第 47 页：6 条，今日 6 条，连续旧内容 0 条
+2026-06-02 01:19:29 [INFO] zhihu_analyst - 抓取第 48 页
+2026-06-02 01:19:30 [DEBUG] zhihu_analyst -   第 48 页：6 条，今日 6 条，连续旧内容 0 条
+2026-06-02 01:19:32 [INFO] zhihu_analyst - 抓取第 49 页
+2026-06-02 01:19:33 [DEBUG] zhihu_analyst -   第 49 页：6 条，今日 6 条，连续旧内容 0 条
+2026-06-02 01:19:36 [INFO] zhihu_analyst - 抓取第 50 页
+2026-06-02 01:19:37 [DEBUG] zhihu_analyst -   第 50 页：6 条，今日 6 条，连续旧内容 0 条
+2026-06-02 01:19:39 [INFO] zhihu_analyst - 抓取完成：共处理 300 条，跳过重复 1 条，今日新内容 14 条
+2026-06-02 01:19:39 [INFO] zhihu_analyst - 开始遍历 49 位关注用户的回答和想法...
+2026-06-02 01:19:44 [DEBUG] zhihu_analyst - 获取用户 tang-xiao-yun-47 内容失败: 410 Client Error: Gone for url: https://www.zhihu.com/api/v4/members/tang-xiao-yun-47/answers?limit=5&sort_by=created
+2026-06-02 01:19:50 [INFO] zhihu_analyst -   已检查 10/49 人，收集 2 条今日内容
+2026-06-02 01:20:04 [INFO] zhihu_analyst -   已检查 20/49 人，收集 7 条今日内容
+2026-06-02 01:20:18 [INFO] zhihu_analyst -   已检查 30/49 人，收集 12 条今日内容
+2026-06-02 01:20:18 [DEBUG] zhihu_analyst - 获取用户 camp-18-2 内容失败: 410 Client Error: Gone for url: https://www.zhihu.com/api/v4/members/camp-18-2/answers?limit=5&sort_by=created
+2026-06-02 01:20:32 [INFO] zhihu_analyst -   已检查 40/49 人，收集 15 条今日内容
+2026-06-02 01:20:46 [INFO] zhihu_analyst - 关注用户遍历完成：共收集 30 条今日内容
+2026-06-02 01:20:46 [INFO] zhihu_analyst - 合并结果：topstory 14 + followee 30 → 37 条
+2026-06-02 01:20:46 [INFO] zhihu_analyst - 分类第 1/2 批（25 条）
+2026-06-02 01:20:47 [DEBUG] zhihu_analyst - [deepseek-chat] in=2679 out=51 cache_hit=0 cost=$0.00078 累计=$0.0008
+2026-06-02 01:20:47 [INFO] zhihu_analyst -   批次 1：相关 16/25 条
+2026-06-02 01:20:47 [INFO] zhihu_analyst - 分类第 2/2 批（12 条）
+2026-06-02 01:20:48 [DEBUG] zhihu_analyst - [deepseek-chat] in=1150 out=25 cache_hit=0 cost=$0.00034 累计=$0.0011
+2026-06-02 01:20:48 [INFO] zhihu_analyst -   批次 2：相关 10/12 条
+2026-06-02 01:20:48 [INFO] zhihu_analyst - Classify: 26/37 relevant
+2026-06-02 01:20:48 [INFO] zhihu_analyst - 总结 1/26: [回答] 如何评价2026年6月1日A股行情? by 水又三人禾
+2026-06-02 01:20:53 [DEBUG] zhihu_analyst - [deepseek-chat] in=515 out=436 cache_hit=0 cost=$0.00062 累计=$0.0017
+2026-06-02 01:20:53 [INFO] zhihu_analyst - 总结 2/26: [回答] 怎么看待2026年6月2日A股行情？ by 派大星皮皮
+2026-06-02 01:20:57 [DEBUG] zhihu_analyst - [deepseek-chat] in=550 out=314 cache_hit=0 cost=$0.00049 累计=$0.0022
+2026-06-02 01:20:57 [INFO] zhihu_analyst - 总结 3/26: [回答] 如何看待2026年6月2号的A股行情？ by 羊村里最快的羊
+2026-06-02 01:21:04 [DEBUG] zhihu_analyst - [deepseek-chat] in=611 out=852 cache_hit=0 cost=$0.00110 累计=$0.0033
+2026-06-02 01:21:04 [INFO] zhihu_analyst - 总结 4/26: [回答] 2026年黄金价格突破1500的可能性有多大？ by 剑锋无尘
+2026-06-02 01:21:11 [DEBUG] zhihu_analyst - [deepseek-chat] in=558 out=784 cache_hit=0 cost=$0.00101 累计=$0.0043
+2026-06-02 01:21:11 [INFO] zhihu_analyst - 总结 5/26: [回答] 支付宝买标普和纳斯达克靠谱吗？ by 羊村里最快的羊
+2026-06-02 01:21:16 [DEBUG] zhihu_analyst - [deepseek-chat] in=244 out=540 cache_hit=0 cost=$0.00066 累计=$0.0050
+2026-06-02 01:21:16 [INFO] zhihu_analyst - 总结 6/26: [文章] 2026.6.1 复盘 by 向阳
+2026-06-02 01:21:21 [DEBUG] zhihu_analyst - [deepseek-chat] in=530 out=586 cache_hit=0 cost=$0.00079 累计=$0.0058
+2026-06-02 01:21:21 [INFO] zhihu_analyst - 总结 7/26: [回答] 为什么伊斯兰没有发展出属于自己的“新教”，或者说由此延伸的所 by 波动率就是趋势
+2026-06-02 01:21:28 [DEBUG] zhihu_analyst - [deepseek-chat] in=371 out=516 cache_hit=0 cost=$0.00067 累计=$0.0065
+2026-06-02 01:21:28 [INFO] zhihu_analyst - 总结 8/26: [回答] 隆基绿能2025年净亏64亿，高瓴清仓，光伏行业何时能迎来反 by 柯里昂的胡子
+2026-06-02 01:21:36 [DEBUG] zhihu_analyst - [deepseek-chat] in=503 out=752 cache_hit=0 cost=$0.00096 累计=$0.0074
+2026-06-02 01:21:36 [INFO] zhihu_analyst - 总结 9/26: [回答] 老虎、富途、长桥非法跨境展业被罚，富途等券商有多少业务依赖内 by 乘海生
+2026-06-02 01:21:42 [DEBUG] zhihu_analyst - [deepseek-chat] in=329 out=661 cache_hit=256 cost=$0.00082 累计=$0.0082
+2026-06-02 01:21:42 [INFO] zhihu_analyst - 总结 10/26: [想法] 马后炮聊一下，因为之前一直在新高，如果… by 向阳
+2026-06-02 01:21:48 [DEBUG] zhihu_analyst - [deepseek-chat] in=290 out=440 cache_hit=0 cost=$0.00056 累计=$0.0088
+2026-06-02 01:21:48 [INFO] zhihu_analyst - 总结 11/26: [想法] 发现大家对锂矿比较感兴趣，我说一下我个… by 向阳
+2026-06-02 01:21:52 [DEBUG] zhihu_analyst - [deepseek-chat] in=290 out=469 cache_hit=0 cost=$0.00059 累计=$0.0094
+2026-06-02 01:21:52 [INFO] zhihu_analyst - 总结 12/26: [想法] 1.科技极限缩圈，今天还是选择了前排补跌… by 向阳
+2026-06-02 01:21:57 [DEBUG] zhihu_analyst - [deepseek-chat] in=576 out=495 cache_hit=0 cost=$0.00070 累计=$0.0101
+2026-06-02 01:21:57 [INFO] zhihu_analyst - 总结 13/26: [回答] 对2026年6月1日A股市场行情，大家有什么看法？ by MR Dang
+2026-06-02 01:22:04 [DEBUG] zhihu_analyst - [deepseek-chat] in=531 out=723 cache_hit=0 cost=$0.00094 累计=$0.0110
+2026-06-02 01:22:04 [INFO] zhihu_analyst - 总结 14/26: [想法] 1. 今天红利大涨，防御的味道很浓 by 派大星皮皮
+2026-06-02 01:22:11 [DEBUG] zhihu_analyst - [deepseek-chat] in=199 out=569 cache_hit=0 cost=$0.00068 累计=$0.0117
+2026-06-02 01:22:11 [INFO] zhihu_analyst - 总结 15/26: [想法] 1. 最强的方向陆续开始补跌了 by 派大星皮皮
+2026-06-02 01:22:15 [DEBUG] zhihu_analyst - [deepseek-chat] in=232 out=354 cache_hit=0 cost=$0.00045 累计=$0.0122
+2026-06-02 01:22:15 [INFO] zhihu_analyst - 总结 16/26: [想法] 开盘买了一笔电力etf by 派大星皮皮
+2026-06-02 01:22:18 [DEBUG] zhihu_analyst - [deepseek-chat] in=74 out=214 cache_hit=0 cost=$0.00026 累计=$0.0124
+2026-06-02 01:22:18 [INFO] zhihu_analyst - 总结 17/26: [回答] 是不是到了一定年龄，挣钱就成为最重要的事了？ by 刮走
+2026-06-02 01:22:23 [DEBUG] zhihu_analyst - [deepseek-chat] in=413 out=406 cache_hit=0 cost=$0.00056 累计=$0.0130
+2026-06-02 01:22:23 [INFO] zhihu_analyst - 总结 18/26: [想法] 紫阳东路老师今天忍痛割肉了云南锗业了，… by 羊村里最快的羊
+2026-06-02 01:22:28 [DEBUG] zhihu_analyst - [deepseek-chat] in=269 out=445 cache_hit=0 cost=$0.00056 累计=$0.0135
+2026-06-02 01:22:28 [INFO] zhihu_analyst - 总结 19/26: [想法] 6月1日复盘连扳热点：4连板：合锻智能，… by 羊村里最快的羊
+2026-06-02 01:22:35 [DEBUG] zhihu_analyst - [deepseek-chat] in=404 out=776 cache_hit=0 cost=$0.00096 累计=$0.0145
+2026-06-02 01:22:35 [INFO] zhihu_analyst - 总结 20/26: [想法] 美股和韩股市场真差 by 羊村里最快的羊
+2026-06-02 01:22:37 [DEBUG] zhihu_analyst - [deepseek-chat] in=184 out=224 cache_hit=0 cost=$0.00030 累计=$0.0148
+2026-06-02 01:22:37 [INFO] zhihu_analyst - 总结 21/26: [想法] 这些人还是太会玩，周五盘中不发，周末才… by 羊村里最快的羊
+2026-06-02 01:22:41 [DEBUG] zhihu_analyst - [deepseek-chat] in=188 out=238 cache_hit=0 cost=$0.00031 累计=$0.0151
+2026-06-02 01:22:41 [INFO] zhihu_analyst - 总结 22/26: [想法] 高位批量减持和增发就是牛市末期的特征，… by 死月半月半
+2026-06-02 01:22:43 [DEBUG] zhihu_analyst - [deepseek-chat] in=72 out=126 cache_hit=0 cost=$0.00016 累计=$0.0153
+2026-06-02 01:22:43 [INFO] zhihu_analyst - 总结 23/26: [想法] 不去回答问题，是希望粉丝少一点，不要增… by 死月半月半
+2026-06-02 01:22:49 [DEBUG] zhihu_analyst - [deepseek-chat] in=172 out=505 cache_hit=0 cost=$0.00060 累计=$0.0159
+2026-06-02 01:22:49 [INFO] zhihu_analyst - 总结 24/26: [想法] 我被屏蔽了？ by 死月半月半
+2026-06-02 01:22:51 [DEBUG] zhihu_analyst - [deepseek-chat] in=45 out=145 cache_hit=0 cost=$0.00017 累计=$0.0160
+2026-06-02 01:22:51 [INFO] zhihu_analyst - 总结 25/26: [想法] 结合利率、政策、基本面、重要事件，对20… by 剑锋无尘
+2026-06-02 01:23:03 [DEBUG] zhihu_analyst - [deepseek-chat] in=85 out=1024 cache_hit=0 cost=$0.00115 累计=$0.0172
+2026-06-02 01:23:03 [INFO] zhihu_analyst - 总结 26/26: [想法] 老登就安全了吗？还有几个巨型IPO，根据5… by forward
+2026-06-02 01:23:06 [DEBUG] zhihu_analyst - [deepseek-chat] in=82 out=312 cache_hit=0 cost=$0.00037 累计=$0.0176
+2026-06-02 01:23:06 [INFO] zhihu_analyst - 逐篇总结完成：26 篇
+2026-06-02 01:23:06 [INFO] zhihu_analyst - Summary: 24039 chars
+2026-06-02 01:23:06 [INFO] zhihu_analyst - Reports saved: output\reports\report_2026-06-01.html, output\reports\report_2026-06-01.md
+2026-06-02 01:23:08 [INFO] zhihu_analyst - 报告邮件已发送至：['799356840@qq.com']
+2026-06-02 01:23:08 [INFO] zhihu_analyst - Email sent
+2026-06-02 01:23:08 [INFO] zhihu_analyst - Done in 356.5s | API调用28次，输入12146token，输出12982token，总费用约 $0.0176
+2026-06-02 01:23:08 [INFO] zhihu_analyst - Report: output\reports\report_2026-06-01.html

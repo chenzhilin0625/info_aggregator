@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A股每日分析报告 - 2026-05-27</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: "Microsoft YaHei", "PingFang SC", "Helvetica Neue", Arial, sans-serif;
+    font-size: 14px; line-height: 1.6; color: #333; background: #f5f5f5;
+    max-width: 960px; margin: 0 auto; padding: 16px;
+  }
+  a { color: #1565c0; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .header {
+    background: linear-gradient(135deg, #1a237e 0%, #283593 100%);
+    color: white; padding: 24px 28px; border-radius: 8px 8px 0 0; margin-bottom: 2px;
+  }
+  .header h1 { font-size: 22px; font-weight: 700; margin-bottom: 8px; }
+  .header .meta { font-size: 12px; opacity: 0.85; }
+  .header .meta span { margin-right: 16px; }
+  .card {
+    background: white; border-radius: 6px; padding: 20px 24px;
+    margin-bottom: 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  }
+  .card h2 { font-size: 16px; color: #1a237e; border-bottom: 2px solid #e8eaf6; padding-bottom: 8px; margin-bottom: 14px; }
+  .summary-card {
+    background: linear-gradient(135deg, #e8f5e9 0%, #f1f8e9 100%);
+    border-left: 4px solid #4caf50;
+  }
+  .summary-item { margin: 6px 0; }
+  .summary-item strong { color: #2e7d32; }
+  .sector-pills { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+  .pill { padding: 3px 10px; border-radius: 12px; font-size: 12px; font-weight: 600; }
+  .pill-bullish { background: #ffcdd2; color: #c62828; }
+  .pill-bearish { background: #e8f5e9; color: #2e7d32; }
+  .pill-neutral { background: #e3f2fd; color: #1565c0; }
+  .pill-top { background: #e8eaf6; color: #1a237e; }
+  .policy-item {
+    border-left: 3px solid #1976d2; padding: 8px 12px; margin: 8px 0;
+    background: #f8f9ff; border-radius: 0 4px 4px 0;
+  }
+  .policy-title { font-weight: 600; color: #1565c0; }
+  .policy-meta { font-size: 12px; color: #666; margin-top: 4px; }
+  .sector-card {
+    border: 1px solid #e0e0e0; border-radius: 6px; margin-bottom: 12px; overflow: hidden;
+  }
+  .sector-header {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 12px 16px; background: #f5f5f5; border-bottom: 1px solid #e0e0e0;
+  }
+  .sector-name { font-weight: 700; font-size: 15px; }
+  .sector-meta { display: flex; gap: 12px; align-items: center; font-size: 12px; color: #666; }
+  .sector-body { padding: 14px 16px; }
+  .badge { display: inline-block; padding: 2px 9px; border-radius: 10px; font-size: 12px; font-weight: 600; }
+  .badge-strong_bullish { background: #ffcdd2; color: #b71c1c; }
+  .badge-bullish        { background: #ffe0e0; color: #c62828; }
+  .badge-neutral        { background: #f5f5f5; color: #616161; }
+  .badge-bearish        { background: #e8f5e9; color: #2e7d32; }
+  .badge-strong_bearish { background: #c8e6c9; color: #1b5e20; }
+  .advice-row { display: flex; flex-wrap: wrap; gap: 8px; margin: 10px 0; }
+  .advice-tag { padding: 4px 12px; border-radius: 4px; font-size: 13px; font-weight: 700; }
+  .advice-buy    { background: #fff3e0; color: #e65100; border: 1px solid #ff9800; }
+  .advice-watch  { background: #fffde7; color: #f57f17; border: 1px solid #ffc107; }
+  .advice-neutral{ background: #e3f2fd; color: #1565c0; border: 1px solid #42a5f5; }
+  .advice-sell   { background: #fce4ec; color: #880e4f; border: 1px solid #e91e63; }
+  .advice-avoid  { background: #e8f5e9; color: #1b5e20; border: 1px solid #4caf50; }
+  .factors-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 10px 0;
+  }
+  @media (max-width: 600px) { .factors-grid { grid-template-columns: 1fr; } }
+  .factors-col h4 { font-size: 13px; margin-bottom: 6px; }
+  .factors-col ul { padding-left: 16px; }
+  .factors-col li { font-size: 13px; margin-bottom: 3px; }
+  .bull-col h4 { color: #c62828; }
+  .bear-col h4 { color: #2e7d32; }
+  .risk-warning { color: #e65100; font-size: 13px; margin-top: 6px; }
+  .stocks { font-size: 13px; margin-top: 6px; }
+  .stock-tag {
+    display: inline-block; background: #e8eaf6; color: #283593;
+    padding: 2px 8px; border-radius: 4px; font-size: 12px; margin: 2px;
+  }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  th, td { padding: 8px 12px; border: 1px solid #e0e0e0; text-align: left; }
+  th { background: #f5f5f5; font-weight: 600; color: #424242; }
+  tr:nth-child(even) { background: #fafafa; }
+  .source-item { padding: 5px 0; border-bottom: 1px solid #f0f0f0; font-size: 13px; }
+  .source-item:last-child { border-bottom: none; }
+  .source-meta { font-size: 11px; color: #9e9e9e; margin-top: 2px; }
+  .footer {
+    text-align: center; padding: 16px; color: #9e9e9e; font-size: 12px;
+    border-top: 1px solid #e0e0e0; margin-top: 8px;
+  }
+  .score-bar {
+    display: inline-block; height: 6px; border-radius: 3px;
+    background: #e8eaf6; width: 60px; vertical-align: middle; overflow: hidden;
+  }
+  .score-fill {
+    position: absolute; left: 0; top: 0; height: 100%;
+    background: #3f51b5; border-radius: 3px;
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>A股每日分析报告</h1>
+  <div class="meta">
+    <span>2026-05-27</span>
+    <span>抓取 49 条</span>
+    <span>相关 33 条</span>
+    <span>耗时 154s</span>
+    <span>API费用 $0.0105</span>
+  </div>
+</div>
+
+<div class="card summary-card">
+  <h2>执行摘要</h2>
+  
+  <div class="summary-item">
+    <strong>今日重点板块：</strong>
+    <div class="sector-pills">
+      
+      <span class="pill pill-top">科技/半导体</span>
+      
+      <span class="pill pill-top">新能源/电力</span>
+      
+      <span class="pill pill-top">军工/国防</span>
+      
+    </div>
+  </div>
+  
+  
+  <div class="summary-item" style="margin-top:10px">
+    <strong>利多板块：</strong>
+    <div class="sector-pills">
+      
+      <span class="pill pill-bullish">科技/半导体</span>
+      
+      <span class="pill pill-bullish">新能源/电力</span>
+      
+      <span class="pill pill-bullish">军工/国防</span>
+      
+    </div>
+  </div>
+  
+  
+  
+</div>
+
+
+<div class="card">
+  <h2>宏观政策与时政</h2>
+  
+  <div class="policy-item">
+    <div class="policy-title">央企疏解至雄安新区政策推进</div>
+    
+    <div class="policy-meta">
+      来源：<a href="https://www.zhihu.com/question/2034972409263018808/answer/2043033592700437606">唯唯诺诺的梦</a>
+      · 2026-05-27 18:19
+      · 置信度：50%
+    </div>
+  </div>
+  
+  <div class="policy-item">
+    <div class="policy-title">监管层释放降温信号</div>
+    
+    <div class="policy-meta">
+      来源：<a href="/pins/2042996329429848985">派大星皮皮</a>
+      · 2026-05-27 16:01
+      · 置信度：60%
+    </div>
+  </div>
+  
+</div>
+
+
+<div class="card">
+  <h2>板块分析与操作建议</h2>
+  
+  
+  <div class="sector-card">
+    <div class="sector-header">
+      <div>
+        <span class="sector-name">科技/半导体</span>
+        <span class="badge badge-bullish" style="margin-left:8px">
+          看多 📈
+        </span>
+      </div>
+      <div class="sector-meta">
+        <span>
+          相关度
+          <span class="score-bar"><span class="score-fill" style="width:80%"></span></span>
+          8/10
+        </span>
+        <span>6条信息</span>
+      </div>
+    </div>
+    
+    <div class="sector-body">
+      
+      <div class="factors-grid">
+        <div class="factors-col bull-col">
+          <h4>利多因素</h4>
+          <ul>
+            
+            <li>长进光子上市首日暴涨1510%，带动激光产业链资金关注</li>
+            
+            <li>韩国股市创新高，SK海力士市值突破万亿，提振全球半导体情绪</li>
+            
+            <li>科技和储能调整后仍有新高，中期趋势看好</li>
+            
+            <li>商业航天下月有催化，科技板块热度延续</li>
+            
+          </ul>
+        </div>
+        <div class="factors-col bear-col">
+          <h4>利空因素</h4>
+          <ul>
+            
+            <li>消费板块资金被科技吸血，市场风格极致偏转，存在回调风险</li>
+            
+            <li>个别观点认为科技股泡沫可能破灭，引发系统性下跌</li>
+            
+          </ul>
+        </div>
+      </div>
+      
+      <div style="border-top:1px solid #f0f0f0;padding-top:10px;margin-top:4px">
+        <div class="advice-row">
+          <span class="advice-tag advice-buy">
+            ✅ 积极布局
+          </span>
+          <span style="align-self:center;font-size:13px">
+            政策支持叠加资金涌入，半导体板块强势，但需警惕短期过热回调
+          </span>
+        </div>
+        <div style="font-size:12px;color:#666;margin-top:4px">
+          中期(1-2周)
+        </div>
+        
+        <div class="risk-warning">风险：科技股估值偏高，若市场情绪逆转可能快速下跌，注意仓位控制</div>
+        
+        
+        <div class="stocks">
+          关注：
+          
+          <span class="stock-tag">长进光子</span>
+          
+          <span class="stock-tag">天通股份</span>
+          
+          <span class="stock-tag">天孚通信</span>
+          
+          <span class="stock-tag">SK海力士(港股/ETF)</span>
+          
+          <span class="stock-tag">半导体ETF</span>
+          
+        </div>
+        
+      </div>
+    </div>
+    
+  </div>
+  
+  
+  
+  <div class="sector-card">
+    <div class="sector-header">
+      <div>
+        <span class="sector-name">新能源/电力</span>
+        <span class="badge badge-bullish" style="margin-left:8px">
+          看多 📈
+        </span>
+      </div>
+      <div class="sector-meta">
+        <span>
+          相关度
+          <span class="score-bar"><span class="score-fill" style="width:70%"></span></span>
+          7/10
+        </span>
+        <span>5条信息</span>
+      </div>
+    </div>
+    
+    <div class="sector-body">
+      
+      <div class="factors-grid">
+        <div class="factors-col bull-col">
+          <h4>利多因素</h4>
+          <ul>
+            
+            <li>科技和储能调整后仍有新高，中期看好</li>
+            
+            <li>智能化战略发布会预期新突破，短期催化</li>
+            
+            <li>长进光子上市暴涨1510%，带动激光产业链关注</li>
+            
+            <li>OPEC受挫，光伏储能受益</li>
+            
+          </ul>
+        </div>
+        <div class="factors-col bear-col">
+          <h4>利空因素</h4>
+          <ul>
+            
+            <li>上证指数跌1.25%，市场整体偏弱</li>
+            
+            <li>部分信息信心较低，如OPEC受挫仅0.3</li>
+            
+          </ul>
+        </div>
+      </div>
+      
+      <div style="border-top:1px solid #f0f0f0;padding-top:10px;margin-top:4px">
+        <div class="advice-row">
+          <span class="advice-tag advice-buy">
+            ✅ 积极布局
+          </span>
+          <span style="align-self:center;font-size:13px">
+            政策导向明确，储能调整后有望新高，叠加激光产业链爆发，短期催化密集
+          </span>
+        </div>
+        <div style="font-size:12px;color:#666;margin-top:4px">
+          中期(1-2周)
+        </div>
+        
+        <div class="risk-warning">风险：市场整体下跌，需警惕系统性风险，关注个股高波动</div>
+        
+        
+        <div class="stocks">
+          关注：
+          
+          <span class="stock-tag">长进光子</span>
+          
+          <span class="stock-tag">天通股份</span>
+          
+          <span class="stock-tag">天孚通信</span>
+          
+          <span class="stock-tag">光伏ETF</span>
+          
+          <span class="stock-tag">储能ETF</span>
+          
+        </div>
+        
+      </div>
+    </div>
+    
+  </div>
+  
+  
+  
+  <div class="sector-card">
+    <div class="sector-header">
+      <div>
+        <span class="sector-name">军工/国防</span>
+        <span class="badge badge-bullish" style="margin-left:8px">
+          看多 📈
+        </span>
+      </div>
+      <div class="sector-meta">
+        <span>
+          相关度
+          <span class="score-bar"><span class="score-fill" style="width:60%"></span></span>
+          6/10
+        </span>
+        <span>1条信息</span>
+      </div>
+    </div>
+    
+    <div class="sector-body">
+      
+      <div class="factors-grid">
+        <div class="factors-col bull-col">
+          <h4>利多因素</h4>
+          <ul>
+            
+            <li>长进光子上市首日暴涨1510%，带动激光产业链关注</li>
+            
+            <li>N长进主力净流入18.17亿，资金追捧明显</li>
+            
+            <li>天通股份、天孚通信等激光相关个股主力净流入超9亿</li>
+            
+          </ul>
+        </div>
+        <div class="factors-col bear-col">
+          <h4>利空因素</h4>
+          <ul>
+            
+            <li>上证指数跌1.25%，大盘整体偏弱</li>
+            
+            <li>信息仅1条，板块整体热度有限</li>
+            
+          </ul>
+        </div>
+      </div>
+      
+      <div style="border-top:1px solid #f0f0f0;padding-top:10px;margin-top:4px">
+        <div class="advice-row">
+          <span class="advice-tag advice-watch">
+            👀 谨慎关注
+          </span>
+          <span style="align-self:center;font-size:13px">
+            激光产业链受新股暴涨带动，但大盘弱势，需观察持续性
+          </span>
+        </div>
+        <div style="font-size:12px;color:#666;margin-top:4px">
+          短期(1-3天)
+        </div>
+        
+        <div class="risk-warning">风险：新股暴涨后波动大，追高风险较高</div>
+        
+        
+        <div class="stocks">
+          关注：
+          
+          <span class="stock-tag">长进光子</span>
+          
+          <span class="stock-tag">天通股份</span>
+          
+          <span class="stock-tag">天孚通信</span>
+          
+        </div>
+        
+      </div>
+    </div>
+    
+  </div>
+  
+  
+  
+  <div class="sector-card">
+    <div class="sector-header">
+      <div>
+        <span class="sector-name">大宗商品/周期</span>
+        <span class="badge badge-bullish" style="margin-left:8px">
+          看多 📈
+        </span>
+      </div>
+      <div class="sector-meta">
+        <span>
+          相关度
+          <span class="score-bar"><span class="score-fill" style="width:60%"></span></span>
+          6/10
+        </span>
+        <span>4条信息</span>
+      </div>
+    </div>
+    
+    <div class="sector-body">
+      
+      <div class="factors-grid">
+        <div class="factors-col bull-col">
+          <h4>利多因素</h4>
+          <ul>
+            
+            <li>OPEC受挫可能推高油价，利好光伏储能替代需求</li>
+            
+            <li>黄金价格预期大幅上涨，年底目标1500-2000元/克</li>
+            
+            <li>国际金价预期7000-9000美元/盎司，长期看多</li>
+            
+          </ul>
+        </div>
+        <div class="factors-col bear-col">
+          <h4>利空因素</h4>
+          <ul>
+            
+            <li>黄金价格分析观点中性，长期走势存不确定性</li>
+            
+            <li>汇率波动可能影响商品价格，增加短期风险</li>
+            
+          </ul>
+        </div>
+      </div>
+      
+      <div style="border-top:1px solid #f0f0f0;padding-top:10px;margin-top:4px">
+        <div class="advice-row">
+          <span class="advice-tag advice-watch">
+            👀 谨慎关注
+          </span>
+          <span style="align-self:center;font-size:13px">
+            黄金长期看多但短期中性，OPEC事件利好光伏储能，建议逢低布局黄金和光伏龙头。
+          </span>
+        </div>
+        <div style="font-size:12px;color:#666;margin-top:4px">
+          中长期(1个月以上)
+        </div>
+        
+        <div class="risk-warning">风险：黄金预期涨幅较大但信心不足，需警惕汇率和OPEC政策反复风险。</div>
+        
+        
+        <div class="stocks">
+          关注：
+          
+          <span class="stock-tag">山东黄金</span>
+          
+          <span class="stock-tag">中金黄金</span>
+          
+          <span class="stock-tag">隆基绿能</span>
+          
+          <span class="stock-tag">阳光电源</span>
+          
+          <span class="stock-tag">黄金ETF</span>
+          
+        </div>
+        
+      </div>
+    </div>
+    
+  </div>
+  
+  
+  
+  <div class="sector-card">
+    <div class="sector-header">
+      <div>
+        <span class="sector-name">消费/零售</span>
+        <span class="badge badge-neutral" style="margin-left:8px">
+          中性 ➡️
+        </span>
+      </div>
+      <div class="sector-meta">
+        <span>
+          相关度
+          <span class="score-bar"><span class="score-fill" style="width:50%"></span></span>
+          5/10
+        </span>
+        <span>4条信息</span>
+      </div>
+    </div>
+    
+    <div class="sector-body">
+      
+      <div class="factors-grid">
+        <div class="factors-col bull-col">
+          <h4>利多因素</h4>
+          <ul>
+            
+            <li>长进光子上市暴涨，带动激光产业链关注，可能间接提振消费电子相关零售</li>
+            
+            <li>白酒板块逆势拉升，显示消费龙头仍有资金支撑</li>
+            
+          </ul>
+        </div>
+        <div class="factors-col bear-col">
+          <h4>利空因素</h4>
+          <ul>
+            
+            <li>消费板块资金被科技吸血，风格极致偏转，短期资金流出压力大</li>
+            
+            <li>上证指数跌1.25%，市场整体偏弱，消费板块承压</li>
+            
+          </ul>
+        </div>
+      </div>
+      
+      <div style="border-top:1px solid #f0f0f0;padding-top:10px;margin-top:4px">
+        <div class="advice-row">
+          <span class="advice-tag advice-watch">
+            👀 谨慎关注
+          </span>
+          <span style="align-self:center;font-size:13px">
+            消费板块受科技吸血影响，但白酒逆势拉升显示局部韧性，建议观望资金流向变化。
+          </span>
+        </div>
+        <div style="font-size:12px;color:#666;margin-top:4px">
+          短期(1-3天)
+        </div>
+        
+        <div class="risk-warning">风险：科技股持续吸金可能加剧消费板块调整，需警惕风格切换风险。</div>
+        
+        
+        <div class="stocks">
+          关注：
+          
+          <span class="stock-tag">长进光子</span>
+          
+          <span class="stock-tag">天通股份</span>
+          
+          <span class="stock-tag">天孚通信</span>
+          
+          <span class="stock-tag">白酒ETF</span>
+          
+          <span class="stock-tag">泡泡玛特</span>
+          
+        </div>
+        
+      </div>
+    </div>
+    
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</div>
+
+
+<div class="card">
+  <h2>今日重要数据</h2>
+  <table>
+    <thead><tr><th>数据指标</th><th>来源</th></tr></thead>
+    <tbody>
+      
+      <tr><td>黄金年底预计1500-2000元/克、国际金价7000-9000美元/盎司</td><td><a href="/pins/2043019011236034385">剑锋无尘</a></td></tr>
+      
+      <tr><td>上证指数跌1.25%、深证成指跌0.88%、创业板指涨0.07%、长进光子上市首日暴涨1510.52%、长进光子收报659.99元/股、中一签可赚30.95万元、N长进主力净流入18.17亿、天通股份主力净流入10.29亿、天孚通信主力净流入9.21亿</td><td><a href="/pins/2043051935566139679">羊村里最快的羊</a></td></tr>
+      
+      <tr><td>摩根士丹利持股549.28万股</td><td><a href="/pins/2042985857699907555">羊村里最快的羊</a></td></tr>
+      
+      <tr><td>KOSPI开盘上涨2.4%至8242.12点、SK海力士股价飙涨11%、KOSPI 200期货上涨5%</td><td><a href="/pins/2042880528521630095">羊村里最快的羊</a></td></tr>
+      
+      <tr><td>3万亿成交量</td><td><a href="/pins/2042908899012039213">派大星皮皮</a></td></tr>
+      
+    </tbody>
+  </table>
+</div>
+
+
+<div class="card">
+  <h2>原始信息来源（共 33 条）</h2>
+  
+  <div class="source-item">
+    <a href="https://zhuanlan.zhihu.com/p/2043023533685609209">又跳水</a>
+    <div class="source-meta">茶话股经 · 2026-05-27 17:40</div>
+  </div>
+  
+  <div class="source-item">
+    <a href="https://www.zhihu.com/question/2042525839712150197/answer/2042873518677872756">对2026年5月27日A股市场行情，大家有什么看法？</a>
+    <div class="source-meta">MR Dang · 2026-05-27 07:43</div>
+  </div>
+  
+  <div class="source-item">
+    <a href="https://www.zhihu.com/question/2042932191802520267/answer/2043102795742565817">沪指失守4100点，白酒板块逆势拉升，如何看待 2026 年 5 月 27 日 A 股行情？</a>
+    <div class="source-meta">水又三人禾 · 2026-05-27 22:54</div>
+  </div>
+  
+  <div class="source-item">
+    <a href="https://zhuanlan.zhihu.com/p/2042891551467116239">顶背离，也有调整结束的时候</a>
+    <div class="source-meta">水又三人禾 · 2026-05-27 09:55</div>
+  </div>
+  
+  <div class="source-item">
+    <a href="/pins/2042938396553872237">不行了我要笑死了，这个图我一定要发出来…</a>
+    <div class="source-meta">水又三人禾 · 2026-05-27 12:07</div>
+  </div>
+  
+  <div class="source-item">
+    <a href="/pins/2042916973705704424">今天A股盘中波动的比较剧烈，估计很多人…</a>
+    <div class="source-meta">水又三人禾 · 2026-05-27 10:43</div>
+  </div>
+  
+  <div class="source-item">
+    <a href="https://www.zhihu.com/question/2034972409263018808/answer/2043033592700437606">驻京央企会大批量疏解到雄安新区吗？</a>
+    <div class="source-meta">唯唯诺诺的梦 · 2026-05-27 18:19</div>
+  </div>
+  
+  <div class="source-item">
+    <a href="https://www.zhihu.com/question/2042615240727294304/answer/2043001015713141974">大家对于2026年5月27日A股市场行情有什么预测和看法？</a>
+    <div class="source-meta">奥特之父 · 2026-05-27 16:09</div>
+  </div>
+  
+  <div class="source-item">
+    <a href="https://www.zhihu.com/question/2041247388258362911/answer/2042818175520305541">比亚迪 5 月 28 日将举办智能化战略发布会，预计宣布新突破，可能涉及什么技术？你有哪些期待？</a>
+    <div class="source-meta">奥特之父 · 2026-05-27 04:03</div>
+  </div>
+  
+  <div class="source-item">
+    <a href="https://www.zhihu.com/question/2042529311253648823/answer/2042986714541642081">如何看待 2026 年 5月 27日 A 股行情走势？</a>
+    <div class="source-meta">张蛆 · 2026-05-27 15:13</div>
+  </div>
+  
+  <div class="source-item">
+    <a href="https://www.zhihu.com/question/2042146220160935753/answer/2042925853542175581">怎么看待2026年5月27日A股行情？</a>
+    <div class="source-meta">张蛆 · 2026-05-27 11:11</div>
+  </div>
+  
+  <div class="source-item">
+    <a href="https://www.zhihu.com/question/2015919332857754166/answer/2043018915257784110">黄金是否可以回到1200+？</a>
+    <div class="source-meta">剑锋无尘 · 2026-05-27 17:21</div>
+  </div>
+  
+  <div class="source-item">
+    <a href="/pins/2043019011236034385">预计今年底黄金会回到1500-2000元/克，对…</a>
+    <div class="source-meta">剑锋无尘 · 2026-05-27 17:23</div>
+  </div>
+  
+  <div class="source-item">
+    <a href="https://zhuanlan.zhihu.com/p/2042712951753376992">今日复盘--潜力思路分析</a>
+    <div class="source-meta">羊村里最快的羊 · 2026-05-27 08:22</div>
+  </div>
+  
+  <div class="source-item">
+    <a href="/pins/2043051935566139679">5月27日复盘连扳热点：3连板：华电能源，…</a>
+    <div class="source-meta">羊村里最快的羊 · 2026-05-27 19:38</div>
+  </div>
+  
+  <div class="source-item">
+    <a href="/pins/2042985857699907555">据证券时报：三房巷今天收到法院拍卖告知…</a>
+    <div class="source-meta">羊村里最快的羊 · 2026-05-27 15:49</div>
+  </div>
+  
+  <div class="source-item">
+    <a href="/pins/2042925184907202969">今天大盘没什么看点，点两层进be</a>
+    <div class="source-meta">羊村里最快的羊 · 2026-05-27 11:15</div>
+  </div>
+  
+  <div class="source-item">
+    <a href="/pins/2042880528521630095">亚太韩国股市情况：韩国综合股价指数（KO…</a>
+    <div class="source-meta">羊村里最快的羊 · 2026-05-27 08:13</div>
+  </div>
+  
+  <div class="source-item">
+    <a href="https://zhuanlan.zhihu.com/p/2043008822080443974">2026.5.27 复盘</a>
+    <div class="source-meta">向阳 · 2026-05-27 17:44</div>
+  </div>
+  
+  <div class="source-item">
+    <a href="/pins/2042959862397678175">1.少看盘，这里看图形就是最低点附近了，…</a>
+    <div class="source-meta">向阳 · 2026-05-27 13:39</div>
+  </div>
+  
+  <div class="source-item">
+    <a href="/pins/2042934205546549603">1.上午没怎么看盘，这个位置还是锁仓不动…</a>
+    <div class="source-meta">向阳 · 2026-05-27 12:10</div>
+  </div>
+  
+  <div class="source-item">
+    <a href="https://zhuanlan.zhihu.com/p/2043016157784012655">拆解牛市的两个最核心的底层逻辑</a>
+    <div class="source-meta">布得布说 · 2026-05-27 17:37</div>
+  </div>
+  
+  <div class="source-item">
+    <a href="https://zhuanlan.zhihu.com/p/2042982017231583012">中国企业的变富之路</a>
+    <div class="source-meta">布得布说 · 2026-05-27 15:30</div>
+  </div>
+  
+  <div class="source-item">
+    <a href="https://www.zhihu.com/question/2042903393052485561/answer/2043101856516281213">如何看待段永平称「泡泡玛特王宁的商业理解能力，比乔布斯还强」？</a>
+    <div class="source-meta">波动率就是趋势 · 2026-05-27 22:50</div>
+  </div>
+  
+  <div class="source-item">
+    <a href="https://www.zhihu.com/question/2035895721015128441/answer/2042982557239743521">2026年5月当高估的科技股泡沫破灭崩盘时，那些低估值老登股，也会跟随大跌吗？？</a>
+    <div class="source-meta">波动率就是趋势 · 2026-05-27 14:56</div>
+  </div>
+  
+  <div class="source-item">
+    <a href="/pins/2042772793616491705">是不是预言了cnyusd暴涨，USD对石油和粮…</a>
+    <div class="source-meta">波动率就是趋势 · 2026-05-27 01:03</div>
+  </div>
+  
+  <div class="source-item">
+    <a href="/pins/2042771519210776271">现在回头看，是不是OPEC被沉重打击，是不…</a>
+    <div class="source-meta">波动率就是趋势 · 2026-05-27 00:59</div>
+  </div>
+  
+  <div class="source-item">
+    <a href="/pins/2042769585917646787">伊朗最终会如何收尾，有哪位大佬推测一下…</a>
+    <div class="source-meta">波动率就是趋势 · 2026-05-27 00:54</div>
+  </div>
+  
+  <div class="source-item">
+    <a href="https://www.zhihu.com/question/2042639081306378567/answer/2043065474334864775">怎么看待2026年5月28日A股行情走势？</a>
+    <div class="source-meta">派大星皮皮 · 2026-05-27 20:26</div>
+  </div>
+  
+  <div class="source-item">
+    <a href="/pins/2042996329429848985">以下在公开回答里讲也许过不了夹</a>
+    <div class="source-meta">派大星皮皮 · 2026-05-27 16:01</div>
+  </div>
+  
+  <div class="source-item">
+    <a href="/pins/2042917801678067576">双闯剩55%，半设还剩60%</a>
+    <div class="source-meta">派大星皮皮 · 2026-05-27 11:54</div>
+  </div>
+  
+  <div class="source-item">
+    <a href="/pins/2042911454685287438">一直发不出来，操作看同名gzh</a>
+    <div class="source-meta">派大星皮皮 · 2026-05-27 10:14</div>
+  </div>
+  
+  <div class="source-item">
+    <a href="/pins/2042908899012039213">1. 创业板和半导体设备各减10%</a>
+    <div class="source-meta">派大星皮皮 · 2026-05-27 10:08</div>
+  </div>
+  
+</div>
+
+<div class="footer">
+  本报告由 AI 自动生成，信息来源为知乎用户内容，仅供参考，不构成投资建议。<br>
+  股市有风险，投资需谨慎。
+</div>
+
+</body>
+</html>

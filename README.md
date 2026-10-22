@@ -1,15 +1,15 @@
-# 知乎财经日报自动分析系统
+# AI信息自动抓取分析系统
 
-从知乎关注流抓取内容，用 DeepSeek API 提取 A 股相关财经信息，生成结构化日报并通过邮件推送。
+从关注流抓取内容，用 DeepSeek API 提取相关信息，生成结构化日报并通过邮件推送。
 
 ## 目录结构
 
 ```
-zhihu-finance-analyst/
+ai-info-analyst/
 ├── main.py                     # 程序入口
 ├── config/config.yaml           # 所有配置（Cookie、API Key、邮件等）
 ├── src/
-│   ├── crawler/                 # 知乎抓取（feed + 关注用户）
+│   ├── crawler/                 # 抓取（feed + 关注用户）
 │   ├── analyzer/                # AI 分类 + 摘要 + 综合
 │   ├── reporter/                # HTML/MD 报告生成 + 邮件发送
 │   ├── storage/                 # SQLite 去重 + 运行历史
@@ -29,7 +29,7 @@ zhihu-finance-analyst/
 ### 手动运行（当天内容）
 
 ```powershell
-cd D:\zhihu-finance-analyst
+cd D:\ai-info-analyst
 .venv\Scripts\python.exe main.py
 ```
 
@@ -48,49 +48,49 @@ cd D:\zhihu-finance-analyst
 ### 创建定时任务（每天 23:30 执行）
 
 ```powershell
-schtasks /create /tn "zhihu-finance-analyst" /tr "D:\zhihu-finance-analyst\scripts\run_daily.bat" /sc daily /st 23:30 /f
+schtasks /create /tn "ai-info-analyst" /tr "D:\ai-info-analyst\scripts\run_daily.bat" /sc daily /st 23:30 /f
 ```
 
 ### 查看任务状态
 
 ```powershell
-schtasks /query /tn "zhihu-finance-analyst" /v /fo list
+schtasks /query /tn "ai-info-analyst" /v /fo list
 ```
 
 只看关键信息：
 
 ```powershell
-schtasks /query /tn "zhihu-finance-analyst" /v /fo list | findstr "Status Enabled Last"
+schtasks /query /tn "ai-info-analyst" /v /fo list | findstr "Status Enabled Last"
 ```
 
 ### 禁用任务（暂停，保留配置）
 
 ```powershell
-schtasks /change /tn "zhihu-finance-analyst" /disable
+schtasks /change /tn "ai-info-analyst" /disable
 ```
 
 ### 启用任务（恢复）
 
 ```powershell
-schtasks /change /tn "zhihu-finance-analyst" /enable
+schtasks /change /tn "ai-info-analyst" /enable
 ```
 
 ### 手动触发一次
 
 ```powershell
-schtasks /run /tn "zhihu-finance-analyst"
+schtasks /run /tn "ai-info-analyst"
 ```
 
 ### 修改执行时间
 
 ```powershell
-schtasks /change /tn "zhihu-finance-analyst" /st 08:00
+schtasks /change /tn "ai-info-analyst" /st 08:00
 ```
 
 ### 彻底删除
 
 ```powershell
-schtasks /delete /tn "zhihu-finance-analyst" /f
+schtasks /delete /tn "ai-info-analyst" /f
 ```
 
 ## 日志查看
@@ -109,7 +109,7 @@ Get-Content output\logs\task_stderr.log -ErrorAction SilentlyContinue
 
 ### 定时任务没跑
 
-1. 先确认任务是否存在：`schtasks /query /tn "zhihu-finance-analyst"`
+1. 先确认任务是否存在：`schtasks /query /tn "ai-info-analyst"`
 2. 看 **Enabled** 是否为 `True`，**Status** 是否为 `Ready`
 3. 看 **Last Result**：
    - `0` → 正常
